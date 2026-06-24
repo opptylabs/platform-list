@@ -376,6 +376,7 @@ import * as tensor from "./tensor";
 import * as texture from "./texture";
 import * as thevault from "./thevault";
 import * as threshold from "./threshold";
+import * as tibanelabs from "./tibanelabs";
 import * as tiplink from "./tiplink";
 import * as titan from "./titan";
 import * as tramplin from "./tramplin";
@@ -796,6 +797,7 @@ export const platforms: PlatformRaw[] = [
   texture.platform,
   thevault.platform,
   threshold.platform,
+  tibanelabs.platform,
   tiplink.platform,
   titan.platform,
   tramplin.platform,
@@ -1217,6 +1219,7 @@ export const services: ServiceRaw[] = [
   ...texture.services,
   ...thevault.services,
   ...threshold.services,
+  ...tibanelabs.services,
   ...tiplink.services,
   ...titan.services,
   ...tramplin.services,
