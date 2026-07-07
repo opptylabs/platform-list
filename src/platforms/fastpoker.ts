@@ -26,4 +26,17 @@ export const pokerService: ServiceRaw = {
   contractsRaw: [pokerProgram],
 };
 
-export const services: ServiceRaw[] = [pokerService];
+const rewardsProgram = {
+  name: "Rewards",
+  address: "FASTPjXb68fPW9JRYSBS3EDoaT6inz84GoqkPK52dsA9",
+  networkId: NetworkId.solana,
+};
+
+export const rewardsService: ServiceRaw = {
+  id: `${platform.id}-rewards`,
+  name: "Rewards",
+  platformId: platform.id,
+  contractsRaw: [rewardsProgram],
+};
+
+export const services: ServiceRaw[] = [pokerService, rewardsService];
