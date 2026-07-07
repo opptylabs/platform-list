@@ -15,6 +15,7 @@ import * as allbridge from "./allbridge";
 import * as alldomains from "./alldomains";
 import * as alphaledger from "./alphaledger";
 import * as altude from "./altude";
+import * as ample from "./ample";
 import * as amppay from "./amppay";
 import * as amulet from "./amulet";
 import * as anchorage from "./anchorage";
@@ -436,6 +437,7 @@ export const platforms: PlatformRaw[] = [
   alldomains.platform,
   alphaledger.platform,
   altude.platform,
+  ample.platform,
   amppay.platform,
   amulet.platform,
   anchorage.platform,
@@ -858,6 +860,7 @@ export const services: ServiceRaw[] = [
   ...alldomains.services,
   ...alphaledger.services,
   ...altude.services,
+  ...ample.services,
   ...amppay.services,
   ...amulet.services,
   ...anchorage.services,
