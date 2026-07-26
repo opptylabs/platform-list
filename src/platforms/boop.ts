@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "boop",
   name: "Boop",
@@ -17,13 +17,11 @@ export const platform: PlatformRaw = {
 const contract = {
   name: "Staking",
   address: "boopURdYr29D4C4BX7UWfi7rHQyinzCb4XRac3SHR85",
-  networkId: NetworkId.solana,
 };
 
 const poolContract = {
   name: "Pool",
   address: "boopiN5ZqKsQ1uCtQoPG7FeXVmJi7YcwngQQrZCp6qA",
-  networkId: NetworkId.solana,
 };
 
 export const stakingService: ServiceRaw = {

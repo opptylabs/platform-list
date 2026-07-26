@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 
 export const platform: PlatformRaw = {
   id: "m0",
@@ -17,19 +17,16 @@ export const platform: PlatformRaw = {
 const earnContract = {
   name: "Earn Program",
   address: "mz2vDzjbQDUDXBH6FPF5s4odCJ4y8YLE5QWaZ8XdZ9Z",
-  networkId: NetworkId.solana,
 };
 
 const portalContract = {
   name: "Wormhole Portal",
   address: "mzp1q2j5Hr1QuLC3KFBCAUz5aUckT6qyuZKZ3WJnMmY",
-  networkId: NetworkId.solana,
 };
 
 const wmExtensionContract = {
   name: "wM Extension",
   address: "wMXX1K1nca5W4pZr1piETe78gcAVVrEFi9f4g46uXko",
-  networkId: NetworkId.solana,
 };
 
 export const mainService: ServiceRaw = {

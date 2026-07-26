@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 
 export const platform: PlatformRaw = {
   id: "wzrd",
@@ -20,7 +20,6 @@ export const platform: PlatformRaw = {
 const channelVaultContract = {
   name: "Channel Vault",
   address: "5WH4UiSZ7fbPQbLrRCJyWxnTAoNyTZ3ZjcdgTuinCXmQ",
-  networkId: NetworkId.solana,
 };
 
 export const vaultService: ServiceRaw = {

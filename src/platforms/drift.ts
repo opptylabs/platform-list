@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId, ContractRaw } from "../types";
+import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "drift",
   name: "Drift",
@@ -19,25 +19,21 @@ export const platform: PlatformRaw = {
 const contract = {
   name: "Drift",
   address: "dRiftyHA39MWEi3m9aunc5MzRF1JYuBsbn6VPcn33UH",
-  networkId: NetworkId.solana,
 };
 
 const vaultsContract: ContractRaw = {
   name: "Drift Vaults",
   address: "vAuLTsyrvSfZRuRB3XgvkPwNGgYSs9YRYymVebLKoxR",
-  networkId: NetworkId.solana,
 };
 
 const proxyContract = {
   name: "Jit Proxy",
   address: "J1TnP8zvVxbtF5KFp5xRmWuvG9McnhzmBd9XGfCyuxFP",
-  networkId: NetworkId.solana,
 };
 
 const airdropContract = {
   name: "Airdrop",
   address: "E7HtfkEMhmn9uwL7EFNydcXBWy5WCYN1vFmKKjipEH1x",
-  networkId: NetworkId.solana,
 };
 
 export const perpsService: ServiceRaw = {

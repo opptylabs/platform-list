@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "solstice",
   name: "Solstice",
@@ -18,19 +18,16 @@ export const platform: PlatformRaw = {
 export const contract = {
   name: "Yield Vault",
   address: "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
-  networkId: NetworkId.solana,
 };
 
 export const usxJustEarnContract = {
   name: "USX Just Earn",
   address: "JECcmzAWytxXQtMN3taGmAYhTK4CDEfwEGrzfMvVeGXm",
-  networkId: NetworkId.solana,
 };
 
 export const usxContract = {
   name: "USX",
   address: "USXyiSTsPEWz55pSK7sZoUL79ntoVGQbaTDT57tH6bx",
-  networkId: NetworkId.solana,
 };
 
 export const yieldVaultService: ServiceRaw = {

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 import { platform as jupiterPlatform } from "./jupiter-exchange";
 
 export const platform: PlatformRaw = {
@@ -16,7 +16,6 @@ export const platform: PlatformRaw = {
 const jupiterJupuaryContract = {
   name: "Jupuary",
   address: "DiS3nNjFVMieMgmiQFm6wgJL7nevk4NrhXKLbtEH1Z2R",
-  networkId: NetworkId.solana,
 };
 
 export const jupuaryService: ServiceRaw = {

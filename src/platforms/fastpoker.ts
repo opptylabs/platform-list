@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 
 export const platform: PlatformRaw = {
   id: "fastpoker",
@@ -16,7 +16,6 @@ export const platform: PlatformRaw = {
 const pokerProgram = {
   name: "FastPoker",
   address: "PokerXYdXL2SKNnfGbv1WE7vJHipTpNsfZbZeVvoJLn",
-  networkId: NetworkId.solana,
 };
 
 export const pokerService: ServiceRaw = {
@@ -29,7 +28,6 @@ export const pokerService: ServiceRaw = {
 const rewardsProgram = {
   name: "Rewards",
   address: "FASTPjXb68fPW9JRYSBS3EDoaT6inz84GoqkPK52dsA9",
-  networkId: NetworkId.solana,
 };
 
 export const rewardsService: ServiceRaw = {

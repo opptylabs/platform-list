@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 import { platform as jupiterPlatform } from "./jupiter-exchange";
 
 export const platform: PlatformRaw = {
@@ -15,13 +15,11 @@ export const platform: PlatformRaw = {
 const lfgContract = {
   name: "LFG",
   address: "DiSLRwcSFvtwvMWSs7ubBMvYRaYNYupa76ZSuYLe6D7j",
-  networkId: NetworkId.solana,
 };
 
 const dtfContract = {
   name: "DTF",
   address: "presSVxnf9UU8jMxhgSMqaRwNiT36qeBdNeTRKjTdbj",
-  networkId: NetworkId.solana,
 };
 
 export const lfgService: ServiceRaw = {

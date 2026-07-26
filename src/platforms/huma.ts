@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "huma",
   name: "Huma",
@@ -22,31 +22,26 @@ export const platform: PlatformRaw = {
 const contract = {
   name: "Permissionless",
   address: "HumaXepHnjaRCpjYTokxY4UtaJcmx41prQ8cxGmFC5fn",
-  networkId: NetworkId.solana,
 };
 
 const institutionalContract = {
   name: "Institutional",
   address: "EVQ4s1b6N1vmWFDv8PRNc77kufBP8HcrSNWXQAhRsJq9",
-  networkId: NetworkId.solana,
 };
 
 const airdropContract = {
   name: "Airdrop",
   address: "Distcc8stwHiwnxxj5BWkP9Re7MWRhH3JqRaRxfQC6Zr",
-  networkId: NetworkId.solana,
 };
 
 const stakingContract = {
   name: "Staking",
   address: "vsRJM68m7i18PwzTFphgPYXTujCgxEi28knpUwSmg3q",
-  networkId: NetworkId.solana,
 };
 
 const primeContract = {
   name: "Prime",
   address: "prm1azdDGzyqP76s3Hv2nuG3uLnBgR5u2d7pANwmmzC",
-  networkId: NetworkId.solana,
 };
 
 export const service: ServiceRaw = {

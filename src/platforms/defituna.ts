@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "defituna",
   name: "DeFiTuna",
@@ -18,19 +18,16 @@ export const platform: PlatformRaw = {
 const defiTunaContract = {
   name: "DefiTuna",
   address: "tuna4uSQZncNeeiAMKbstuxA9CUkHH6HmC64wgmnogD",
-  networkId: NetworkId.solana,
 };
 
 const stakingContract = {
   name: "Staking",
   address: "tUnst2Y2sbmgSgARBpSBZhqPzpoy2iUsdCwb5ToYVJa",
-  networkId: NetworkId.solana,
 };
 
 const fusionAmmContract = {
   name: "Fusion AMM",
   address: "fUSioN9YKKSa3CUC2YUc4tPkHJ5Y6XW1yz8y6F7qWz9",
-  networkId: NetworkId.solana,
 };
 
 export const defiTunaService: ServiceRaw = {

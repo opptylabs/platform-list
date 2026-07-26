@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "mayan",
   name: "Mayan",
@@ -15,7 +15,6 @@ export const platform: PlatformRaw = {
 export const swiftContract = {
   name: "Swift",
   address: "BLZRi6frs4X4DNLw56V4EXai1b6QVESN1BhHBTYM9VcY",
-  networkId: NetworkId.solana,
 };
 
 export const claimService: ServiceRaw = {

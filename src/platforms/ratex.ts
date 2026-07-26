@@ -1,4 +1,4 @@
-import { NetworkId, PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "ratex",
   name: "RateX",
@@ -64,7 +64,6 @@ export const programIds = [
 const withdrawableTokensContract = {
   name: "Withdrawable Tokens",
   address: "raTejbjhXcMjSSq9SzkkdzxeWzttF1jz94F8CtvU9Ss",
-  networkId: NetworkId.solana,
 };
 
 export const service: ServiceRaw = {
@@ -74,7 +73,6 @@ export const service: ServiceRaw = {
   contractsRaw: programIds.map((programId) => ({
     name: "RateX",
     address: programId,
-    networkId: NetworkId.solana,
   })),
 };
 export const withdrawableTokensService: ServiceRaw = {
@@ -87,7 +85,6 @@ export const withdrawableTokensService: ServiceRaw = {
 const airdropContract = {
   name: "RateX Airdrop",
   address: "rateAsYRezXAQ8r7dwTeaRgC2YmcvEtKmYkuJDvD33s",
-  networkId: NetworkId.solana,
 };
 
 export const airdropService: ServiceRaw = {

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "pyth",
   name: "Pyth",
@@ -19,31 +19,26 @@ export const platform: PlatformRaw = {
 const contract = {
   name: "Staking",
   address: "pytS9TjG1qyAZypk7n8rw8gfW9sUaqqYyMhJQ4E7JCQ",
-  networkId: NetworkId.solana,
 };
 
 const integrityPoolContract = {
   name: "Staking",
   address: "pyti8TM4zRVBjmarcgAPmTNNAXYKJv7WVHrkrm6woLN",
-  networkId: NetworkId.solana,
 };
 
 const airdropContract = {
   name: "Airdrop",
   address: "EXxqB6XPLczReFcZyigfbdowB6WGYtnkLYC4XZ2ae9ch",
-  networkId: NetworkId.solana,
 };
 
 export const expressRelayContract = {
   name: "Express Relay",
   address: "PytERJFhAKuNNuaiXkApLfWzwNwSNDACpigT3LwQfou",
-  networkId: NetworkId.solana,
 };
 
 const governanceContract = {
   name: "Governance",
   address: "pytGY6tWRgGinSCvRLnSv4fHfBTMoiDGiCsesmHWM6U",
-  networkId: NetworkId.solana,
 };
 
 export const stakingService: ServiceRaw = {

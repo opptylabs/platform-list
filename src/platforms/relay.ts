@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "relay",
   name: "Relay",
@@ -16,13 +16,11 @@ export const platform: PlatformRaw = {
 const contract = {
   name: "WSOL Unwrapper",
   address: "DzACDmwdqc5ADPJKnZEcQAgpsPdvYzvYBMihPNN48pFE",
-  networkId: NetworkId.solana,
 };
 
 const relayContract = {
   name: "Relay Bridge",
   address: "99vQwtBwYtrqqD9YSXbdum3KBdxPAVxYTaQ3cfnJSrN2",
-  networkId: NetworkId.solana,
 };
 
 export const bridgeService: ServiceRaw = {

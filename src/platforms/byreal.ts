@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "byreal",
   name: "Byreal",
@@ -17,25 +17,21 @@ export const platform: PlatformRaw = {
 const clmmContract = {
   name: "CLMMM",
   address: "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
-  networkId: NetworkId.solana,
 };
 
 const resetContract = {
   name: "Reset",
   address: "REALdpFGDDsiD9tvxYsXBTDpgH1gGQEqJ8YSLdYQWGD",
-  networkId: NetworkId.solana,
 };
 
 const routerContract = {
   name: "Router",
   address: "REALp6iMBDTctQqpmhBo4PumwJGcybbnDpxtax3ara3",
-  networkId: NetworkId.solana,
 };
 
 const rfqContract = {
   name: "RFQ",
   address: "REALFP9S4VmrAixmeYa68FrPKn4NVD2QFxxMfz9arhz",
-  networkId: NetworkId.solana,
 };
 
 export const clmmService: ServiceRaw = {

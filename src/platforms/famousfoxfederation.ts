@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "famousfoxfederation",
   name: "Famous Fox Federation",
@@ -16,19 +16,16 @@ export const platform: PlatformRaw = {
 const stakingContract = {
   name: "Staking",
   address: "FoXpJL1exLBJgHVvdSHNKyKu2xX2uatctH9qp6dLmfpP",
-  networkId: NetworkId.solana,
 };
 
 const mainContract = {
   name: "Main",
   address: "JUicemrQ1X9XizUh1Pcn1SMJoArP8udtEqG5vZiWvkz",
-  networkId: NetworkId.solana,
 };
 
 const missionsContract = {
   name: "Missions",
   address: "6NcdQ5WTnrPoMLbP4kvpLYa4YSwKqkNHRRE8XVf5hmv9",
-  networkId: NetworkId.solana,
 };
 
 export const stakingService: ServiceRaw = {

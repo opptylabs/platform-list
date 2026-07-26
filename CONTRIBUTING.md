@@ -39,8 +39,6 @@ Create a new TypeScript file in `src/platforms/` named after your platform ID (e
 
 ```typescript
 import { PlatformRaw, ServiceRaw } from "../types";
-import { NetworkId } from "@sonarwatch/portfolio-core";
-
 export const platform: PlatformRaw = {
   id: "myplatform",
   name: "My Platform",
@@ -142,8 +140,6 @@ Services represent specific features or smart contracts of your platform (e.g., 
 ### Basic Service with One Contract
 
 ```typescript
-import { NetworkId } from "@sonarwatch/portfolio-core";
-
 const contract = {
   name: "Swap",
   address: "YourProgramPublicKeyHere",
@@ -153,7 +149,6 @@ const service: ServiceRaw = {
   id: `${platform.id}-swap`,
   name: "Swap",
   platformId: platform.id,
-  networkId: NetworkId.solana,
   contractsRaw: [contract],
 };
 
@@ -178,7 +173,6 @@ const swapService: ServiceRaw = {
   id: `${platform.id}-swap`,
   name: "Swap",
   platformId: platform.id,
-  networkId: NetworkId.solana,
   contractsRaw: [swapContract],
 };
 
@@ -186,7 +180,6 @@ const stakingService: ServiceRaw = {
   id: `${platform.id}-staking`,
   name: "Staking",
   platformId: platform.id,
-  networkId: NetworkId.solana,
   contractsRaw: [stakingContract],
 };
 
@@ -214,7 +207,6 @@ const multiplyService: ServiceRaw = {
   id: `${platform.id}-multiply`,
   name: "Multiply",
   platformId: platform.id,
-  networkId: NetworkId.solana,
   contractsRaw: [lendingContract, swapingContract],
 };
 
@@ -295,8 +287,6 @@ Here's a complete example of a platform file with all the elements:
 
 ```typescript
 import { PlatformRaw, ServiceRaw } from "../types";
-import { NetworkId } from "@sonarwatch/portfolio-core";
-
 // Platform definition
 export const platform: PlatformRaw = {
   id: "jupiter-governance",
@@ -332,7 +322,6 @@ const asrService: ServiceRaw = {
   id: `${platform.id}-asr`,
   name: "ASR",
   platformId: platform.id,
-  networkId: NetworkId.solana,
   contractsRaw: [asrContract],
 };
 

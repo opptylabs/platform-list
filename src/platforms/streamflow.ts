@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "streamflow",
   name: "Streamflow",
@@ -20,25 +20,21 @@ export const platform: PlatformRaw = {
 export const vestingContract = {
   name: "Vesting",
   address: "strmRqUCoQUgGUan5YhzUZa6KqdzwX5L6FpUxfmKg5m",
-  networkId: NetworkId.solana,
 };
 
 const stakingContract = {
   name: "Staking",
   address: "STAKEvGqQTtzJZH6BWDcbpzXXn2BBerPAgQ3EGLN2GH",
-  networkId: NetworkId.solana,
 };
 
 const airdropsContract = {
   name: "Airdrops",
   address: "aSTRM2NKoKxNnkmLWk9sz3k74gKBk9t7bpPrTGxMszH",
-  networkId: NetworkId.solana,
 };
 
 const airdropContract = {
   name: "Airdrop Distribution",
   address: "MErKy6nZVoVAkryxAejJz2juifQ4ArgLgHmaJCQkU7N",
-  networkId: NetworkId.solana,
 };
 
 export const vestingService: ServiceRaw = {

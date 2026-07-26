@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "oresupply",
   name: "OreSupply",
@@ -19,25 +19,21 @@ export const platform: PlatformRaw = {
 const contract = {
   name: "Mining",
   address: "poo1sKMYsZtDDS7og73L68etJQYyn6KXhXTLz1hizJc",
-  networkId: NetworkId.solana,
 };
 
 const legacyStakingContract = {
   name: "V1",
   address: "BoostzzkNfCA9D1qNuN5xZxB5ErbK4zQuBeTHGDpXT1",
-  networkId: NetworkId.solana,
 };
 
 const v2Contract = {
   name: "V2",
   address: "oreV2ZymfyeXgNgBdqMkumTqqAprVqgBWQfoYkrtKWQ",
-  networkId: NetworkId.solana,
 };
 
 const v3Contract = {
   name: "V3",
   address: "oreV3EG1i9BEgiAJ8b177Z2S2rMarzak4NMv1kULvWv",
-  networkId: NetworkId.solana,
 };
 
 export const service: ServiceRaw = {

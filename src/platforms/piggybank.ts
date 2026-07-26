@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "piggybank",
   name: "Piggybank",
@@ -20,13 +20,11 @@ export const platform: PlatformRaw = {
 const legacyContract = {
   name: "Vault",
   address: "Pig1CsXnfDwN1NuoeNRBojohbjc14dogmJCXeb2vL3Y",
-  networkId: NetworkId.solana,
 };
 
 const token2022Contract = {
   name: "Vault",
   address: "Pig2ienhM3ukiTec3x8aCdnLASpU4z8yRPLgH9QxDvm",
-  networkId: NetworkId.solana,
 };
 
 export const vaultService: ServiceRaw = {

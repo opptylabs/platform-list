@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "wormhole",
   name: "Wormhole",
@@ -23,43 +23,36 @@ export const platform: PlatformRaw = {
 const mainContract = {
   name: "Main",
   address: "HDwcJBJXjL9FpJ7UBsYBtaDjsBUhuLCUYoz3zr8SWWaQ",
-  networkId: NetworkId.solana,
 };
 
 const coreContract = {
   name: "Core",
   address: "worm2ZoG2kUd4vFXhvjh93UUH596ayRfgQ2MgjNMTth",
-  networkId: NetworkId.solana,
 };
 
 const legacyStakingContract = {
   name: "Legacy Staking",
   address: "sspu65omPW2zJGWDxmx8btqxudHezoQHSGZmnW8jbVz",
-  networkId: NetworkId.solana,
 };
 
 const stakingContract = {
   name: "Staking",
   address: "MGoV9M6YUsdhJzjzH9JMCW2tRe1LLxF1CjwqKC7DR1B",
-  networkId: NetworkId.solana,
 };
 
 const tokenBridgeContract = {
   name: "Token Bridge",
   address: "wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb",
-  networkId: NetworkId.solana,
 };
 
 const tokenBridgeRelayerContract = {
   name: "Token Bridge Relayer",
   address: "3vxKRPwUTiEkeUVyoZ9MXFe1V71sRLbLqu1gRYaWmehQ",
-  networkId: NetworkId.solana,
 };
 
 const tbtcBridgeContract = {
   name: "tBTC Bridge",
   address: "87MEvHZCXE3ML5rrmh5uX1FbShHmRXXS32xJDGbQ7h5t",
-  networkId: NetworkId.solana,
 };
 
 export const legacyStakingService: ServiceRaw = {

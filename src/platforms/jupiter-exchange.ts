@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId, ContractRaw } from "../types";
+import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
 
 export const platform: PlatformRaw = {
   id: "jupiter-exchange",
@@ -25,145 +25,121 @@ export const platform: PlatformRaw = {
 export const jupiterV7Contract: ContractRaw = {
   name: "Swap V7",
   address: "JUP7pNXFL1G2BESRYMtZ1jepzfDQVffkkkf5JhXWWhC",
-  networkId: NetworkId.solana,
 };
 
 export const jupiterV6Contract = {
   name: "Swap V6",
   address: "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
-  networkId: NetworkId.solana,
 };
 
 const jupiterV5Contract = {
   name: "Swap v5",
   address: "JUP5pEAZeHdHrLxh5UCwAbpjGwYKKoquCpda2hfP4u8",
-  networkId: NetworkId.solana,
 };
 
 const jupiterV4Contract = {
   name: "Swap v4",
   address: "JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDD33WcGuJB",
-  networkId: NetworkId.solana,
 };
 
 const jupiterV3Contract = {
   name: "Swap v3",
   address: "JUP3c2Uh3WA4Ng34tw6kPd2G4C5BB21Xo36Je1s32Ph",
-  networkId: NetworkId.solana,
 };
 
 const jupiterV2Contract = {
   name: "Swap v2",
   address: "JUP2jxvXaqu7NQY1GmNF4m1vodw12LVXYxbFL2uJvfo",
-  networkId: NetworkId.solana,
 };
 
 const jupiterV1Contract = {
   name: "Swap v1",
   address: "JUP6i4ozu5ydDCnLiMogSckDPpbtr7BJ4FtzYWkb5Rk",
-  networkId: NetworkId.solana,
 };
 
 export const apeContract = {
   name: "Ape",
   address: "JSWX3pKDbj2EdCMu4ei7sPYSpdcwZNyjkDSteoHQ4UH",
-  networkId: NetworkId.solana,
 };
 
 export const jupiterLimitContract = {
   name: "Limit",
   address: "jupoNjAxXgZ4rjzxzPMP4oxduvQsQtZzyknqvzYNrNu",
-  networkId: NetworkId.solana,
 };
 
 export const jupiterLimitV1Contract = {
   name: "Limit V1",
   address: "j1o2qRpjcyUwEvwtcfhEQefh773ZgjxcVRry7LDqg5X",
-  networkId: NetworkId.solana,
 };
 
 export const jupiterDcaContract = {
   name: "DCA",
   address: "DCA265Vj8a9CEuX1eb1LWRnDT7uK6q1xMipnNyatn23M",
-  networkId: NetworkId.solana,
 };
 
 const jupiterDcaVaContract = {
   name: "VA",
   address: "VALaaymxQh2mNy2trH9jUqHT1mTow76wpTcGmSWSwJe",
-  networkId: NetworkId.solana,
 };
 
 export const jupiterLockContract = {
   name: "Lock",
   address: "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
-  networkId: NetworkId.solana,
 };
 
 export const jupiterPerpsContract = {
   name: "Perps",
   address: "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
-  networkId: NetworkId.solana,
 };
 
 const airdropContract = {
   name: "Airdrop",
   address: "meRjbQXFNf5En86FXT2YPz1dQzLj4Yb3xK8u1MVgqpb",
-  networkId: NetworkId.solana,
 };
 
 const rfqContract = {
   name: "JupiterZ",
   address: "61DFfeTKM7trxYcPQCM78bJ794ddZprZpAwAnLiwTpYH",
-  networkId: NetworkId.solana,
 };
 
 const inviteContract = {
   name: "Invite",
   address: "inv1tEtSwRMtM44tbvJGNiTxMvDfPVnX9StyqXfDfks",
-  networkId: NetworkId.solana,
 };
 
 const lendVaultsContract = {
   name: "Lend Vaults",
   address: "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
-  networkId: NetworkId.solana,
 };
 
 const lendEthenaVaultsContract = {
   name: "Lend Ethena Vaults",
   address: "jupo974WCqAUMD3RtpayTap1me7StQCWtEkBbDb6Ba3",
-  networkId: NetworkId.solana,
 };
 
 export const lendContract = {
   name: "Lend",
   address: "jup3YeL8QhtSx1e253b2FDvsMNC87fDrgQZivbrndc9",
-  networkId: NetworkId.solana,
 };
 
 export const lendEthenaContract = {
   name: "Lend Ethena",
   address: "jup97Zx1NixM8UJMQFw8TtKzqTiRT3ETAJR7cVx3PfQ",
-  networkId: NetworkId.solana,
 };
 
 export const lendLiquidityEthenaContract = {
   name: "Lend Liquidity Ethena",
   address: "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS",
-  networkId: NetworkId.solana,
 };
 
 export const rewardsHubContract = {
   name: "Rewards Hub",
   address: "GenieRGuCtgfDGThwjp2GLreQMFtJoG1fqFE8MF1gAzG",
-  networkId: NetworkId.solana,
 };
 
 const deltaNeutralVaultContract = {
   name: "Delta Neutral Vault",
   address: "BUNDeH5A4c47bcEoAjBhN3sCjLgYnRsmt9ibMztqVkC9",
-  networkId: NetworkId.solana,
 };
 
 export const swapV7Service: ServiceRaw = {

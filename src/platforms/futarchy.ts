@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "futarchy",
   name: "MetaDAO",
@@ -20,31 +20,26 @@ export const platform: PlatformRaw = {
 const contract = {
   name: "Futarchy DAO",
   address: "autoQP9RmUNkzzKRXsMkWicDVZ3h29vvyMDcAYjCxxg",
-  networkId: NetworkId.solana,
 };
 
 const launchpadContract = {
   name: "Launchpad",
   address: "AfJJJ5UqxhBKoE3grkKAZZsoXDE9kncbMKvqSHGsCNrE",
-  networkId: NetworkId.solana,
 };
 
 const conditionalContract = {
   name: "Conditional Vault",
   address: "VLTX1ishMBbcX3rdBWGssxawAo1Q2X2qxYFYqiGodVg",
-  networkId: NetworkId.solana,
 };
 
 const ammContract = {
   name: "AMM",
   address: "AMMyu265tkBpRW21iGQxKGLaves3gKm2JcMUqfXNSpqD",
-  networkId: NetworkId.solana,
 };
 
 const ICOContract = {
   name: "ICO",
   address: "moontUzsdepotRGe5xsfip7vLPTJnVuafqdUWexVnPM",
-  networkId: NetworkId.solana,
 };
 
 export const launchpadService: ServiceRaw = {

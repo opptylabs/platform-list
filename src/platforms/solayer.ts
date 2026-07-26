@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 
 export const platform: PlatformRaw = {
   id: "solayer",
@@ -27,25 +27,21 @@ export const platform: PlatformRaw = {
 export const solayerContract = {
   name: "Solayer",
   address: "sSo1iU21jBrU9VaJ8PJib1MtorefUV4fzC9GURa2KNn",
-  networkId: NetworkId.solana,
 };
 
 const airdropContract = {
   name: "Airdrop",
   address: "ARDPkhymCbfdan375FCgPnBJQvUfHeb7nHVdBfwWSxrp",
-  networkId: NetworkId.solana,
 };
 
 const sUDCContract = {
   name: "sUDC",
   address: "s1aysqpEyZyijPybUV89oBGeooXrR22wMNLjnG2SWJA",
-  networkId: NetworkId.solana,
 };
 
 export const endoAvsContract = {
   name: "Endo Avs",
   address: "endoLNCKTqDn8gSVnN2hDdpgACUPWHZTwoYnnMybpAT",
-  networkId: NetworkId.solana,
 };
 
 export const solayerService: ServiceRaw = {

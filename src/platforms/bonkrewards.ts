@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "bonkrewards",
   name: "Bonk Rewards",
@@ -19,31 +19,26 @@ export const platform: PlatformRaw = {
 const contract = {
   name: "Staking",
   address: "STAKEkKzbdeKkqzKpLkNQD3SUuLgshDKCD7U8duxAbB",
-  networkId: NetworkId.solana,
 };
 
 const fireContract = {
   name: "Fire",
   address: "FiRESpaNzgYUiba5vkb44CZJLZjrux1AUECdfwPRsNkg",
-  networkId: NetworkId.solana,
 };
 
 const swapContract = {
   name: "Swap",
   address: "BSwp6bEBihVLdqJRKGgzjcGLHkcTuzmSo1TQkHepzH8p",
-  networkId: NetworkId.solana,
 };
 
 const bonkMasContract = {
   name: "BonkMas",
   address: "BMas2pUrC5GR1ZJFbJLy2UmBcEgCfdxB5QLSBrLRnvK4",
-  networkId: NetworkId.solana,
 };
 
 const daoContract = {
   name: "DAO",
   address: "HA99cuBQCCzZu1zuHN2qBxo2FBo1cxNLwKkdt6Prhy8v",
-  networkId: NetworkId.solana,
 };
 
 export const stakingService: ServiceRaw = {

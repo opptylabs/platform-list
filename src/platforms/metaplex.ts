@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "metaplex",
   name: "Metaplex",
@@ -19,31 +19,26 @@ export const platform: PlatformRaw = {
 const coreContract = {
   name: `Core`,
   address: "CoREENxT6tW1HoK8ypY1SxRMZTcVPm7R94rH4PZNhX7d",
-  networkId: NetworkId.solana,
 };
 
 export const metaplexContract = {
   name: "Token Metadata",
   address: "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
-  networkId: NetworkId.solana,
 };
 
 export const bubblegumContract = {
   name: "Bubblegum",
   address: "BGUMAp9Gq7iTEuizy4pqaxsTyUCBK68MDfK752saRPUY",
-  networkId: NetworkId.solana,
 };
 
 const candyMachineV2Contract = {
   name: "Candy Machine V2",
   address: "cndy3Z4yapfJBmL3ShUp5exZKqR3z33thTzeNMm2gRZ",
-  networkId: NetworkId.solana,
 };
 
 export const candyMachineContract = {
   name: `Candy Machine V3`,
   address: "CMAGAKJ67e9hRZgfC5SFTbZH8MgEmtqazKXjmkaJjWTJ",
-  networkId: NetworkId.solana,
 };
 
 export const candyMachineV2Service: ServiceRaw = {

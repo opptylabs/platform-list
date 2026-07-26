@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "bouncebit",
   name: "BounceBit",
@@ -19,19 +19,16 @@ export const platform: PlatformRaw = {
 const contract = {
   name: "CeDeFi v2",
   address: "65YBWQitcBexwuaBKfAV163xDd4LzVAdytATLbttpgxx",
-  networkId: NetworkId.solana,
 };
 
 const rewardsContract = {
   name: "Rewards",
   address: "5DBxQ4KRKgpCEp46fSs2RG4uoZ5totahCLyjmnn6tKRg",
-  networkId: NetworkId.solana,
 };
 
 const promoContract = {
   name: "Promo",
   address: "5HRzz8VDD9QjpEBBdq6hBUEXcssxW5mPnod4L6Qgnh9g",
-  networkId: NetworkId.solana,
 };
 
 export const service: ServiceRaw = {

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "fragmetric",
   name: "Fragmetric",
@@ -26,13 +26,11 @@ export const platform: PlatformRaw = {
 const contract = {
   name: "Fragmetric",
   address: "fragnAis7Bp6FTsMoa6YcH8UffhEw43Ph79qAiK3iF3",
-  networkId: NetworkId.solana,
 };
 
 const airdropContract = {
   name: "Airdrop",
   address: "fdropWhSi5xVKa9z26qKXveXoHDePDXfb5zxt3RKvKx",
-  networkId: NetworkId.solana,
 };
 
 export const service: ServiceRaw = {

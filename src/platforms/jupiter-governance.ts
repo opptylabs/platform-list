@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 import { platform as jupiterPlatform } from "./jupiter-exchange";
 
 export const platform: PlatformRaw = {
@@ -16,19 +16,16 @@ export const platform: PlatformRaw = {
 export const jupiterGovernanceContract = {
   name: "Governance",
   address: "GovaE4iu227srtG2s3tZzB4RmWBzw8sTwrCLZz7kN7rY",
-  networkId: NetworkId.solana,
 };
 
 export const jupiterVoteContract = {
   name: "Locker Vote",
   address: "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
-  networkId: NetworkId.solana,
 };
 
 const asrContract = {
   name: "ASR Distributor",
   address: "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
-  networkId: NetworkId.solana,
 };
 
 export const governanceService: ServiceRaw = {

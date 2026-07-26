@@ -18,8 +18,7 @@
 ## Platform file pattern (`src/platforms/<id>.ts`)
 
 ```ts
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
-// Only import NetworkId if you actually use it (for contracts)
+import { PlatformRaw, ServiceRaw } from "../types";
 
 export const platform: PlatformRaw = {
   id: "<id>",              // kebab-case, matches filename
@@ -42,7 +41,6 @@ export const platform: PlatformRaw = {
 const mainContract = {
   name: "...",
   address: "<solana program address>",
-  networkId: NetworkId.solana,
 };
 
 export const mainService: ServiceRaw = {
@@ -58,7 +56,7 @@ export const services: ServiceRaw[] = [mainService];
 
 ## Key files
 
-- `src/types.ts` — PlatformRaw, ServiceRaw, PlatformTag, NetworkId
+- `src/types.ts` — PlatformRaw, ServiceRaw, PlatformTag
 - `src/platforms/index.ts` — auto-generated, DO NOT edit manually
 - `scripts/generate-imports.ts` — regenerates index.ts
 - `scripts/fetch-img.ts` — downloads Twitter avatars → `img/<id>.webp` (400x400)

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "magna",
   name: "Magna",
@@ -15,13 +15,11 @@ export const platform: PlatformRaw = {
 const airdropContract = {
   name: "Vesting Airdrop",
   address: "3zK38YBP6u3BpLUpaa6QhRHh4VXdv3J8cmD24fFpuyqy",
-  networkId: NetworkId.solana,
 };
 
 const maintContract = {
   name: "Core",
   address: "magnaSHyv8zzKJJmr8NSz5JXmtdGDTTFPEADmvNAwbj",
-  networkId: NetworkId.solana,
 };
 
 export const airdropService: ServiceRaw = {

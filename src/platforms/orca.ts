@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, ContractRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "orca",
   name: "Orca",
@@ -20,22 +20,18 @@ export const platform: PlatformRaw = {
 const pools: ContractRaw = {
   name: `Orca Pools`,
   address: "9W959DqEETiGZocYWCQPaJ6sBmUzgfxXfqGeTEdp3aQP",
-  networkId: NetworkId.solana,
 };
 const aquaFarms: ContractRaw = {
   name: `Orca Aqua Farms`,
   address: "82yxjeMsvaURa4MbZZ7WZZHfobirZYkH1zF8fmeGtyaQ",
-  networkId: NetworkId.solana,
 };
 const whirlpool: ContractRaw = {
   name: `Orca Whirlpool`,
   address: "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
-  networkId: NetworkId.solana,
 };
 const staking: ContractRaw = {
   name: `Orca Staking`,
   address: "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
-  networkId: NetworkId.solana,
 };
 
 export const poolsService: ServiceRaw = {

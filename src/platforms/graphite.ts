@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "graphite",
   name: "Graphite Protocol",
@@ -15,19 +15,16 @@ export const platform: PlatformRaw = {
 const stakingContract = {
   name: "Staking",
   address: "7pXE4B9EgsEixnyW6U16dEHXKqaaU3mj63cCMqrPRy1C",
-  networkId: NetworkId.solana,
 };
 
 const nftGen1StakingContract = {
   name: "Taiyo Gen1 Staking",
   address: "J1gmrCGd1zkmjYpsCRkFCsQQEZohRQLVXN4dVxKvDu1e",
-  networkId: NetworkId.solana,
 };
 
 const nftGen2StakingContract = {
   name: "Taiyo Gen2 Staking",
   address: "5f7ZLHmrtjpiCjM2vhSfbewUyDPZcf8x2RDRYJnyMXxg",
-  networkId: NetworkId.solana,
 };
 
 export const service: ServiceRaw = {

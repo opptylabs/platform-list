@@ -78,25 +78,9 @@ describe("Contracts", () => {
     }
   });
 
-  it("should have valid networkId references", () => {
-    const invalidContracts = contracts.filter(
-      (contract) =>
-        !contract.networkId || contract.networkId.trim().length === 0,
-    );
-
-    if (invalidContracts.length > 0) {
-      throw new Error(
-        `Found contracts with invalid networkId: ${invalidContracts
-          .map((c) => c.address)
-          .join(", ")}`,
-      );
-    }
-  });
-
-  it("should not have duplicate contracts (same address, service, and network)", () => {
+  it("should not have duplicate contracts (same address and service)", () => {
     const contractKeys = contracts.map(
-      (contract) =>
-        `${contract.address}-${contract.serviceId}-${contract.networkId}`,
+      (contract) => `${contract.address}-${contract.serviceId}`,
     );
     const duplicates = contractKeys.filter(
       (key, index) => contractKeys.indexOf(key) !== index,
@@ -107,15 +91,15 @@ describe("Contracts", () => {
     }
   });
 
-  it("should have id formatted as networkId-address", () => {
+  it("should have id equal to address", () => {
     const invalidContracts = contracts.filter(
-      (contract) => contract.id !== `${contract.networkId}-${contract.address}`,
+      (contract) => contract.id !== contract.address,
     );
 
     if (invalidContracts.length > 0) {
       throw new Error(
         `Found contracts with invalid id format: ${invalidContracts
-          .map((c) => `${c.id} (expected: ${c.networkId}-${c.address})`)
+          .map((c) => `${c.id} (expected: ${c.address})`)
           .join(", ")}`,
       );
     }

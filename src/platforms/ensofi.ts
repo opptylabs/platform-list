@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "ensofi",
   name: "EnsoFi",
@@ -18,19 +18,16 @@ export const platform: PlatformRaw = {
 const lendingContract = {
   name: "Lending Fixed Terms",
   address: "ensoQXKf4MvNuEC3M9xmcqUqgucFNd5UzAonDdUtgqn",
-  networkId: NetworkId.solana,
 };
 
 const lendingFlexContract = {
   name: "Lending Flexible Terms",
   address: "enseM1J4dGgwEw3qDyuVBi7YsjgwqvKzuX3ZLaboLGv",
-  networkId: NetworkId.solana,
 };
 
 const liquidityContract = {
   name: "Liquidity",
   address: "ensSuXMeaUhRC7Re3ukaxLcX2E4qmd2LZxbxsK9XcWz",
-  networkId: NetworkId.solana,
 };
 
 export const lendingService: ServiceRaw = {

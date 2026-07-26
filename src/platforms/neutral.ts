@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, ContractRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "neutral",
   name: "Neutral",
@@ -17,23 +17,19 @@ export const platform: PlatformRaw = {
 const contract: ContractRaw = {
   name: "Bundle",
   address: "BUNDDh4P5XviMm1f3gCvnq2qKx6TGosAGnoUK12e7cXU",
-  networkId: NetworkId.solana,
 };
 
 const neutral1VaultsContract: ContractRaw = {
   name: "Neutral Vaults",
   address: "9Fcn3Fd4d5ocrb12xCUtEvezxcjFEAyHBPfrZDiPt9Qj",
-  networkId: NetworkId.solana,
 };
 const neutral2VaultsContract: ContractRaw = {
   name: "Neutral Vaults",
   address: "EuSLjg23BrtwYAk1t4TFe5ArYSXCVXLBqrHRBfWQiTeJ",
-  networkId: NetworkId.solana,
 };
 const neutral3VaultsContract: ContractRaw = {
   name: "Neutral Vaults",
   address: "BVddkVtFJLCihbVrtLo8e3iEd9NftuLunaznAxFFW8vf",
-  networkId: NetworkId.solana,
 };
 
 export const strategiesService: ServiceRaw = {

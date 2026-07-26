@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "stabble",
   name: "stabble",
@@ -19,19 +19,16 @@ export const platform: PlatformRaw = {
 const weghtedPoolContract = {
   name: "Weighted Pools",
   address: "swapFpHZwjELNnjvThjajtiVmkz3yPQEHjLtka2fwHW",
-  networkId: NetworkId.solana,
 };
 
 const stablePoolContract = {
   name: "Stable Pools",
   address: "swapNyd8XiQwJ6ianp9snpu4brUqFxadzvHebnAXjJZ",
-  networkId: NetworkId.solana,
 };
 
 const stakingContract = {
   name: "LP Staking",
   address: "rev31KMq4qzt1y1iw926p694MHVVWT57caQrsHLFA4x",
-  networkId: NetworkId.solana,
 };
 
 export const stablePoolsService: ServiceRaw = {

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "sanctum",
   name: "Sanctum",
@@ -20,31 +20,26 @@ export const platform: PlatformRaw = {
 const infContract = {
   name: "Infinity",
   address: "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
-  networkId: NetworkId.solana,
 };
 
 const voteContract = {
   name: "Vote",
   address: "VAU1T7S5UuEHmMvXtXMVmpEoQtZ2ya7eRb7gcN47wDp",
-  networkId: NetworkId.solana,
 };
 
 const stakingContract = {
   name: "Staking",
   address: "bon4Kh3x1uQK16w9b9DKgz3Aw4AP1pZxBJk55Q6Sosb",
-  networkId: NetworkId.solana,
 };
 
 const routerContract = {
   name: "Router",
   address: "stkitrT1Uoy18Dk1fTrgPw8W6MVzoCfYoAFT4MLsmhq",
-  networkId: NetworkId.solana,
 };
 
 const asrContract = {
   name: "ASR",
   address: "9R2CZDyVjBBK2bxx6NfKdnYMYfh8TQEphUUgZ4861XqJ",
-  networkId: NetworkId.solana,
 };
 
 export const voteService: ServiceRaw = {

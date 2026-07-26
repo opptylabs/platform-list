@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 
 export const platform: PlatformRaw = {
   id: "raydium",
@@ -21,85 +21,71 @@ export const platform: PlatformRaw = {
 const ammV4Contract = {
   name: "AMM v4",
   address: "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
-  networkId: NetworkId.solana,
 };
 
 const ammV5Contract = {
   name: "AMM v5",
   address: "5quBtoiQqxF9Jv6KYKctB59NT3gtJD2Y65kdnB1Uev3h",
-  networkId: NetworkId.solana,
 };
 
 const ammRootingContract = {
   name: "AMM Rooting",
   address: "routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS",
-  networkId: NetworkId.solana,
 };
 
 const clmmContract = {
   name: "CLMM",
   address: "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
-  networkId: NetworkId.solana,
 };
 
 const cpmmContract = {
   name: "CPMM",
   address: "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
-  networkId: NetworkId.solana,
 };
 
 const farmV3Contract = {
   name: "Farm V3",
   address: "EhhTKczWMGQt46ynNeRX1WfeagwwJd7ufHvCDjRxjo5Q",
-  networkId: NetworkId.solana,
 };
 
 const farmV4Contract = {
   name: "Farm V4",
   address: "CBuCnLe26faBpcBP2fktp4rp8abpcAnTWft6ZrP5Q4T",
-  networkId: NetworkId.solana,
 };
 
 const farmV5Contract = {
   name: "Farm V5",
   address: "9KEPoZmtHUrBbhWN1v1KWLMkkvwY6WLtAVUCPRtRjP4z",
-  networkId: NetworkId.solana,
 };
 
 const farmV6Contract = {
   name: "Farm V6",
   address: "FarmqiPv5eAj3j1GMdMCMUGXqPUvmquZtMy86QH6rzhG",
-  networkId: NetworkId.solana,
 };
 
 const idoContract = {
   name: "IDO V1",
   address: "6FJon3QE27qgPVggARueB22hLvoh22VzJpXv4rBEoSLF",
-  networkId: NetworkId.solana,
 };
 
 const idoV2Contract = {
   name: "IDO V2",
   address: "CC12se5To1CdEuw7fDS27B7Geo5jJyL7t5UK2B44NgiH",
-  networkId: NetworkId.solana,
 };
 
 const idoV3Contract = {
   name: "IDO V3",
   address: "9HzJyW1qZsEiSfMUf6L2jo3CcTKAyBmSyKdwQeYisHrC",
-  networkId: NetworkId.solana,
 };
 
 const idoV4Contract = {
   name: "IDO V4",
   address: "DropEU8AvevN3UrXWXTMuz3rqnMczQVNjq3kcSdW2SQi",
-  networkId: NetworkId.solana,
 };
 
 const launchpadContract = {
   name: "Launchpad",
   address: "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
-  networkId: NetworkId.solana,
 };
 
 export const ammV4Service: ServiceRaw = {

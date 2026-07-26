@@ -1,4 +1,4 @@
-import { ContractRaw, NetworkId, PlatformRaw, ServiceRaw } from "../types";
+import { ContractRaw, PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "helio",
   name: "MoonPay Commerce (Helio)",
@@ -15,13 +15,11 @@ export const platform: PlatformRaw = {
 const contractV2: ContractRaw = {
   name: "Payment",
   address: "ENicYBBNZQ91toN7ggmTxnDGZW14uv9UkumN7XBGeYJ4",
-  networkId: NetworkId.solana,
 };
 
 const contractV1 = {
   name: "Payment V1",
   address: "3KPRuKWxV6PtneZXbokMBwdF4T9brCFx7FcmKJ2tPqqt",
-  networkId: NetworkId.solana,
 };
 
 export const paymentService: ServiceRaw = {

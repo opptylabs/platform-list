@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "vidar",
   name: "Vidar",
@@ -15,31 +15,26 @@ export const platform: PlatformRaw = {
 const nokContract = {
   name: "wNOK Minter",
   address: "sta1L8xffHa3K1puWcTX1m4QWHek4Gs8PJZQtGEFwmX",
-  networkId: NetworkId.solana,
 };
 
 const ljupMinterContract = {
   name: "LJUP Minter",
   address: "1juPgnkY3i9dGkcuZahmby3exN4qpoq5HZ7rKKZsKtA",
-  networkId: NetworkId.solana,
 };
 
 const safeLaunchContract = {
   name: "SafeLaunch",
   address: "SAFEuracFxm3sZfhUNtComzcyS4RTkcNccbkWWb4PH5",
-  networkId: NetworkId.solana,
 };
 
 const stakingContract = {
   name: "BGLD Staking",
   address: "BStkNZqnbLCmZWs52BcJVNiG3XMwoiS1DuwnGg4ZQrrC",
-  networkId: NetworkId.solana,
 };
 
 const minerContract = {
   name: "BGLD Miner",
   address: "BGLDbLHXzZEKvZX2PAkvSChWtZYySZ16Drj6NX247AfY",
-  networkId: NetworkId.solana,
 };
 
 export const ljupService: ServiceRaw = {

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "zeus",
   name: "Zeus",
@@ -20,37 +20,31 @@ export const platform: PlatformRaw = {
 const bootstrapperContract = {
   name: "Bootstrapper",
   address: "ZPLsAzVmV6gRipY8dzoWcGWJ81tkPUN9M7YfxJPru9w",
-  networkId: NetworkId.solana,
 };
 
 const bitcoinSPVContract = {
   name: "BitcoinSPV",
   address: "ZPLowzr41tCGkoRXuzEx4Ts98Jjrbfe9rtv7gqdgGkH",
-  networkId: NetworkId.solana,
 };
 
 const layerCAContract = {
   name: "LayerCA",
   address: "ZPLtKX3gHTa4djEdmkZXkXiJdTUEeD5ZjZD4jAnxrSP",
-  networkId: NetworkId.solana,
 };
 
 const delegatorContract = {
   name: "Delegator",
   address: "ZPLt7XEyRvRxEZcGFGnRKGLBymFjQbwmgTZhMAMfGAU",
-  networkId: NetworkId.solana,
 };
 
 const liquidityManagementContract = {
   name: "LiquidityManagement",
   address: "ZPLuj6HoZ2z6y6WfJuHz3Gg48QeMZ6kGbsa74oPxACY",
-  networkId: NetworkId.solana,
 };
 
 const twoWayPegContract = {
   name: "TwoWayPeg",
   address: "ZPLzxjNk1zUAgJmm3Jkmrhvb4UaLwzvY2MotpfovF5K",
-  networkId: NetworkId.solana,
 };
 
 export const bootstrapperService: ServiceRaw = {

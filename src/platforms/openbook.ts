@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "openbook",
   name: "OpenBook",
@@ -17,19 +17,16 @@ export const platform: PlatformRaw = {
 const contractV1 = {
   name: "V1",
   address: "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
-  networkId: NetworkId.solana,
 };
 
 const contractV2 = {
   name: "V2",
   address: "opnbkNkqux64GppQhwbyEVc3axhssFhVYuwar8rDHCu",
-  networkId: NetworkId.solana,
 };
 
 const contractV3 = {
   name: "V3",
   address: "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
-  networkId: NetworkId.solana,
 };
 
 export const service: ServiceRaw = {

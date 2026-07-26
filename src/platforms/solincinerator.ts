@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "solincinerator",
   name: "Sol Incinerator",
@@ -15,13 +15,11 @@ export const platform: PlatformRaw = {
 const incineratorContract = {
   name: "Incinerator",
   address: "F6fmDVCQfvnEq2KR8hhfZSEczfM9JK9fWbCsYJNbTGn7",
-  networkId: NetworkId.solana,
 };
 
 const safecineratorContract = {
   name: "Safecinerator",
   address: "CLEANALo6FtS6quqTTEXDGFFTuSKMkeKGgcweeiPRJzK",
-  networkId: NetworkId.solana,
 };
 
 export const cleanupService: ServiceRaw = {

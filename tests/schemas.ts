@@ -34,7 +34,6 @@ export const ContractSchema = z.object({
   address: z.string(),
   serviceId: z.string(),
   platformId: platformIdSchema,
-  networkId: z.string(),
 });
 
 export const ServiceSchema = z.object({

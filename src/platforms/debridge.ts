@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
+import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "debridge",
   name: "deBridge",
@@ -20,31 +20,26 @@ export const platform: PlatformRaw = {
 const transferContract = {
   name: "DeBridge",
   address: "DEbrdGj3HsRsAzx6uH4MKyREKxVAfBydijLUF3ygsFfh",
-  networkId: NetworkId.solana,
 };
 
 const aidropContract = {
   name: "Airdrop",
   address: "DBrLFG4dco1xNC5Aarbt3KEaKaJ5rBYHwysqZoeqsSFE",
-  networkId: NetworkId.solana,
 };
 
 const vaultContract = {
   name: "Vault",
   address: "DeDRoPXNyHRJSagxZBBqs4hLAAM1bGKgxh7cyfuNCBpo",
-  networkId: NetworkId.solana,
 };
 
 const sourceContract = {
   name: "Bridge",
   address: "src5qyZHqTqecJV4aY6Cb6zDZLMDzrDKKezs22MPHr4",
-  networkId: NetworkId.solana,
 };
 
 const destContract = {
   name: "Bridge",
   address: "dst5MGcFPoBeREFAA5E3tU5ij8m5uVYwkzkSAbsLbNo",
-  networkId: NetworkId.solana,
 };
 
 export const transferService: ServiceRaw = {
