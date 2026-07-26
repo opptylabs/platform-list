@@ -1,4 +1,4 @@
-# @jup-ag/platform-list
+# @opptylabs/platform-list
 
 A comprehensive registry of platforms in the Solana ecosystem. This package provides structured platform data including metadata, links, token(s) information, smart contracts and services.
 
@@ -6,16 +6,16 @@ A comprehensive registry of platforms in the Solana ecosystem. This package prov
 
 The latest generated JSON files are available via GitHub Releases:
 
-- [`platforms.json`](https://github.com/jup-ag/platform-list/releases/latest/download/platforms.json)
-- [`services.json`](https://github.com/jup-ag/platform-list/releases/latest/download/services.json)
-- [`contracts.json`](https://github.com/jup-ag/platform-list/releases/latest/download/contracts.json)
+- [`platforms.json`](https://github.com/opptylabs/platform-list/releases/latest/download/platforms.json)
+- [`services.json`](https://github.com/opptylabs/platform-list/releases/latest/download/services.json)
+- [`contracts.json`](https://github.com/opptylabs/platform-list/releases/latest/download/contracts.json)
 
 ## Installation
 
 ```bash
-npm install @jup-ag/platform-list
+npm install @opptylabs/platform-list
 # or
-yarn add @jup-ag/platform-list
+yarn add @opptylabs/platform-list
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ yarn add @jup-ag/platform-list
 Get platforms locally
 
 ```typescript
-import { platforms } from "@jup-ag/platform-list";
+import { platforms } from "@opptylabs/platform-list";
 
 console.log(platforms);
 ```
@@ -31,7 +31,7 @@ console.log(platforms);
 Get platforms dynamically
 
 ```typescript
-import { fetchPlatforms } from "@jup-ag/platform-list";
+import { fetchPlatforms } from "@opptylabs/platform-list";
 
 fetchPlatforms()
   .then((fetchedPlatforms) => {
