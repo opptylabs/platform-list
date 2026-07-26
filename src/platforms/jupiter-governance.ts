@@ -1,6 +1,5 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 import { platform as jupiterPlatform } from "./jupiter-exchange";
-
 export const platform: PlatformRaw = {
   id: "jupiter-governance",
   name: "Jupiter DAO",
@@ -13,37 +12,17 @@ export const platform: PlatformRaw = {
   parentId: jupiterPlatform.id,
 };
 
-export const jupiterGovernanceContract = {
-  name: "Governance",
-  address: "GovaE4iu227srtG2s3tZzB4RmWBzw8sTwrCLZz7kN7rY",
-};
-
-export const jupiterVoteContract = {
-  name: "Locker Vote",
-  address: "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
-};
-
-const asrContract = {
-  name: "ASR Distributor",
-  address: "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
-};
-
-export const governanceService: ServiceRaw = {
-  id: `jupiter-governance-vote`,
-  name: "Vote",
-  platformId: platform.id,
-  contractsRaw: [jupiterGovernanceContract, jupiterVoteContract],
-  description:
-    "Governance voting system for JUP holders to participate in protocol decisions and proposals.",
-};
-
-export const asrService: ServiceRaw = {
-  id: `${platform.id}-asr`,
-  name: "ASR",
-  platformId: platform.id,
-  contractsRaw: [asrContract],
-  description:
-    "Active Staking Rewards distribution for JUP stakers who participate in governance voting.",
-};
-
-export const services: ServiceRaw[] = [asrService, governanceService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "ASR Distributor",
+    address: "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+  },
+  {
+    name: "Governance",
+    address: "GovaE4iu227srtG2s3tZzB4RmWBzw8sTwrCLZz7kN7rY",
+  },
+  {
+    name: "Locker Vote",
+    address: "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
+  },
+];

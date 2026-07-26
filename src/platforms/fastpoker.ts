@@ -1,5 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
-
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "fastpoker",
   name: "FastPoker",
@@ -13,28 +12,7 @@ export const platform: PlatformRaw = {
   addedAt: 1749600000000,
 };
 
-const pokerProgram = {
-  name: "FastPoker",
-  address: "PokerXYdXL2SKNnfGbv1WE7vJHipTpNsfZbZeVvoJLn",
-};
-
-export const pokerService: ServiceRaw = {
-  id: `${platform.id}-poker`,
-  name: "FastPoker",
-  platformId: platform.id,
-  contractsRaw: [pokerProgram],
-};
-
-const rewardsProgram = {
-  name: "Rewards",
-  address: "FASTPjXb68fPW9JRYSBS3EDoaT6inz84GoqkPK52dsA9",
-};
-
-export const rewardsService: ServiceRaw = {
-  id: `${platform.id}-rewards`,
-  name: "Rewards",
-  platformId: platform.id,
-  contractsRaw: [rewardsProgram],
-};
-
-export const services: ServiceRaw[] = [pokerService, rewardsService];
+export const contracts: ContractRaw[] = [
+  { name: "FastPoker", address: "PokerXYdXL2SKNnfGbv1WE7vJHipTpNsfZbZeVvoJLn" },
+  { name: "Rewards", address: "FASTPjXb68fPW9JRYSBS3EDoaT6inz84GoqkPK52dsA9" },
+];

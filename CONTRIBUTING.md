@@ -1,13 +1,13 @@
 # Contributing Guide
 
-Thank you for your interest in contributing to the Jupiter Platform List! This guide will help you add new platforms, smart contracts, and services to the registry.
+Thank you for your interest in contributing to the Platform List! This guide will help you add new platforms and smart contracts to the registry.
 
 ## Table of Contents
 
 - [Getting Started](#getting-started)
 - [Adding a New Platform](#adding-a-new-platform)
 - [Platform Structure](#platform-structure)
-- [Services and Contracts](#services-and-contracts)
+- [Contracts](#contracts)
 - [Global Rules](#global-rules)
 - [Testing](#testing)
 - [Submitting Your Contribution](#submitting-your-contribution)
@@ -31,14 +31,14 @@ To add a new platform to the registry, you need to:
 
 1. Create a platform file in [src/platforms/](src/platforms/)
 2. Add a platform image in the [img/](img/) directory
-3. Define services and contracts (if applicable)
+3. Define contracts (if applicable)
 
 ### Step 1: Create Platform File
 
 Create a new TypeScript file in `src/platforms/` named after your platform ID (e.g., `myplatform.ts`):
 
 ```typescript
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "myplatform",
   name: "My Platform",
@@ -58,8 +58,7 @@ export const platform: PlatformRaw = {
   addedAt: 1767268800000, // The timestamp of the day of addition to the list
 };
 
-export const services: ServiceRaw[] = [];
-export default services;
+export const contracts: ContractRaw[] = [];
 ```
 
 ### Step 2: Add Platform Image
@@ -133,85 +132,28 @@ Choose one or more tags that best describe your platform:
 - `card` - Card or spending solution
 - `privacy` - Privacy-focused protocol
 
-## Services and Contracts
+## Contracts
 
-Services represent specific features or smart contracts of your platform (e.g., Swap, Lending, Staking).
+Contracts are the platform's on-chain program addresses. Each contract has just a
+`name` and an `address`; the `platformId` is injected automatically when the index
+is generated.
 
-### Basic Service with One Contract
+### One Contract
 
 ```typescript
-const contract = {
-  name: "Swap",
-  address: "YourProgramPublicKeyHere",
-};
-
-const service: ServiceRaw = {
-  id: `${platform.id}-swap`,
-  name: "Swap",
-  platformId: platform.id,
-  contractsRaw: [contract],
-};
-
-export const services: ServiceRaw[] = [service];
-export default services;
+export const contracts: ContractRaw[] = [
+  { name: "Swap", address: "YourProgramPublicKeyHere" },
+];
 ```
 
-### Multiple Services
+### Multiple Contracts
 
 ```typescript
-const swapContract = {
-  name: "Swap",
-  address: "SwapProgramAddress",
-};
-
-const stakingContract = {
-  name: "Staking",
-  address: "StakingProgramAddress",
-};
-
-const swapService: ServiceRaw = {
-  id: `${platform.id}-swap`,
-  name: "Swap",
-  platformId: platform.id,
-  contractsRaw: [swapContract],
-};
-
-const stakingService: ServiceRaw = {
-  id: `${platform.id}-staking`,
-  name: "Staking",
-  platformId: platform.id,
-  contractsRaw: [stakingContract],
-};
-
-export const services: ServiceRaw[] = [swapService, stakingService];
-export default services;
-```
-
-### Service with Multiple Contracts
-
-Some services may use multiple contracts (for example, a Multiply service that uses both a lending contract and a swap contract):
-
-```typescript
-
-const lendingContract = {
-  name: "Lending",
-  address: "LendingProgramAddress",
-};
-
-const swapingContract = {
-  name : "Swap"
-  address : "SwapProgramAddress"
-}
-
-const multiplyService: ServiceRaw = {
-  id: `${platform.id}-multiply`,
-  name: "Multiply",
-  platformId: platform.id,
-  contractsRaw: [lendingContract, swapingContract],
-};
-
-export const services: ServiceRaw[] = [multiplyService];
-export default services;
+export const contracts: ContractRaw[] = [
+  { name: "Swap", address: "SwapProgramAddress" },
+  { name: "Staking", address: "StakingProgramAddress" },
+  { name: "Lending", address: "LendingProgramAddress" },
+];
 ```
 
 ## Global Rules
@@ -229,15 +171,14 @@ Please follow these rules when contributing:
 
 - **Platform IDs**: Always in lowercase, use hyphens for spaces (e.g., `my-platform`)
 - **File names**: Match platform ID exactly (e.g., `my-platform.ts`, `my-platform.webp`)
-- **Service IDs**: Format as `{platform-id}-{service-name}` (e.g., `jupiter-exchange-swap`)
 
 ### 3. Code Quality
 
-- Use TypeScript types provided by the library (`PlatformRaw`, `ServiceRaw`, `ContractRaw`)
+- Use TypeScript types provided by the library (`PlatformRaw`, `ContractRaw`)
 - Follow the existing code structure and patterns
 - Ensure all required fields are filled
 - Validate contract addresses are correct
-- Always export `services` as both a named export and default export
+- Always export `contracts` as a named export (empty array if there are none)
 
 ## Testing
 
@@ -276,7 +217,7 @@ Make sure all tests pass and there are no TypeScript errors.
    - Clear title: "Add [Platform Name] platform"
    - Description including:
      - Platform website
-     - What services/contracts you're adding
+     - What contracts you're adding
      - Any special considerations
 
 4. Wait for review and address any feedback
@@ -286,7 +227,7 @@ Make sure all tests pass and there are no TypeScript errors.
 Here's a complete example of a platform file with all the elements:
 
 ```typescript
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 // Platform definition
 export const platform: PlatformRaw = {
   id: "jupiter-governance",
@@ -300,44 +241,29 @@ export const platform: PlatformRaw = {
   tags: ["dao", "dapp"],
 };
 
-// Export contracts that might be used by other platforms
-export const jupiterGovernanceContract = {
-  name: "Governance",
-  address: "GovaE4iu227srtG2s3tZzB4RmWBzw8sTwrCLZz7kN7rY",
-};
-
-export const jupiterVoteContract = {
-  name: "Locker Vote",
-  address: "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
-};
-
-// Internal contract (not exported)
-const asrContract = {
-  name: "ASR Distributor",
-  address: "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
-};
-
-// Service definition
-const asrService: ServiceRaw = {
-  id: `${platform.id}-asr`,
-  name: "ASR",
-  platformId: platform.id,
-  contractsRaw: [asrContract],
-};
-
-// Export services (both named export and default export)
-export const services: ServiceRaw[] = [asrService];
-export default services;
+// Flat list of the platform's on-chain program addresses.
+export const contracts: ContractRaw[] = [
+  {
+    name: "Governance",
+    address: "GovaE4iu227srtG2s3tZzB4RmWBzw8sTwrCLZz7kN7rY",
+  },
+  {
+    name: "Locker Vote",
+    address: "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
+  },
+  {
+    name: "ASR Distributor",
+    address: "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+  },
+];
 ```
 
 **Key points from this example:**
 
 - Platform ID is lowercase (`jupiter-governance`)
-- Contracts that other platforms might use are exported (`jupiterGovernanceContract`, `jupiterVoteContract`)
-- Internal contracts are not exported (`asrContract`)
-- Service ID follows the pattern `{platform-id}-{service-name}`
-- Services are exported both as a named export and default export
-- Image file should be at `img/jupiter-governance.webp` (64x64 pixels, .webp format)
+- Each contract is a flat `{ name, address }` entry
+- `platformId` is added automatically at index-generation time
+- Image file should be at `img/jupiter-governance.webp` (400x400 pixels, .webp format)
 
 ## Questions?
 

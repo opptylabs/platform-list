@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "openbook",
   name: "OpenBook",
@@ -14,33 +14,8 @@ export const platform: PlatformRaw = {
   tags: ["dapp"],
 };
 
-const contractV1 = {
-  name: "V1",
-  address: "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
-};
-
-const contractV2 = {
-  name: "V2",
-  address: "opnbkNkqux64GppQhwbyEVc3axhssFhVYuwar8rDHCu",
-};
-
-const contractV3 = {
-  name: "V3",
-  address: "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
-};
-
-export const service: ServiceRaw = {
-  id: `${platform.id}-v1`,
-  name: "V1",
-  platformId: platform.id,
-  contractsRaw: [contractV1],
-};
-
-export const serviceV2: ServiceRaw = {
-  id: `${platform.id}-v2`,
-  name: "V2",
-  platformId: platform.id,
-  contractsRaw: [contractV2, contractV3],
-};
-
-export const services: ServiceRaw[] = [service, serviceV2];
+export const contracts: ContractRaw[] = [
+  { name: "V1", address: "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX" },
+  { name: "V2", address: "opnbkNkqux64GppQhwbyEVc3axhssFhVYuwar8rDHCu" },
+  { name: "V3", address: "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb" },
+];

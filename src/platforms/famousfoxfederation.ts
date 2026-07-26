@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "famousfoxfederation",
   name: "Famous Fox Federation",
@@ -13,58 +13,8 @@ export const platform: PlatformRaw = {
   tags: ["nft-collection", "dapp"],
 };
 
-const stakingContract = {
-  name: "Staking",
-  address: "FoXpJL1exLBJgHVvdSHNKyKu2xX2uatctH9qp6dLmfpP",
-};
-
-const mainContract = {
-  name: "Main",
-  address: "JUicemrQ1X9XizUh1Pcn1SMJoArP8udtEqG5vZiWvkz",
-};
-
-const missionsContract = {
-  name: "Missions",
-  address: "6NcdQ5WTnrPoMLbP4kvpLYa4YSwKqkNHRRE8XVf5hmv9",
-};
-
-export const stakingService: ServiceRaw = {
-  id: `${platform.id}-staking`,
-  name: "Staking",
-  platformId: platform.id,
-  contractsRaw: [stakingContract],
-  link: "https://famousfoxes.com/stake",
-  description:
-    "NFT staking program allowing Fox holders to lock their NFTs and earn daily FOXY token rewards while retaining DAO eligibility.",
-};
-
-export const mainService: ServiceRaw = {
-  id: `${platform.id}-tools`,
-  name: "Tool",
-  platformId: platform.id,
-  contractsRaw: [mainContract],
-};
-
-export const missionsService: ServiceRaw = {
-  id: `${platform.id}-missions`,
-  name: "Missions",
-  platformId: platform.id,
-  contractsRaw: [missionsContract],
-  link: "https://famousfoxes.com/missions",
-  description:
-    "Gamified staking feature where Foxes embark on themed adventures to earn Treasury Chests and FAME tokens for cosmetic upgrades.",
-};
-
-export const tmiService: ServiceRaw = {
-  id: `${platform.id}-tmi`,
-  name: "TMI",
-  platformId: platform.id,
-  contractsRaw: [],
-};
-
-export const services: ServiceRaw[] = [
-  stakingService,
-  mainService,
-  missionsService,
-  tmiService,
+export const contracts: ContractRaw[] = [
+  { name: "Staking", address: "FoXpJL1exLBJgHVvdSHNKyKu2xX2uatctH9qp6dLmfpP" },
+  { name: "Main", address: "JUicemrQ1X9XizUh1Pcn1SMJoArP8udtEqG5vZiWvkz" },
+  { name: "Missions", address: "6NcdQ5WTnrPoMLbP4kvpLYa4YSwKqkNHRRE8XVf5hmv9" },
 ];

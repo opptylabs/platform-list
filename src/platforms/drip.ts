@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "drip",
   name: "Drip Haus",
@@ -12,26 +12,4 @@ export const platform: PlatformRaw = {
   tags: ["nft-marketplace", "dapp"],
 };
 
-export const collectingService: ServiceRaw = {
-  id: `${platform.id}-collecting`,
-  name: "Collecting",
-  platformId: platform.id,
-  contractsRaw: [],
-  link: "https://drip.haus/",
-  description:
-    "Free NFT distribution platform using compressed NFT technology to deliver digital art, music, and collectibles to subscribers at near-zero cost.",
-};
-
-export const creatorRewardsService: ServiceRaw = {
-  id: `${platform.id}-creator-rewards`,
-  name: "Creator Rewards",
-  platformId: platform.id,
-  contractsRaw: [],
-  description:
-    "Droplets-based donation system enabling collectors to directly support creators by minting NFTs and tipping through in-platform currency.",
-};
-
-export const services: ServiceRaw[] = [
-  collectingService,
-  creatorRewardsService,
-];
+export const contracts: ContractRaw[] = [];

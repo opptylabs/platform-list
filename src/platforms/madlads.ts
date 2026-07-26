@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "madlads",
   name: "MadLads",
@@ -12,16 +12,6 @@ export const platform: PlatformRaw = {
   tags: ["nft-collection"],
 };
 
-const solboundContract = {
-  name: "SolBound",
-  address: "7DkjPwuKxvz6Viiawtbmb4CqnMKP6eGb1WqYas1airUS",
-};
-
-export const wClaimService: ServiceRaw = {
-  id: `${platform.id}-launch`,
-  name: "W Claim",
-  platformId: platform.id,
-  contractsRaw: [solboundContract],
-};
-
-export const services: ServiceRaw[] = [wClaimService];
+export const contracts: ContractRaw[] = [
+  { name: "SolBound", address: "7DkjPwuKxvz6Viiawtbmb4CqnMKP6eGb1WqYas1airUS" },
+];

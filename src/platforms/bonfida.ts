@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "sns",
   name: "SNS",
@@ -16,61 +16,17 @@ export const platform: PlatformRaw = {
   platformToken: "SNS8DJbHc34nKySHVhLGMUUE72ho6igvJaxtq9T3cX3",
   tokens: ["EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp"],
 };
-const contract = {
-  name: "Offer",
-  address: "85iDfUvr3HJyLM2zcq5BXSiDvUWfw6cSE1FfNBo8Ap29",
-};
 
-const airdropContract = {
-  name: "Airdrop",
-  address: "bMersFdXPWiRzjqmbviCRMvwvN1FpRmATaqrF894CbU",
-};
-
-const recordContract = {
-  name: "Records Program",
-  address: "HP3D4D1ZCmohQGFVms2SS4LCANgJyksBf5s1F77FuFjZ",
-};
-
-const nameServiceContract = {
-  name: "Name Service",
-  address: "namesLPneVptA9Z5rqUDD9tMTWEJwofgaYwp8cawRkX",
-};
-
-const registrarContract = {
-  name: "Registrar",
-  address: "jCebN34bUfdeUYJT13J1yG16XWQpt5PDx6Mse9GUqhR",
-};
-
-const airdropService: ServiceRaw = {
-  id: `${platform.id}-airdrop`,
-  name: "Airdrop",
-  platformId: platform.id,
-  contractsRaw: [airdropContract],
-  description:
-    "Token distribution program for domain holders and early SNS ecosystem participants.",
-};
-
-const offerService: ServiceRaw = {
-  id: `${platform.id}-offers`,
-  name: "Offers",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  description:
-    "Domain marketplace enabling users to make and accept offers for .sol domain names.",
-};
-
-export const mainService: ServiceRaw = {
-  id: `${platform.id}-domaine-name`,
-  name: "Name Service",
-  platformId: platform.id,
-  contractsRaw: [nameServiceContract, registrarContract, recordContract],
-  link: "https://www.sns.id/",
-  description:
-    "Domain name service allowing users to register human-readable .sol addresses and link them to wallet addresses, social profiles, and on-chain records.",
-};
-
-export const services: ServiceRaw[] = [
-  mainService,
-  airdropService,
-  offerService,
+export const contracts: ContractRaw[] = [
+  {
+    name: "Name Service",
+    address: "namesLPneVptA9Z5rqUDD9tMTWEJwofgaYwp8cawRkX",
+  },
+  { name: "Registrar", address: "jCebN34bUfdeUYJT13J1yG16XWQpt5PDx6Mse9GUqhR" },
+  {
+    name: "Records Program",
+    address: "HP3D4D1ZCmohQGFVms2SS4LCANgJyksBf5s1F77FuFjZ",
+  },
+  { name: "Airdrop", address: "bMersFdXPWiRzjqmbviCRMvwvN1FpRmATaqrF894CbU" },
+  { name: "Offer", address: "85iDfUvr3HJyLM2zcq5BXSiDvUWfw6cSE1FfNBo8Ap29" },
 ];

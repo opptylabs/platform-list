@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "believe",
   name: "Believe",
@@ -12,11 +12,4 @@ export const platform: PlatformRaw = {
     "Believe is a memecoin launchpad that allows users to create tokens via Twitter/X replies, with tokens graduating to Meteora after reaching $100k market cap.",
 };
 
-export const launchService: ServiceRaw = {
-  id: `${platform.id}-launch`,
-  name: "Launchacoin",
-  platformId: platform.id,
-  contractsRaw: [],
-};
-
-export const services: ServiceRaw[] = [launchService];
+export const contracts: ContractRaw[] = [];

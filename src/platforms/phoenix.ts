@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "phoenix",
   name: "Phoenix",
@@ -16,34 +16,7 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "dex", "trading", "defi"],
 };
 
-const contract: ContractRaw = {
-  name: "Legacy",
-  address: "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY",
-};
-
-const eternalContract: ContractRaw = {
-  name: "Eternal",
-  address: "EtrnLzgbS7nMMy5fbD42kXiUzGg8XQzJ972Xtk1cjWih",
-};
-
-export const legacyService: ServiceRaw = {
-  id: `${platform.id}-legacy`,
-  name: "Legacy",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  link: "https://www.phoenix.trade/",
-  description:
-    "On-chain central limit order book enabling traders to place limit and market orders with full price-time priority matching.",
-};
-
-export const eternalService: ServiceRaw = {
-  id: `${platform.id}-eternal`,
-  name: "Eternal",
-  platformId: platform.id,
-  contractsRaw: [eternalContract],
-  link: "https://www.phoenix.trade/",
-  description:
-    "On-chain central limit order book enabling traders to place limit and market orders with full price-time priority matching.",
-};
-
-export const services: ServiceRaw[] = [legacyService, eternalService];
+export const contracts: ContractRaw[] = [
+  { name: "Legacy", address: "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY" },
+  { name: "Eternal", address: "EtrnLzgbS7nMMy5fbD42kXiUzGg8XQzJ972Xtk1cjWih" },
+];

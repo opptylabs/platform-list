@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "manifest",
   name: "Manifest",
@@ -14,28 +14,10 @@ export const platform: PlatformRaw = {
   },
 };
 
-const orderBookContract = {
-  name: "Order Book",
-  address: "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
-};
-
-const vaultContract = {
-  name: "Vault",
-  address: "MNFSTqtC93rEfYHB6hF82sKdZpUDFWkViLByLd1k1Ms",
-};
-
-export const orderBookService: ServiceRaw = {
-  id: `${platform.id}-order-book`,
-  name: "Order Book",
-  platformId: platform.id,
-  contractsRaw: [orderBookContract],
-};
-
-export const vaultService: ServiceRaw = {
-  id: `${platform.id}-vault`,
-  name: "Vault",
-  platformId: platform.id,
-  contractsRaw: [vaultContract],
-};
-
-export const services: ServiceRaw[] = [orderBookService, vaultService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Order Book",
+    address: "wMNFSTkir3HgyZTsB7uqu3i7FA73grFCptPXgrZjksL",
+  },
+  { name: "Vault", address: "MNFSTqtC93rEfYHB6hF82sKdZpUDFWkViLByLd1k1Ms" },
+];

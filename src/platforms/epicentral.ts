@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "epicentral",
   name: "Epicentral Labs",
@@ -16,17 +16,6 @@ export const platform: PlatformRaw = {
   tokens: ["7B2tQy8DwYt6aXHzt6UVDuqBB6WmykyZQodLSReQ9Wcz"],
 };
 
-const stakingContract = {
-  name: "Staking",
-  address: "EpicbGrj6qRkeYoy35ZTxHHtkvTtUC9Fz7KRuH7c5hrS",
-};
-
-export const stakingService: ServiceRaw = {
-  id: `${platform.id}-staking`,
-  name: "Staking",
-  platformId: platform.id,
-  contractsRaw: [stakingContract],
-  link: "https://stake.opx.markets/",
-};
-
-export const services: ServiceRaw[] = [stakingService];
+export const contracts: ContractRaw[] = [
+  { name: "Staking", address: "EpicbGrj6qRkeYoy35ZTxHHtkvTtUC9Fz7KRuH7c5hrS" },
+];

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "squads",
   name: "Squads",
@@ -14,19 +14,9 @@ export const platform: PlatformRaw = {
   },
 };
 
-const contract = {
-  name: "Multisig V4",
-  address: "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
-};
-
-export const service: ServiceRaw = {
-  id: `${platform.id}-multisig`,
-  name: "Multisig",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  link: "https://squads.so/",
-  description:
-    "Multi-signature smart account protocol enabling teams to require multiple approvals for transactions, program upgrades, and treasury management.",
-};
-
-export const services: ServiceRaw[] = [service];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Multisig V4",
+    address: "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+  },
+];

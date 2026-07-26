@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "zeus",
   name: "Zeus",
@@ -17,96 +17,20 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "infrastructure", "bitcoin"],
 };
 
-const bootstrapperContract = {
-  name: "Bootstrapper",
-  address: "ZPLsAzVmV6gRipY8dzoWcGWJ81tkPUN9M7YfxJPru9w",
-};
-
-const bitcoinSPVContract = {
-  name: "BitcoinSPV",
-  address: "ZPLowzr41tCGkoRXuzEx4Ts98Jjrbfe9rtv7gqdgGkH",
-};
-
-const layerCAContract = {
-  name: "LayerCA",
-  address: "ZPLtKX3gHTa4djEdmkZXkXiJdTUEeD5ZjZD4jAnxrSP",
-};
-
-const delegatorContract = {
-  name: "Delegator",
-  address: "ZPLt7XEyRvRxEZcGFGnRKGLBymFjQbwmgTZhMAMfGAU",
-};
-
-const liquidityManagementContract = {
-  name: "LiquidityManagement",
-  address: "ZPLuj6HoZ2z6y6WfJuHz3Gg48QeMZ6kGbsa74oPxACY",
-};
-
-const twoWayPegContract = {
-  name: "TwoWayPeg",
-  address: "ZPLzxjNk1zUAgJmm3Jkmrhvb4UaLwzvY2MotpfovF5K",
-};
-
-export const bootstrapperService: ServiceRaw = {
-  id: `${platform.id}-bootstrapper`,
-  name: "Bootstrapper",
-  platformId: platform.id,
-  contractsRaw: [bootstrapperContract],
-  description:
-    "Network initialization service for setting up cross-chain infrastructure and validator coordination.",
-};
-
-export const bitcoinSPVService: ServiceRaw = {
-  id: `${platform.id}-bitcoin-spv`,
-  name: "BitcoinSPV",
-  platformId: platform.id,
-  contractsRaw: [bitcoinSPVContract],
-  description:
-    "Simplified Payment Verification for Bitcoin, enabling trustless verification of Bitcoin transactions without running a full node.",
-};
-
-export const layerCAService: ServiceRaw = {
-  id: `${platform.id}-layer-ca`,
-  name: "LayerCA",
-  platformId: platform.id,
-  contractsRaw: [layerCAContract],
-  description:
-    "Cross-chain communication authority managing message routing and verification across supported networks.",
-};
-
-export const stakingService: ServiceRaw = {
-  id: `${platform.id}-staking`,
-  name: "Staking",
-  platformId: platform.id,
-  contractsRaw: [delegatorContract],
-  link: "https://app.zeusguardian.io/",
-  description:
-    "Guardian staking program allowing users to delegate tokens to secure the cross-chain messaging network and earn rewards.",
-};
-
-export const liquidityManagementService: ServiceRaw = {
-  id: `${platform.id}-liquidity-management`,
-  name: "LiquidityManagement",
-  platformId: platform.id,
-  contractsRaw: [liquidityManagementContract],
-  description:
-    "Cross-chain liquidity orchestration for managing asset pools and ensuring bridge solvency across networks.",
-};
-
-export const twoWayPegService: ServiceRaw = {
-  id: `${platform.id}-two-way-peg`,
-  name: "TwoWayPeg",
-  platformId: platform.id,
-  contractsRaw: [twoWayPegContract],
-  description:
-    "Bidirectional Bitcoin bridge enabling native BTC transfers between Bitcoin and supported chains with cryptographic proof verification.",
-};
-
-export const services: ServiceRaw[] = [
-  bootstrapperService,
-  bitcoinSPVService,
-  layerCAService,
-  stakingService,
-  liquidityManagementService,
-  twoWayPegService,
+export const contracts: ContractRaw[] = [
+  {
+    name: "Bootstrapper",
+    address: "ZPLsAzVmV6gRipY8dzoWcGWJ81tkPUN9M7YfxJPru9w",
+  },
+  {
+    name: "BitcoinSPV",
+    address: "ZPLowzr41tCGkoRXuzEx4Ts98Jjrbfe9rtv7gqdgGkH",
+  },
+  { name: "LayerCA", address: "ZPLtKX3gHTa4djEdmkZXkXiJdTUEeD5ZjZD4jAnxrSP" },
+  { name: "Delegator", address: "ZPLt7XEyRvRxEZcGFGnRKGLBymFjQbwmgTZhMAMfGAU" },
+  {
+    name: "LiquidityManagement",
+    address: "ZPLuj6HoZ2z6y6WfJuHz3Gg48QeMZ6kGbsa74oPxACY",
+  },
+  { name: "TwoWayPeg", address: "ZPLzxjNk1zUAgJmm3Jkmrhvb4UaLwzvY2MotpfovF5K" },
 ];

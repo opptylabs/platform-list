@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "triad",
   name: "Triad",
@@ -16,16 +16,9 @@ export const platform: PlatformRaw = {
   platformToken: "t3DohmswhKk94PPbPYwA6ZKACyY3y5kbcqeQerAJjmV",
 };
 
-const contract = {
-  name: "Prediction Market",
-  address: "TRDwq3BN4mP3m9KsuNUWSN6QDff93VKGSwE95Jbr9Ss",
-};
-
-export const service: ServiceRaw = {
-  id: `${platform.id}-prediction-market`,
-  name: "Prediction Market",
-  platformId: platform.id,
-  contractsRaw: [contract],
-};
-
-export const services: ServiceRaw[] = [service];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Prediction Market",
+    address: "TRDwq3BN4mP3m9KsuNUWSN6QDff93VKGSwE95Jbr9Ss",
+  },
+];

@@ -1,5 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
-
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "deriverse",
   name: "Deriverse",
@@ -12,16 +11,9 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "dex", "defi"],
 };
 
-const mainContract = {
-  name: "Deriverse",
-  address: "DRVSpZ2YUYYKgZP8XtLhAGtT1zYSCKzeHfb4DgRnrgqD",
-};
-
-export const mainService: ServiceRaw = {
-  id: "deriverse-main",
-  name: "Deriverse",
-  platformId: "deriverse",
-  contractsRaw: [mainContract],
-};
-
-export const services: ServiceRaw[] = [mainService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Deriverse",
+    address: "DRVSpZ2YUYYKgZP8XtLhAGtT1zYSCKzeHfb4DgRnrgqD",
+  },
+];

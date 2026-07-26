@@ -1,5 +1,4 @@
-import { PlatformRaw } from "../types";
-
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "icm",
   name: "ICM.RUN",
@@ -14,16 +13,6 @@ export const platform: PlatformRaw = {
   addedAt: 1770897600000,
 };
 
-const stakingContract = {
-  name: "Staking",
-  address: "BsMCB3NGDVstxsxK34MnazJTHuMjWTjngjGyybVTuS7s",
-};
-
-export const stakingService = {
-  id: `${platform.id}-staking`,
-  name: "Staking",
-  platformId: platform.id,
-  contractsRaw: [stakingContract],
-};
-
-export const services = [stakingService];
+export const contracts: ContractRaw[] = [
+  { name: "Staking", address: "BsMCB3NGDVstxsxK34MnazJTHuMjWTjngjGyybVTuS7s" },
+];

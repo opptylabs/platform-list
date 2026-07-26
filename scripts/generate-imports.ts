@@ -25,7 +25,7 @@ const files = fs
   .map((file) => file.slice(0, -3)); // Remove .ts and convert to PascalCase
 
 let indexData = `// ⚠️ This file is auto-generated. Do not modify it manually.${EOL}${EOL}`;
-indexData += `import { PlatformRaw, ServiceRaw } from "../types";${EOL}${EOL}`;
+indexData += `import { PlatformRaw, Contract } from "../types";${EOL}${EOL}`;
 
 indexData += files
   .map((platformId) => {
@@ -41,9 +41,12 @@ indexData += files
 indexData += `${EOL}];${EOL}`;
 
 indexData += `${EOL}`;
-indexData += `export const services: ServiceRaw[] = [${EOL}`;
+indexData += `export const contracts: Contract[] = [${EOL}`;
 indexData += files
-  .map((platformId) => `  ...${kebabToCamel(platformId)}.services,`)
+  .map((platformId) => {
+    const ns = kebabToCamel(platformId);
+    return `  ...${ns}.contracts.map((c) => ({ ...c, platformId: ${ns}.platform.id })),`;
+  })
   .join(EOL);
 indexData += `${EOL}];${EOL}`;
 

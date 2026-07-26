@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "lavarage",
   name: "Lavarage",
@@ -15,21 +15,13 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "trading"],
 };
 
-export const lavarageUsdcContract = {
-  name: "USDC Leverage",
-  address: "1avaAUcjccXCjSZzwUvB2gS3DzkkieV2Mw8CjdN65uu",
-};
-
-export const lavarageSolContract = {
-  name: "SOL Leverage",
-  address: "CRSeeBqjDnm3UPefJ9gxrtngTsnQRhEJiTA345Q83X3v",
-};
-
-export const leverageService: ServiceRaw = {
-  id: `${platform.id}-leverage`,
-  name: "Leverage",
-  platformId: platform.id,
-  contractsRaw: [lavarageUsdcContract, lavarageSolContract],
-};
-
-export const services: ServiceRaw[] = [leverageService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "USDC Leverage",
+    address: "1avaAUcjccXCjSZzwUvB2gS3DzkkieV2Mw8CjdN65uu",
+  },
+  {
+    name: "SOL Leverage",
+    address: "CRSeeBqjDnm3UPefJ9gxrtngTsnQRhEJiTA345Q83X3v",
+  },
+];

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "save",
   name: "Save",
@@ -20,51 +20,11 @@ export const platform: PlatformRaw = {
   ],
 };
 
-export const saveContract = {
-  name: "Lending",
-  address: "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
-};
-
-const migrationContract = {
-  name: "Save Migration",
-  address: "S2SquuEfKRHm1riCj13WobJJzf3CgUwu7QmijxjpTfx",
-};
-
-const rewardContract = {
-  name: "Reward",
-  address: "mrksLcZ6rMs9xkmJgw6oKiR3GECw44Gb5NeDqu64kiw",
-};
-
-export const lendingService: ServiceRaw = {
-  id: `${platform.id}-lending`,
-  name: "Lending",
-  platformId: platform.id,
-  contractsRaw: [saveContract],
-  link: "https://save.finance/",
-  description:
-    "Decentralized lending and borrowing protocol with isolated pools, enabling users to supply assets for yield and borrow against collateral.",
-};
-
-export const migrationService: ServiceRaw = {
-  id: `${platform.id}-migration`,
-  name: "Migration",
-  platformId: platform.id,
-  contractsRaw: [migrationContract],
-  description:
-    "Token migration service for converting legacy SLND tokens to the new SAVE token standard.",
-};
-
-export const rewardService: ServiceRaw = {
-  id: `${platform.id}-reward`,
-  name: "Reward",
-  platformId: platform.id,
-  contractsRaw: [rewardContract],
-  description:
-    "Rewards distribution program for users who participate in lending pools and liquidity mining campaigns.",
-};
-
-export const services: ServiceRaw[] = [
-  lendingService,
-  migrationService,
-  rewardService,
+export const contracts: ContractRaw[] = [
+  { name: "Lending", address: "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo" },
+  {
+    name: "Save Migration",
+    address: "S2SquuEfKRHm1riCj13WobJJzf3CgUwu7QmijxjpTfx",
+  },
+  { name: "Reward", address: "mrksLcZ6rMs9xkmJgw6oKiR3GECw44Gb5NeDqu64kiw" },
 ];

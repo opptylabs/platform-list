@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "carrot",
   name: "Carrot",
@@ -20,33 +20,7 @@ export const platform: PlatformRaw = {
   tags: ["stablecoin", "dapp"],
 };
 
-const minterContract = {
-  name: "Minter",
-  address: "CarrotwivhMpDnm27EHmRLeQ683Z1PufuqEmBZvD282s",
-};
-
-const boostContract = {
-  name: "Boost",
-  address: "C73nDAFn23RYwiFa6vtHshSbcg8x6BLYjw3bERJ3vHxf",
-};
-
-export const minterService: ServiceRaw = {
-  id: `${platform.id}-minter`,
-  name: "Minter",
-  platformId: platform.id,
-  contractsRaw: [minterContract],
-  link: "https://deficarrot.com/",
-  description:
-    "Stablecoin yield aggregator minting CRT tokens backed by USDC, USDT, and PYUSD deposits earning optimized yields across lending protocols.",
-};
-
-export const boostService: ServiceRaw = {
-  id: `${platform.id}-boost`,
-  name: "Boost",
-  platformId: platform.id,
-  contractsRaw: [boostContract],
-  description:
-    "Leveraged yield strategy using recursive lending loops to amplify returns on yield-bearing assets within a single transaction.",
-};
-
-export const services: ServiceRaw[] = [minterService, boostService];
+export const contracts: ContractRaw[] = [
+  { name: "Minter", address: "CarrotwivhMpDnm27EHmRLeQ683Z1PufuqEmBZvD282s" },
+  { name: "Boost", address: "C73nDAFn23RYwiFa6vtHshSbcg8x6BLYjw3bERJ3vHxf" },
+];

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "byreal",
   name: "Byreal",
@@ -14,67 +14,9 @@ export const platform: PlatformRaw = {
   },
 };
 
-const clmmContract = {
-  name: "CLMMM",
-  address: "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
-};
-
-const resetContract = {
-  name: "Reset",
-  address: "REALdpFGDDsiD9tvxYsXBTDpgH1gGQEqJ8YSLdYQWGD",
-};
-
-const routerContract = {
-  name: "Router",
-  address: "REALp6iMBDTctQqpmhBo4PumwJGcybbnDpxtax3ara3",
-};
-
-const rfqContract = {
-  name: "RFQ",
-  address: "REALFP9S4VmrAixmeYa68FrPKn4NVD2QFxxMfz9arhz",
-};
-
-export const clmmService: ServiceRaw = {
-  id: "byreal-clmm",
-  name: "CLMM",
-  platformId: platform.id,
-  contractsRaw: [clmmContract],
-  link: "https://www.byreal.io/pools",
-  description:
-    "Concentrated liquidity market maker pools enabling capital-efficient liquidity provision with customizable price ranges.",
-};
-
-export const resetService: ServiceRaw = {
-  id: "byreal-reset",
-  name: "Reset Launchpad",
-  platformId: platform.id,
-  contractsRaw: [resetContract],
-  description:
-    "Fair token launchpad with Smart Price Ladder and Fairshare Engine for democratized IDO access and transparent price-based allocation.",
-};
-
-export const routerService: ServiceRaw = {
-  id: "byreal-router",
-  name: "Router",
-  platformId: platform.id,
-  contractsRaw: [routerContract],
-  description:
-    "Smart-routing engine combining CLMM and RFQ mechanisms to find optimal trade paths with minimal slippage.",
-};
-
-export const rfqService: ServiceRaw = {
-  id: "byreal-rfq",
-  name: "RFQ",
-  platformId: platform.id,
-  contractsRaw: [rfqContract],
-  link: "https://www.byreal.io/swap",
-  description:
-    "Request-for-Quote system enabling gasless, zero-slippage trades with MEV protection through CEX liquidity integration.",
-};
-
-export const services: ServiceRaw[] = [
-  clmmService,
-  resetService,
-  routerService,
-  rfqService,
+export const contracts: ContractRaw[] = [
+  { name: "CLMMM", address: "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2" },
+  { name: "Reset", address: "REALdpFGDDsiD9tvxYsXBTDpgH1gGQEqJ8YSLdYQWGD" },
+  { name: "Router", address: "REALp6iMBDTctQqpmhBo4PumwJGcybbnDpxtax3ara3" },
+  { name: "RFQ", address: "REALFP9S4VmrAixmeYa68FrPKn4NVD2QFxxMfz9arhz" },
 ];

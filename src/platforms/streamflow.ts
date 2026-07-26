@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "streamflow",
   name: "Streamflow",
@@ -17,66 +17,12 @@ export const platform: PlatformRaw = {
   platformToken: "STREAMribRwybYpMmSYoCsQUdr6MZNXEqHgm7p1gu9M",
 };
 
-export const vestingContract = {
-  name: "Vesting",
-  address: "strmRqUCoQUgGUan5YhzUZa6KqdzwX5L6FpUxfmKg5m",
-};
-
-const stakingContract = {
-  name: "Staking",
-  address: "STAKEvGqQTtzJZH6BWDcbpzXXn2BBerPAgQ3EGLN2GH",
-};
-
-const airdropsContract = {
-  name: "Airdrops",
-  address: "aSTRM2NKoKxNnkmLWk9sz3k74gKBk9t7bpPrTGxMszH",
-};
-
-const airdropContract = {
-  name: "Airdrop Distribution",
-  address: "MErKy6nZVoVAkryxAejJz2juifQ4ArgLgHmaJCQkU7N",
-};
-
-export const vestingService: ServiceRaw = {
-  id: `${platform.id}-vesting`,
-  name: "Vesting",
-  platformId: platform.id,
-  contractsRaw: [vestingContract],
-  link: "https://app.streamflow.finance/vesting",
-  description:
-    "Token vesting infrastructure for creating customizable vesting schedules with cliff periods, linear unlocks, and automated distributions.",
-};
-
-export const stakingService: ServiceRaw = {
-  id: `${platform.id}-staking`,
-  name: "Staking",
-  platformId: platform.id,
-  contractsRaw: [stakingContract],
-  link: "https://app.streamflow.finance/staking",
-  description:
-    "Token staking solution enabling projects to create custom staking programs with flexible reward mechanisms and lock periods.",
-};
-
-export const airdropService: ServiceRaw = {
-  id: `${platform.id}-airdrops`,
-  name: "Airdrops",
-  platformId: platform.id,
-  contractsRaw: [airdropsContract],
-  link: "https://app.streamflow.finance/airdrops",
-  description:
-    "Batch token distribution tool for executing large-scale airdrops with merkle tree verification and gas-efficient claim mechanisms.",
-};
-
-export const airdropDistributionService: ServiceRaw = {
-  id: `${platform.id}-airdrop-distribution`,
-  name: "Airdrop Distribution",
-  platformId: platform.id,
-  contractsRaw: [airdropContract],
-};
-
-export const services: ServiceRaw[] = [
-  vestingService,
-  stakingService,
-  airdropService,
-  airdropDistributionService,
+export const contracts: ContractRaw[] = [
+  { name: "Vesting", address: "strmRqUCoQUgGUan5YhzUZa6KqdzwX5L6FpUxfmKg5m" },
+  { name: "Staking", address: "STAKEvGqQTtzJZH6BWDcbpzXXn2BBerPAgQ3EGLN2GH" },
+  { name: "Airdrops", address: "aSTRM2NKoKxNnkmLWk9sz3k74gKBk9t7bpPrTGxMszH" },
+  {
+    name: "Airdrop Distribution",
+    address: "MErKy6nZVoVAkryxAejJz2juifQ4ArgLgHmaJCQkU7N",
+  },
 ];

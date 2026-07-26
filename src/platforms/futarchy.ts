@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "futarchy",
   name: "MetaDAO",
@@ -17,63 +17,19 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "dao"],
 };
 
-const contract = {
-  name: "Futarchy DAO",
-  address: "autoQP9RmUNkzzKRXsMkWicDVZ3h29vvyMDcAYjCxxg",
-};
-
-const launchpadContract = {
-  name: "Launchpad",
-  address: "AfJJJ5UqxhBKoE3grkKAZZsoXDE9kncbMKvqSHGsCNrE",
-};
-
-const conditionalContract = {
-  name: "Conditional Vault",
-  address: "VLTX1ishMBbcX3rdBWGssxawAo1Q2X2qxYFYqiGodVg",
-};
-
-const ammContract = {
-  name: "AMM",
-  address: "AMMyu265tkBpRW21iGQxKGLaves3gKm2JcMUqfXNSpqD",
-};
-
-const ICOContract = {
-  name: "ICO",
-  address: "moontUzsdepotRGe5xsfip7vLPTJnVuafqdUWexVnPM",
-};
-
-export const launchpadService: ServiceRaw = {
-  id: "futarchy-launchpad",
-  name: "Launchpad",
-  platformId: platform.id,
-  contractsRaw: [launchpadContract],
-  link: "https://metadao.fi/launchpad",
-  description:
-    "Futarchy-governed token launchpad issuing ownership coins with on-chain treasuries and performance-locked team allocations.",
-};
-
-export const decisionMarketService: ServiceRaw = {
-  id: "futarchy-decision-market",
-  name: "Decision Market",
-  platformId: platform.id,
-  contractsRaw: [contract, conditionalContract, ammContract],
-  link: "https://metadao.fi/",
-  description:
-    "Prediction market governance system where proposals pass or fail based on their predicted impact on token price via conditional markets.",
-};
-
-export const ICOService: ServiceRaw = {
-  id: "futarchy-ico",
-  name: "ICO",
-  platformId: platform.id,
-  contractsRaw: [ICOContract],
-  link: "https://metadao.fi/",
-  description:
-    "Raise money while putting ownership into the hands of your early users and believers.d",
-};
-
-export const services: ServiceRaw[] = [
-  launchpadService,
-  decisionMarketService,
-  ICOService,
+export const contracts: ContractRaw[] = [
+  {
+    name: "Launchpad",
+    address: "AfJJJ5UqxhBKoE3grkKAZZsoXDE9kncbMKvqSHGsCNrE",
+  },
+  {
+    name: "Futarchy DAO",
+    address: "autoQP9RmUNkzzKRXsMkWicDVZ3h29vvyMDcAYjCxxg",
+  },
+  {
+    name: "Conditional Vault",
+    address: "VLTX1ishMBbcX3rdBWGssxawAo1Q2X2qxYFYqiGodVg",
+  },
+  { name: "AMM", address: "AMMyu265tkBpRW21iGQxKGLaves3gKm2JcMUqfXNSpqD" },
+  { name: "ICO", address: "moontUzsdepotRGe5xsfip7vLPTJnVuafqdUWexVnPM" },
 ];

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "ratex",
   name: "RateX",
@@ -17,85 +17,52 @@ export const platform: PlatformRaw = {
   platformToken: "J1wnHdKvP34fg7TtYdX63UPJMTdXNzJGEqfNJB22vKjU",
 };
 
-// lookupAddressTable Es56bH1dokFwohpWS8XYSfTXavvSEuyob2FnUYzF6pCL
-// lookupAddressTable J1NBWaniyDdnnm4dsdTXKmNJog5p4ye1AtVeqkkrUFyM
-export const programIds = [
-  "RAtEwzA1rerjeWip6uMuheQtzykxYCrEQRaSFCCrf2D",
-  "RATEuvat8kBBvomUgsbGDS2EV4KjKCoMKCP3DpxYmF8",
-  "RAtEjoYMC6U3fWrbxcuda1N4hcgDbgqQN8MFCsA7ge2",
-  "rAtEti4KRfAtVTYhcdYbVznJkbt8yTAXebwHEAr31xr",
-  "RAtegmyRsp72GuTVFrg68KC4EryqHYp5tWNdm9qJ3ub",
-  "rATeLFtHiGs6Q1rz4VNsp62vc3B8dLsDrNFm2NzKHSR",
-  "rAtERVnFCEdaY3BqP7w1wdMJFphHz9m8uTyLjRkw8Fu",
-  "ratEH6tibNBomaJtiFtivmPk7pxcPPvRg3mEt8vZiEK",
-  "rATEA6NzH5jVXbJkAwPsknuvviVrSnSpARNATkG2ZJ6",
-  "raTeSRo3LFRvsrcXFKgu1P8F4DLE39h6b1zeT2HfwAq",
-  "RaTEiNdQ31benKiF11k1kzv48EeK69HHNadvQXiFq6Z",
-  "raTeSq8Ebeb1JR3xRgSz7i2DP35Fyz5zsszkijgnXKm",
-  "RaTeUhvvohYGErSb2Sy3RA5EdMv9A9jtiJe8FHTg7uK",
-  "rAtewzmMSgn1QGewCM8PHdoW49bbuzrDQi4ftFoTFWo",
-  "ratEoDQr8juEipHZ7kx1Vu7BffJ2t2R27ScJCJHDiSV",
-  "RAtELWRTmTxPtDUue6ihnoXRhLzjbFixvJmH9RwymLo",
-  "raTeaQusQToYvnH1kU531VJiUnsBjvwF19CUvFW3EAj",
-  "RatEdYzPhpaBhUCoaUm7Vcq2PVXyKt1qzPS1VBqYpGz",
-  "RatEYEfgg9jtNHS6Szk5FZsJWCtDJufqXQXajzFstrt",
-  "RAtERBd1ujYhv3ddY2sYtxvTLggwwQckureGz7XrKYU",
-  "rATE72gUT1BBYk5aLujzHumXqnnm9v1BrYngLadL2nw",
-  "rAtEFNJKz4T1ccUj7A5PpDgwyBhZbba8wSoFMfAju9J",
-  "RATEvhkMJiUPxD4VoPKWutvf87sj1n3rqKWgfQgaBRs",
-  "RAte2gSaXmo5YSbpGHDKpK64J7frAmonHBpi4odtyRV",
-  "RatEimg3gZ3fkM5ivJ7kBEt2CYCyBe78cZokkbJYWUN",
-  "RatE8tuHWtSQSHqk9dtcZKQipUJfZXMvjxqFQuAjMnL",
-  "raTeAJ92EGM17TBENyDNvrsjmhhujvaanXCFKuxF494",
-  "RatEqyzDoJW8bAk2dBp9rTZCYykhLxt4P7CDxodKK1L",
-  "RAtePjCQkLqCECgAWPgGaSje5rnoSbpHXc8HuBBZxaU",
-  "rateE3GompDX8X8a6WEqwve7kge6YwCGEhN8krmTFjB",
-  "RaTEA6Gx8Yg7hK5N1nNC2zLe8KSm1NMEL3fMqMrDyiX",
-  "rateqk9kmMstT8SdVDyiV81Wuv4snjYyBjYoPkGqywK",
-  "rAtEXKMmfaKu3c7WyfnwZkpHb5bMbu4uYHhpX2DVUhY",
-  "ratEMFkpZf6movMQZPUAvtn72BzhVkABzUr53wQDXbp",
-  "rAte14X4CFgBXqPLEhmcLxkXVRoFthL3fcbBHVuvmxo",
-  "raTEMK3K8ahgwLuWUHEvp7aJXjVmcbNgj8XmQVMgt5q",
-  "RateFzvQT8Dz2HqDHAQj22ujp8B5kaBm2FUUkSoLgZm",
-  "raTEkEMFeDsvsELyQ5CMk4dS8Yhh3wyXXRL6QESd7p2",
-  "rAtEYiVSYnNEDcwqrFGwCbi7gFDYCssu2vmdozzyv4Q",
-];
-
-const withdrawableTokensContract = {
-  name: "Withdrawable Tokens",
-  address: "raTejbjhXcMjSSq9SzkkdzxeWzttF1jz94F8CtvU9Ss",
-};
-
-export const service: ServiceRaw = {
-  id: `ratex-main`,
-  name: "RateX",
-  platformId: "ratex",
-  contractsRaw: programIds.map((programId) => ({
-    name: "RateX",
-    address: programId,
-  })),
-};
-export const withdrawableTokensService: ServiceRaw = {
-  id: `ratex-withdrawable-tokens`,
-  name: "Withdrawable Tokens",
-  platformId: "ratex",
-  contractsRaw: [withdrawableTokensContract],
-};
-
-const airdropContract = {
-  name: "RateX Airdrop",
-  address: "rateAsYRezXAQ8r7dwTeaRgC2YmcvEtKmYkuJDvD33s",
-};
-
-export const airdropService: ServiceRaw = {
-  id: `ratex-airdrop`,
-  name: "RateX Airdrop",
-  platformId: "ratex",
-  contractsRaw: [airdropContract],
-};
-
-export const services: ServiceRaw[] = [
-  service,
-  withdrawableTokensService,
-  airdropService,
+export const contracts: ContractRaw[] = [
+  { name: "RateX", address: "RAtEwzA1rerjeWip6uMuheQtzykxYCrEQRaSFCCrf2D" },
+  { name: "RateX", address: "RATEuvat8kBBvomUgsbGDS2EV4KjKCoMKCP3DpxYmF8" },
+  { name: "RateX", address: "RAtEjoYMC6U3fWrbxcuda1N4hcgDbgqQN8MFCsA7ge2" },
+  { name: "RateX", address: "rAtEti4KRfAtVTYhcdYbVznJkbt8yTAXebwHEAr31xr" },
+  { name: "RateX", address: "RAtegmyRsp72GuTVFrg68KC4EryqHYp5tWNdm9qJ3ub" },
+  { name: "RateX", address: "rATeLFtHiGs6Q1rz4VNsp62vc3B8dLsDrNFm2NzKHSR" },
+  { name: "RateX", address: "rAtERVnFCEdaY3BqP7w1wdMJFphHz9m8uTyLjRkw8Fu" },
+  { name: "RateX", address: "ratEH6tibNBomaJtiFtivmPk7pxcPPvRg3mEt8vZiEK" },
+  { name: "RateX", address: "rATEA6NzH5jVXbJkAwPsknuvviVrSnSpARNATkG2ZJ6" },
+  { name: "RateX", address: "raTeSRo3LFRvsrcXFKgu1P8F4DLE39h6b1zeT2HfwAq" },
+  { name: "RateX", address: "RaTEiNdQ31benKiF11k1kzv48EeK69HHNadvQXiFq6Z" },
+  { name: "RateX", address: "raTeSq8Ebeb1JR3xRgSz7i2DP35Fyz5zsszkijgnXKm" },
+  { name: "RateX", address: "RaTeUhvvohYGErSb2Sy3RA5EdMv9A9jtiJe8FHTg7uK" },
+  { name: "RateX", address: "rAtewzmMSgn1QGewCM8PHdoW49bbuzrDQi4ftFoTFWo" },
+  { name: "RateX", address: "ratEoDQr8juEipHZ7kx1Vu7BffJ2t2R27ScJCJHDiSV" },
+  { name: "RateX", address: "RAtELWRTmTxPtDUue6ihnoXRhLzjbFixvJmH9RwymLo" },
+  { name: "RateX", address: "raTeaQusQToYvnH1kU531VJiUnsBjvwF19CUvFW3EAj" },
+  { name: "RateX", address: "RatEdYzPhpaBhUCoaUm7Vcq2PVXyKt1qzPS1VBqYpGz" },
+  { name: "RateX", address: "RatEYEfgg9jtNHS6Szk5FZsJWCtDJufqXQXajzFstrt" },
+  { name: "RateX", address: "RAtERBd1ujYhv3ddY2sYtxvTLggwwQckureGz7XrKYU" },
+  { name: "RateX", address: "rATE72gUT1BBYk5aLujzHumXqnnm9v1BrYngLadL2nw" },
+  { name: "RateX", address: "rAtEFNJKz4T1ccUj7A5PpDgwyBhZbba8wSoFMfAju9J" },
+  { name: "RateX", address: "RATEvhkMJiUPxD4VoPKWutvf87sj1n3rqKWgfQgaBRs" },
+  { name: "RateX", address: "RAte2gSaXmo5YSbpGHDKpK64J7frAmonHBpi4odtyRV" },
+  { name: "RateX", address: "RatEimg3gZ3fkM5ivJ7kBEt2CYCyBe78cZokkbJYWUN" },
+  { name: "RateX", address: "RatE8tuHWtSQSHqk9dtcZKQipUJfZXMvjxqFQuAjMnL" },
+  { name: "RateX", address: "raTeAJ92EGM17TBENyDNvrsjmhhujvaanXCFKuxF494" },
+  { name: "RateX", address: "RatEqyzDoJW8bAk2dBp9rTZCYykhLxt4P7CDxodKK1L" },
+  { name: "RateX", address: "RAtePjCQkLqCECgAWPgGaSje5rnoSbpHXc8HuBBZxaU" },
+  { name: "RateX", address: "rateE3GompDX8X8a6WEqwve7kge6YwCGEhN8krmTFjB" },
+  { name: "RateX", address: "RaTEA6Gx8Yg7hK5N1nNC2zLe8KSm1NMEL3fMqMrDyiX" },
+  { name: "RateX", address: "rateqk9kmMstT8SdVDyiV81Wuv4snjYyBjYoPkGqywK" },
+  { name: "RateX", address: "rAtEXKMmfaKu3c7WyfnwZkpHb5bMbu4uYHhpX2DVUhY" },
+  { name: "RateX", address: "ratEMFkpZf6movMQZPUAvtn72BzhVkABzUr53wQDXbp" },
+  { name: "RateX", address: "rAte14X4CFgBXqPLEhmcLxkXVRoFthL3fcbBHVuvmxo" },
+  { name: "RateX", address: "raTEMK3K8ahgwLuWUHEvp7aJXjVmcbNgj8XmQVMgt5q" },
+  { name: "RateX", address: "RateFzvQT8Dz2HqDHAQj22ujp8B5kaBm2FUUkSoLgZm" },
+  { name: "RateX", address: "raTEkEMFeDsvsELyQ5CMk4dS8Yhh3wyXXRL6QESd7p2" },
+  { name: "RateX", address: "rAtEYiVSYnNEDcwqrFGwCbi7gFDYCssu2vmdozzyv4Q" },
+  {
+    name: "Withdrawable Tokens",
+    address: "raTejbjhXcMjSSq9SzkkdzxeWzttF1jz94F8CtvU9Ss",
+  },
+  {
+    name: "RateX Airdrop",
+    address: "rateAsYRezXAQ8r7dwTeaRgC2YmcvEtKmYkuJDvD33s",
+  },
 ];

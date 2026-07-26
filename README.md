@@ -1,13 +1,12 @@
 # @opptylabs/platform-list
 
-A comprehensive registry of platforms in the Solana ecosystem. This package provides structured platform data including metadata, links, token(s) information, smart contracts and services.
+A comprehensive registry of platforms in the Solana ecosystem. This package provides structured platform data including metadata, links, token(s) information and smart contracts.
 
 ## JSON endpoints
 
 The latest generated JSON files are available via GitHub Releases:
 
 - [`platforms.json`](https://github.com/opptylabs/platform-list/releases/latest/download/platforms.json)
-- [`services.json`](https://github.com/opptylabs/platform-list/releases/latest/download/services.json)
 - [`contracts.json`](https://github.com/opptylabs/platform-list/releases/latest/download/contracts.json)
 
 ## Installation

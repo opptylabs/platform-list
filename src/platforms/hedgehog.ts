@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "hedgehog",
   name: "Hedgehog Markets",
@@ -15,26 +15,8 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "prediction", "defi"],
 };
 
-const ammContract = {
-  name: "AMM",
-  address: "Hr4whNgXr3yZsJvx3TVSwfsFgXuSEPB1xKmvgrtLhsrM",
-};
-
-const swapContract = {
-  name: "Swap",
-  address: "2ZznCMfx2XP43zaPw9R9wKnjXWiEeEexyhdBPv3UqDtD",
-};
-
-const tokensContract = {
-  name: "Tokens",
-  address: "D8vMVKonxkbBtAXAxBwPPWyTfon8337ARJmHvwtsF98G",
-};
-
-export const governanceV1Service: ServiceRaw = {
-  id: `${platform.id}-markets`,
-  name: "Markets",
-  platformId: platform.id,
-  contractsRaw: [ammContract, swapContract, tokensContract],
-};
-
-export const services: ServiceRaw[] = [governanceV1Service];
+export const contracts: ContractRaw[] = [
+  { name: "AMM", address: "Hr4whNgXr3yZsJvx3TVSwfsFgXuSEPB1xKmvgrtLhsrM" },
+  { name: "Swap", address: "2ZznCMfx2XP43zaPw9R9wKnjXWiEeEexyhdBPv3UqDtD" },
+  { name: "Tokens", address: "D8vMVKonxkbBtAXAxBwPPWyTfon8337ARJmHvwtsF98G" },
+];

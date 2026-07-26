@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "marinade",
   name: "Marinade",
@@ -16,44 +16,7 @@ export const platform: PlatformRaw = {
   tags: ["lst", "dapp"],
 };
 
-const contract = {
-  name: "Ticket",
-  address: "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
-};
-
-const airdropContract = {
-  name: "Airdrop",
-  address: "indiXdKbsC4QSLQQnn6ngZvkqfywn6KgEeQbkGSpk1V",
-};
-
-export const service: ServiceRaw = {
-  id: `${platform.id}-ticket`,
-  name: "Ticket",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  description:
-    "Delayed unstaking ticket system for converting mSOL back to SOL at a 1:1 ratio after the standard unstaking period.",
-};
-
-export const airdropService: ServiceRaw = {
-  id: `${platform.id}-airdrop`,
-  name: "Airdrop",
-  platformId: platform.id,
-  contractsRaw: [airdropContract],
-};
-
-export const nativeStakeService: ServiceRaw = {
-  id: `${platform.id}-native-stake`,
-  name: "Native Stake",
-  platformId: platform.id,
-  contractsRaw: [],
-  link: "https://marinade.finance/app/native/",
-  description:
-    "Non-custodial native staking service that delegates SOL directly to validators selected by an automated strategy promoting network decentralization.",
-};
-
-export const services: ServiceRaw[] = [
-  service,
-  airdropService,
-  nativeStakeService,
+export const contracts: ContractRaw[] = [
+  { name: "Ticket", address: "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD" },
+  { name: "Airdrop", address: "indiXdKbsC4QSLQQnn6ngZvkqfywn6KgEeQbkGSpk1V" },
 ];

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "loopscale",
   name: "Loopscale",
@@ -15,33 +15,10 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "lending", "defi"],
 };
 
-const contract = {
-  name: "Loopscale",
-  address: "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
-};
-
-const creditBookContract = {
-  name: "CreditBook",
-  address: "abfcSQac2vK2Pa6UAJb37DzarVxF15bDTdphJzAqYYp",
-};
-
-export const service: ServiceRaw = {
-  id: "loopscale-lending",
-  name: "Lending",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  link: "https://app.loopscale.com/",
-  description:
-    "Order-book based lending protocol matching borrowers and lenders directly for customizable fixed-rate loans with isolated risk markets.",
-};
-
-export const creditBookService: ServiceRaw = {
-  id: "loopscale-creditbook",
-  name: "CreditBook",
-  platformId: platform.id,
-  contractsRaw: [creditBookContract],
-  description:
-    "Limit Creditbook marketplace grouping similar loan orders into standardized categories for concentrated liquidity and efficient matching.",
-};
-
-export const services: ServiceRaw[] = [service, creditBookService];
+export const contracts: ContractRaw[] = [
+  { name: "Loopscale", address: "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78" },
+  {
+    name: "CreditBook",
+    address: "abfcSQac2vK2Pa6UAJb37DzarVxF15bDTdphJzAqYYp",
+  },
+];

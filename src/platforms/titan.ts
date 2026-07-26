@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "titan",
   name: "Titan",
@@ -14,39 +14,10 @@ export const platform: PlatformRaw = {
   tags: ["tool", "dapp", "dex", "defi"],
 };
 
-const contract = {
-  name: "Swap",
-  address: "T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT",
-};
-
-const limitOrderContract = {
-  name: "Limit Order",
-  address: "TitanLozLMhczcwrioEguG2aAmiATAPXdYpBg3DbeKK",
-};
-
-export const service: ServiceRaw = {
-  id: `${platform.id}-swap`,
-  name: "Swap",
-  platformId: platform.id,
-  contractsRaw: [contract],
-};
-
-export const limitOrderService: ServiceRaw = {
-  id: `${platform.id}-limit-order`,
-  name: "Limit Order",
-  platformId: platform.id,
-  contractsRaw: [limitOrderContract],
-};
-
-export const forgeService: ServiceRaw = {
-  id: `${platform.id}-forge`,
-  name: "Forge",
-  platformId: platform.id,
-  contractsRaw: [],
-};
-
-export const services: ServiceRaw[] = [
-  service,
-  forgeService,
-  limitOrderService,
+export const contracts: ContractRaw[] = [
+  { name: "Swap", address: "T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT" },
+  {
+    name: "Limit Order",
+    address: "TitanLozLMhczcwrioEguG2aAmiATAPXdYpBg3DbeKK",
+  },
 ];

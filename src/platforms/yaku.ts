@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "yaku",
   name: "Yaku",
@@ -12,4 +12,5 @@ export const platform: PlatformRaw = {
   tokens: ["NGK3iHqqQkyRZUj4uhJDQqEyKKcZ7mdawWpqwMffM3s"],
   tags: ["gaming"],
 };
-export const services: ServiceRaw[] = [];
+
+export const contracts: ContractRaw[] = [];

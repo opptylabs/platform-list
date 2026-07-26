@@ -1,6 +1,5 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 import { platform as jupiterPlatform } from "./jupiter-exchange";
-
 export const platform: PlatformRaw = {
   id: "jupiter-launchpad",
   name: "Jupiter Launchpad",
@@ -12,32 +11,7 @@ export const platform: PlatformRaw = {
   tags: ["tool"],
 };
 
-const lfgContract = {
-  name: "LFG",
-  address: "DiSLRwcSFvtwvMWSs7ubBMvYRaYNYupa76ZSuYLe6D7j",
-};
-
-const dtfContract = {
-  name: "DTF",
-  address: "presSVxnf9UU8jMxhgSMqaRwNiT36qeBdNeTRKjTdbj",
-};
-
-export const lfgService: ServiceRaw = {
-  id: `${platform.id}-lfg`,
-  name: "LFG",
-  platformId: platform.id,
-  contractsRaw: [lfgContract],
-  description:
-    "Token launch platform enabling new projects to raise capital through community-driven fair launches.",
-};
-
-export const dtfService: ServiceRaw = {
-  id: `${platform.id}-dtf`,
-  name: "DTF",
-  platformId: platform.id,
-  contractsRaw: [dtfContract],
-  description:
-    "Direct Token Financing presale system enabling projects to distribute tokens directly to community members.",
-};
-
-export const services: ServiceRaw[] = [lfgService, dtfService];
+export const contracts: ContractRaw[] = [
+  { name: "LFG", address: "DiSLRwcSFvtwvMWSs7ubBMvYRaYNYupa76ZSuYLe6D7j" },
+  { name: "DTF", address: "presSVxnf9UU8jMxhgSMqaRwNiT36qeBdNeTRKjTdbj" },
+];

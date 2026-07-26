@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "nosana",
   name: "Nosana",
@@ -14,19 +14,7 @@ export const platform: PlatformRaw = {
   },
   tags: ["tool", "depin", "dapp", "ai"],
 };
-const contract: ContractRaw = {
-  name: "Staking",
-  address: "nosScmHY2uR24Zh751PmGj9ww9QRNHewh9H59AfrTJE",
-};
 
-export const stakingService: ServiceRaw = {
-  id: `${platform.id}-staking`,
-  name: "Staking",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  link: "https://app.nosana.io/stake",
-  description:
-    "NOS token staking program allowing users to lock tokens and earn rewards while supporting the decentralized GPU compute network.",
-};
-
-export const services: ServiceRaw[] = [stakingService];
+export const contracts: ContractRaw[] = [
+  { name: "Staking", address: "nosScmHY2uR24Zh751PmGj9ww9QRNHewh9H59AfrTJE" },
+];

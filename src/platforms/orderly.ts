@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "orderly",
   name: "Orderly",
@@ -19,38 +19,11 @@ export const platform: PlatformRaw = {
   tags: ["bridge", "dapp"],
 };
 
-const contract: ContractRaw = {
-  name: `Orderly`,
-  address: "ErBmAD61mGFKvrFNaTJuxoPwqrS8GgtwtqJTJVjFWx9Q",
-};
-
-const stakingContract = {
-  name: "Staking",
-  address: "7X5WKxXLPy9TbJDFejq288HezLmWayZWudKMmUC2d9rB",
-};
-
-const stakingContract2 = {
-  name: "Staking V2",
-  address: "GZGX6QfUo62VbPyYqPZS6t27Uke1dJmoAP6V3rw6ntTH",
-};
-
-export const mainService: ServiceRaw = {
-  id: `${platform.id}-main`,
-  name: "Trading",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  link: "https://orderly.network/",
-  description:
-    "Omnichain CLOB infrastructure providing shared liquidity orderbook trading across 18+ blockchains for perpetuals DEX builders.",
-};
-
-export const stakingService: ServiceRaw = {
-  id: `${platform.id}-staking`,
-  name: "Staking",
-  platformId: platform.id,
-  contractsRaw: [stakingContract, stakingContract2],
-  description:
-    "ORDER token staking granting ownership of the Orderly treasury funded by 60% of protocol revenue and cross-chain reward claiming.",
-};
-
-export const services: ServiceRaw[] = [mainService, stakingService];
+export const contracts: ContractRaw[] = [
+  { name: "Orderly", address: "ErBmAD61mGFKvrFNaTJuxoPwqrS8GgtwtqJTJVjFWx9Q" },
+  { name: "Staking", address: "7X5WKxXLPy9TbJDFejq288HezLmWayZWudKMmUC2d9rB" },
+  {
+    name: "Staking V2",
+    address: "GZGX6QfUo62VbPyYqPZS6t27Uke1dJmoAP6V3rw6ntTH",
+  },
+];

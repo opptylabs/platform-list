@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "sanctum",
   name: "Sanctum",
@@ -17,82 +17,10 @@ export const platform: PlatformRaw = {
   tokens: ["5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm"],
 };
 
-const infContract = {
-  name: "Infinity",
-  address: "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
-};
-
-const voteContract = {
-  name: "Vote",
-  address: "VAU1T7S5UuEHmMvXtXMVmpEoQtZ2ya7eRb7gcN47wDp",
-};
-
-const stakingContract = {
-  name: "Staking",
-  address: "bon4Kh3x1uQK16w9b9DKgz3Aw4AP1pZxBJk55Q6Sosb",
-};
-
-const routerContract = {
-  name: "Router",
-  address: "stkitrT1Uoy18Dk1fTrgPw8W6MVzoCfYoAFT4MLsmhq",
-};
-
-const asrContract = {
-  name: "ASR",
-  address: "9R2CZDyVjBBK2bxx6NfKdnYMYfh8TQEphUUgZ4861XqJ",
-};
-
-export const voteService: ServiceRaw = {
-  id: `${platform.id}-vote`,
-  name: "Vote",
-  platformId: platform.id,
-  contractsRaw: [voteContract],
-  description:
-    "Governance voting system allowing token holders to participate in protocol decisions and validator gauge voting.",
-};
-
-export const stakingService: ServiceRaw = {
-  id: `${platform.id}-staking`,
-  name: "Staking",
-  platformId: platform.id,
-  contractsRaw: [stakingContract],
-  description:
-    "Token staking program enabling users to lock CLOUD tokens to earn rewards and boost their governance voting power.",
-};
-
-export const poolService: ServiceRaw = {
-  id: `${platform.id}-pool`,
-  name: "Infinity Pool",
-  platformId: platform.id,
-  contractsRaw: [infContract],
-  link: "https://app.sanctum.so/infinity",
-  description:
-    "Multi-LST liquidity pool enabling instant swaps between any liquid staking tokens with minimal slippage, powered by on-chain stake account valuations.",
-};
-
-export const routerService: ServiceRaw = {
-  id: `${platform.id}-router`,
-  name: "Router",
-  platformId: platform.id,
-  contractsRaw: [routerContract],
-  link: "https://app.sanctum.so/trade",
-  description:
-    "LST routing service that finds optimal paths for converting between native SOL, stake accounts, and any liquid staking token.",
-};
-
-export const asrService: ServiceRaw = {
-  id: `${platform.id}-asr`,
-  name: "ASR",
-  platformId: platform.id,
-  contractsRaw: [asrContract],
-  description:
-    "Airdrop Staking Rewards program distributing partner token rewards to users who stake their LSTs in the protocol.",
-};
-
-export const services: ServiceRaw[] = [
-  voteService,
-  stakingService,
-  poolService,
-  routerService,
-  asrService,
+export const contracts: ContractRaw[] = [
+  { name: "Vote", address: "VAU1T7S5UuEHmMvXtXMVmpEoQtZ2ya7eRb7gcN47wDp" },
+  { name: "Staking", address: "bon4Kh3x1uQK16w9b9DKgz3Aw4AP1pZxBJk55Q6Sosb" },
+  { name: "Infinity", address: "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx" },
+  { name: "Router", address: "stkitrT1Uoy18Dk1fTrgPw8W6MVzoCfYoAFT4MLsmhq" },
+  { name: "ASR", address: "9R2CZDyVjBBK2bxx6NfKdnYMYfh8TQEphUUgZ4861XqJ" },
 ];

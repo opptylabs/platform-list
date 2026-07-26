@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "piggybank",
   name: "Piggybank",
@@ -17,21 +17,7 @@ export const platform: PlatformRaw = {
   addedAt: 1761652800000,
 };
 
-const legacyContract = {
-  name: "Vault",
-  address: "Pig1CsXnfDwN1NuoeNRBojohbjc14dogmJCXeb2vL3Y",
-};
-
-const token2022Contract = {
-  name: "Vault",
-  address: "Pig2ienhM3ukiTec3x8aCdnLASpU4z8yRPLgH9QxDvm",
-};
-
-export const vaultService: ServiceRaw = {
-  id: `${platform.id}-vault`,
-  name: "Vault",
-  platformId: platform.id,
-  contractsRaw: [legacyContract, token2022Contract],
-};
-
-export const services: ServiceRaw[] = [vaultService];
+export const contracts: ContractRaw[] = [
+  { name: "Vault", address: "Pig1CsXnfDwN1NuoeNRBojohbjc14dogmJCXeb2vL3Y" },
+  { name: "Vault", address: "Pig2ienhM3ukiTec3x8aCdnLASpU4z8yRPLgH9QxDvm" },
+];

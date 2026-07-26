@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "ondo-finance",
   name: "Ondo Finance",
@@ -17,4 +17,5 @@ export const platform: PlatformRaw = {
   ],
   tags: ["dapp", "rwa", "institutional"],
 };
-export const services: ServiceRaw[] = [];
+
+export const contracts: ContractRaw[] = [];

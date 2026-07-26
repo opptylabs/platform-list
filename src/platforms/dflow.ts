@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "dflow",
   name: "DFlow",
@@ -13,27 +13,13 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "bridge", "prediction"],
 };
 
-export const contract = {
-  name: "Aggregator",
-  address: "DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH",
-};
-export const predictionsContract = {
-  name: "Predictions",
-  address: "pReDicTmksnPfkfiz33ndSdbe2dY43KYPg4U2dbvHvb",
-};
-
-export const service: ServiceRaw = {
-  id: `${platform.id}-aggregator`,
-  name: "Aggregator",
-  platformId: platform.id,
-  contractsRaw: [contract],
-};
-
-export const predictionsService: ServiceRaw = {
-  id: `${platform.id}-predictions`,
-  name: "Predictions",
-  platformId: platform.id,
-  contractsRaw: [predictionsContract],
-};
-
-export const services: ServiceRaw[] = [service, predictionsService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Aggregator",
+    address: "DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH",
+  },
+  {
+    name: "Predictions",
+    address: "pReDicTmksnPfkfiz33ndSdbe2dY43KYPg4U2dbvHvb",
+  },
+];

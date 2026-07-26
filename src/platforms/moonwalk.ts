@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "moonwalk",
   name: "Moonwalk",
@@ -15,26 +15,6 @@ export const platform: PlatformRaw = {
   platformToken: "moonThZEkkTVoNB7v6YVCQiT56JYDZ1oN185ba3WizL",
 };
 
-export const mainContract: ContractRaw = {
-  name: `Game`,
-  address: "FitAFk15vtx2PBjfr7QTnefaHRx6HwajRiZMt1DdSSKU",
-};
-
-export const gameService: ServiceRaw = {
-  id: `${platform.id}-game`,
-  name: "Game",
-  platformId: platform.id,
-  contractsRaw: [mainContract],
-  link: "https://app.moonwalk.fit/",
-  description:
-    "Move-to-earn fitness challenges where participants deposit crypto and achieve daily step goals to retain stakes and earn rewards from forfeited pools.",
-};
-
-export const airdropService: ServiceRaw = {
-  id: `${platform.id}-airdrop`,
-  name: "Airdrop",
-  platformId: platform.id,
-  contractsRaw: [],
-};
-
-export const services: ServiceRaw[] = [gameService, airdropService];
+export const contracts: ContractRaw[] = [
+  { name: "Game", address: "FitAFk15vtx2PBjfr7QTnefaHRx6HwajRiZMt1DdSSKU" },
+];

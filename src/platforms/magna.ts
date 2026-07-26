@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "magna",
   name: "Magna",
@@ -12,33 +12,10 @@ export const platform: PlatformRaw = {
   },
 };
 
-const airdropContract = {
-  name: "Vesting Airdrop",
-  address: "3zK38YBP6u3BpLUpaa6QhRHh4VXdv3J8cmD24fFpuyqy",
-};
-
-const maintContract = {
-  name: "Core",
-  address: "magnaSHyv8zzKJJmr8NSz5JXmtdGDTTFPEADmvNAwbj",
-};
-
-export const airdropService: ServiceRaw = {
-  id: `${platform.id}-airdrop`,
-  name: "Vesting Airdrop",
-  platformId: platform.id,
-  contractsRaw: [airdropContract],
-  description:
-    "Token distribution with vesting schedules enabling projects to conduct airdrops with customizable unlock periods and cliff dates.",
-};
-
-export const service: ServiceRaw = {
-  id: `${platform.id}-core`,
-  name: "Asset Management",
-  platformId: platform.id,
-  contractsRaw: [maintContract],
-  link: "https://www.magna.so/",
-  description:
-    "Token management platform for cap table tracking, vesting automation, and custody solutions across multiple chains.",
-};
-
-export const services: ServiceRaw[] = [airdropService, service];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Vesting Airdrop",
+    address: "3zK38YBP6u3BpLUpaa6QhRHh4VXdv3J8cmD24fFpuyqy",
+  },
+  { name: "Core", address: "magnaSHyv8zzKJJmr8NSz5JXmtdGDTTFPEADmvNAwbj" },
+];

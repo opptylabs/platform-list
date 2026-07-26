@@ -1,5 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
-
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "wzrd",
   name: "WZRD",
@@ -17,29 +16,9 @@ export const platform: PlatformRaw = {
   addedAt: 1740009600000,
 };
 
-const channelVaultContract = {
-  name: "Channel Vault",
-  address: "5WH4UiSZ7fbPQbLrRCJyWxnTAoNyTZ3ZjcdgTuinCXmQ",
-};
-
-export const vaultService: ServiceRaw = {
-  id: `${platform.id}-vault`,
-  name: "Vault",
-  platformId: platform.id,
-  contractsRaw: [channelVaultContract],
-  link: "https://app.twzrd.xyz/",
-  description:
-    "Staking vault that accepts CCM deposits and mints vLOFI receipt tokens. Includes auto-compounding, an on-chain exchange rate oracle, and queued or instant redemption.",
-};
-
-export const claimsService: ServiceRaw = {
-  id: `${platform.id}-claims`,
-  name: "Claims",
-  platformId: platform.id,
-  contractsRaw: [],
-  description:
-    "Gasless merkle-proof reward distribution. Stream engagement scores are settled into merkle trees and claimed via sponsored relay transactions.",
-};
-
-export const services: ServiceRaw[] = [vaultService, claimsService];
-export default services;
+export const contracts: ContractRaw[] = [
+  {
+    name: "Channel Vault",
+    address: "5WH4UiSZ7fbPQbLrRCJyWxnTAoNyTZ3ZjcdgTuinCXmQ",
+  },
+];

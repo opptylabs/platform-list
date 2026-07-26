@@ -18,7 +18,7 @@
 ## Platform file pattern (`src/platforms/<id>.ts`)
 
 ```ts
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 
 export const platform: PlatformRaw = {
   id: "<id>",              // kebab-case, matches filename
@@ -37,26 +37,17 @@ export const platform: PlatformRaw = {
   isDeprecated: true,                      // only if deprecated
 };
 
-// If platform has contracts:
-const mainContract = {
-  name: "...",
-  address: "<solana program address>",
-};
-
-export const mainService: ServiceRaw = {
-  id: `${platform.id}-<service>`,
-  name: "...",
-  platformId: platform.id,
-  contractsRaw: [mainContract],
-};
-
-export const services: ServiceRaw[] = [mainService];
-// If no services/contracts, just: export const services: ServiceRaw[] = [];
+// Flat list of the platform's on-chain program addresses.
+// platformId is injected automatically at index-generation time.
+export const contracts: ContractRaw[] = [
+  { name: "...", address: "<solana program address>" },
+];
+// If the platform has no contracts, just: export const contracts: ContractRaw[] = [];
 ```
 
 ## Key files
 
-- `src/types.ts` — PlatformRaw, ServiceRaw, PlatformTag
+- `src/types.ts` — PlatformRaw, ContractRaw, PlatformTag
 - `src/platforms/index.ts` — auto-generated, DO NOT edit manually
 - `scripts/generate-imports.ts` — regenerates index.ts
 - `scripts/fetch-img.ts` — downloads Twitter avatars → `img/<id>.webp` (400x400)

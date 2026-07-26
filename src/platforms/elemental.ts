@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "elemental",
   name: "Elemental",
@@ -14,38 +14,17 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "lending", "vault", "defi"],
 };
 
-const contract = {
-  name: "Elemental",
-  address: "ELE5vYY81W7UCpTPs7SyD6Bwm5FwZBntTW8PiGqM5d4A",
-};
-
-const onycContract = {
-  name: "Elemental",
-  address: "ELE6rYCZUaegWxVhWM4ef9pXZBAgGUVaVKkTbDvX6BMU",
-};
-
-const v2Contract = {
-  name: "Elemental V2",
-  address: "ELE7vRKKCzWT5SEt1eey2Snn3z6pWmBuv5AjDq3BeS1Y",
-};
-
-export const service: ServiceRaw = {
-  id: "elemental-fund",
-  name: "Elemental",
-  platformId: platform.id,
-  contractsRaw: [contract],
-};
-export const v2Service: ServiceRaw = {
-  id: "elemental-v2",
-  name: "Elemental V2",
-  platformId: platform.id,
-  contractsRaw: [v2Contract],
-};
-export const onycService: ServiceRaw = {
-  id: "elemental-fund-onyc",
-  name: "ONyc",
-  platformId: platform.id,
-  contractsRaw: [onycContract],
-};
-
-export const services: ServiceRaw[] = [service, onycService, v2Service];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Elemental",
+    address: "ELE5vYY81W7UCpTPs7SyD6Bwm5FwZBntTW8PiGqM5d4A",
+  },
+  {
+    name: "Elemental",
+    address: "ELE6rYCZUaegWxVhWM4ef9pXZBAgGUVaVKkTbDvX6BMU",
+  },
+  {
+    name: "Elemental V2",
+    address: "ELE7vRKKCzWT5SEt1eey2Snn3z6pWmBuv5AjDq3BeS1Y",
+  },
+];

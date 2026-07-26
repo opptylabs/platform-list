@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "madbears",
   name: "MadBears",
@@ -10,4 +10,5 @@ export const platform: PlatformRaw = {
   },
   tags: ["nft-collection"],
 };
-export const services: ServiceRaw[] = [];
+
+export const contracts: ContractRaw[] = [];

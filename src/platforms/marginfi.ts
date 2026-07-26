@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "marginfi",
   name: "Marginfi",
@@ -16,19 +16,6 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "lending", "defi", "lst"],
 };
 
-const contract = {
-  name: "Lending",
-  address: "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
-};
-
-export const service: ServiceRaw = {
-  id: "marginfi-lending",
-  name: "Lending",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  link: "https://app.marginfi.com/",
-  description:
-    "Overcollateralized lending and borrowing protocol with isolated risk pools, enabling users to supply assets to earn yield and borrow against their collateral.",
-};
-
-export const services: ServiceRaw[] = [service];
+export const contracts: ContractRaw[] = [
+  { name: "Lending", address: "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA" },
+];

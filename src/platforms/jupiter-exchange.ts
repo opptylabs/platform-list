@@ -1,5 +1,4 @@
-import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
-
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "jupiter-exchange",
   name: "Jupiter",
@@ -22,391 +21,47 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "lending", "trading", "stablecoin", "defi", "lst", "wallet"],
 };
 
-export const jupiterV7Contract: ContractRaw = {
-  name: "Swap V7",
-  address: "JUP7pNXFL1G2BESRYMtZ1jepzfDQVffkkkf5JhXWWhC",
-};
-
-export const jupiterV6Contract = {
-  name: "Swap V6",
-  address: "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
-};
-
-const jupiterV5Contract = {
-  name: "Swap v5",
-  address: "JUP5pEAZeHdHrLxh5UCwAbpjGwYKKoquCpda2hfP4u8",
-};
-
-const jupiterV4Contract = {
-  name: "Swap v4",
-  address: "JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDD33WcGuJB",
-};
-
-const jupiterV3Contract = {
-  name: "Swap v3",
-  address: "JUP3c2Uh3WA4Ng34tw6kPd2G4C5BB21Xo36Je1s32Ph",
-};
-
-const jupiterV2Contract = {
-  name: "Swap v2",
-  address: "JUP2jxvXaqu7NQY1GmNF4m1vodw12LVXYxbFL2uJvfo",
-};
-
-const jupiterV1Contract = {
-  name: "Swap v1",
-  address: "JUP6i4ozu5ydDCnLiMogSckDPpbtr7BJ4FtzYWkb5Rk",
-};
-
-export const apeContract = {
-  name: "Ape",
-  address: "JSWX3pKDbj2EdCMu4ei7sPYSpdcwZNyjkDSteoHQ4UH",
-};
-
-export const jupiterLimitContract = {
-  name: "Limit",
-  address: "jupoNjAxXgZ4rjzxzPMP4oxduvQsQtZzyknqvzYNrNu",
-};
-
-export const jupiterLimitV1Contract = {
-  name: "Limit V1",
-  address: "j1o2qRpjcyUwEvwtcfhEQefh773ZgjxcVRry7LDqg5X",
-};
-
-export const jupiterDcaContract = {
-  name: "DCA",
-  address: "DCA265Vj8a9CEuX1eb1LWRnDT7uK6q1xMipnNyatn23M",
-};
-
-const jupiterDcaVaContract = {
-  name: "VA",
-  address: "VALaaymxQh2mNy2trH9jUqHT1mTow76wpTcGmSWSwJe",
-};
-
-export const jupiterLockContract = {
-  name: "Lock",
-  address: "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
-};
-
-export const jupiterPerpsContract = {
-  name: "Perps",
-  address: "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
-};
-
-const airdropContract = {
-  name: "Airdrop",
-  address: "meRjbQXFNf5En86FXT2YPz1dQzLj4Yb3xK8u1MVgqpb",
-};
-
-const rfqContract = {
-  name: "JupiterZ",
-  address: "61DFfeTKM7trxYcPQCM78bJ794ddZprZpAwAnLiwTpYH",
-};
-
-const inviteContract = {
-  name: "Invite",
-  address: "inv1tEtSwRMtM44tbvJGNiTxMvDfPVnX9StyqXfDfks",
-};
-
-const lendVaultsContract = {
-  name: "Lend Vaults",
-  address: "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
-};
-
-const lendEthenaVaultsContract = {
-  name: "Lend Ethena Vaults",
-  address: "jupo974WCqAUMD3RtpayTap1me7StQCWtEkBbDb6Ba3",
-};
-
-export const lendContract = {
-  name: "Lend",
-  address: "jup3YeL8QhtSx1e253b2FDvsMNC87fDrgQZivbrndc9",
-};
-
-export const lendEthenaContract = {
-  name: "Lend Ethena",
-  address: "jup97Zx1NixM8UJMQFw8TtKzqTiRT3ETAJR7cVx3PfQ",
-};
-
-export const lendLiquidityEthenaContract = {
-  name: "Lend Liquidity Ethena",
-  address: "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS",
-};
-
-export const rewardsHubContract = {
-  name: "Rewards Hub",
-  address: "GenieRGuCtgfDGThwjp2GLreQMFtJoG1fqFE8MF1gAzG",
-};
-
-const deltaNeutralVaultContract = {
-  name: "Delta Neutral Vault",
-  address: "BUNDeH5A4c47bcEoAjBhN3sCjLgYnRsmt9ibMztqVkC9",
-};
-
-export const swapV7Service: ServiceRaw = {
-  id: `${platform.id}-swap-v7`,
-  name: "Swap v7",
-  platformId: platform.id,
-  contractsRaw: [jupiterV7Contract],
-  link: "https://jup.ag/swap",
-  description:
-    "The swap service allows users to exchange one cryptocurrency for another directly through the Jupiter platform, leveraging its DEX aggregation capabilities to find the best rates across multiple liquidity sources.",
-};
-
-export const swapV6Service: ServiceRaw = {
-  id: `${platform.id}-swap`,
-  name: "Swap v6",
-  platformId: platform.id,
-  contractsRaw: [jupiterV6Contract],
-};
-
-export const swapV5Service: ServiceRaw = {
-  id: `${platform.id}-swap-v5`,
-  name: "Swap v5",
-  platformId: platform.id,
-  contractsRaw: [jupiterV5Contract],
-};
-
-export const swapV4Service: ServiceRaw = {
-  id: `${platform.id}-swap-v4`,
-  name: "Swap v4",
-  platformId: platform.id,
-  contractsRaw: [jupiterV4Contract],
-};
-
-export const swapV3Service: ServiceRaw = {
-  id: `${platform.id}-swap-v3`,
-  name: "Swap v3",
-  platformId: platform.id,
-  contractsRaw: [jupiterV3Contract],
-};
-
-export const swapV2Service: ServiceRaw = {
-  id: `${platform.id}-swap-v2`,
-  name: "Swap v2",
-  platformId: platform.id,
-  contractsRaw: [jupiterV2Contract],
-};
-
-export const swapV1Service: ServiceRaw = {
-  id: `${platform.id}-swap-v1`,
-  name: "Swap v1",
-  platformId: platform.id,
-  contractsRaw: [jupiterV1Contract],
-};
-
-export const gaslessSwapService: ServiceRaw = {
-  id: `${platform.id}-gasless-swap`,
-  name: "Gasless Swap",
-  platformId: platform.id,
-  contractsRaw: [],
-  description:
-    "Gasless swaps allow users to perform token swaps without needing to hold SOL for transaction fees, as the platform covers these costs on behalf of the user.",
-};
-
-export const gaslessSendService: ServiceRaw = {
-  id: `${platform.id}-gasless-send`,
-  name: "Gasless Send",
-  platformId: platform.id,
-  contractsRaw: [],
-};
-
-export const ultraSwapService: ServiceRaw = {
-  id: `${platform.id}-ultra-swap`,
-  name: "Ultra Swap",
-  platformId: platform.id,
-  contractsRaw: [],
-};
-
-export const reclaimService: ServiceRaw = {
-  id: `${platform.id}-reclaim`,
-  name: "Reclaim",
-  platformId: platform.id,
-  contractsRaw: [],
-};
-
-export const manualSwapService: ServiceRaw = {
-  id: `${platform.id}-manual-swap`,
-  name: "Manual Swap",
-  platformId: platform.id,
-  contractsRaw: [],
-};
-
-export const apeService: ServiceRaw = {
-  id: `${platform.id}-ape`,
-  name: "Ape",
-  platformId: platform.id,
-  contractsRaw: [apeContract],
-  description:
-    "Quick-buy feature for rapid token purchases with simplified one-click trading flow.",
-};
-
-export const jupiterZService: ServiceRaw = {
-  id: `${platform.id}-jupiter-z`,
-  name: "JupiterZ",
-  platformId: platform.id,
-  contractsRaw: [rfqContract],
-  description:
-    "JupiterZ is a request-for-quote (RFQ) service that enables users to obtain personalized trade quotes for large or complex transactions, ensuring optimal pricing and execution through direct negotiation with liquidity providers.",
-};
-
-export const limitService: ServiceRaw = {
-  id: `${platform.id}-limit`,
-  name: "Limit",
-  platformId: platform.id,
-  contractsRaw: [jupiterLimitContract],
-};
-
-export const limitV1Service: ServiceRaw = {
-  id: `${platform.id}-limit-v1`,
-  name: "Limit V1",
-  platformId: platform.id,
-  contractsRaw: [jupiterLimitV1Contract],
-  description:
-    "Limit order execution engine filling orders when market prices match specified targets.",
-  link: "https://jup.ag/?tab=limit",
-};
-
-export const limitV2Service: ServiceRaw = {
-  id: `${platform.id}-limit-v2`,
-  name: "Limit V2",
-  platformId: platform.id,
-  contractsRaw: [],
-  description:
-    "The limit order service allows users to set limit orders for token swaps, enabling them to specify the desired price at which they want to buy or sell a cryptocurrency. This service enhances trading flexibility and control over execution prices.",
-  link: "https://jup.ag/?tab=limit",
-};
-
-export const dcaService: ServiceRaw = {
-  id: `${platform.id}-dca`,
-  name: "DCA",
-  platformId: platform.id,
-  contractsRaw: [jupiterDcaContract],
-  link: "https://jup.ag/?tab=recurring",
-  description:
-    "The DCA (Dollar-Cost Averaging) service enables users to set up recurring purchases of cryptocurrencies at regular intervals, helping to mitigate the impact of market volatility and build positions over time in a disciplined manner.",
-};
-
-export const dcaDepositService: ServiceRaw = {
-  id: `${platform.id}-dca-deposit`,
-  name: "DCA",
-  platformId: platform.id,
-  contractsRaw: [],
-};
-
-export const dcaVaService: ServiceRaw = {
-  id: `${platform.id}-dca-va`,
-  name: "DCA VA",
-  platformId: platform.id,
-  contractsRaw: [jupiterDcaVaContract],
-  description:
-    "Value Averaging DCA adjusting purchase amounts based on portfolio performance targets.",
-};
-
-export const lockService: ServiceRaw = {
-  id: `${platform.id}-lock`,
-  name: "Lock",
-  platformId: platform.id,
-  contractsRaw: [jupiterLockContract],
-  link: "https://lock.jup.ag/",
-  description:
-    "The lock service allows users to securely lock their tokens for a specified period, providing benefits such as earning rewards or participating in governance. This feature enhances token utility and encourages long-term holding.",
-};
-
-export const perpsService: ServiceRaw = {
-  id: `${platform.id}-perps`,
-  name: "Perps",
-  platformId: platform.id,
-  contractsRaw: [jupiterPerpsContract],
-  link: "https://jup.ag/perps",
-  description:
-    "The perpetuals (perps) service offers users the ability to trade perpetual futures contracts on various cryptocurrencies, allowing for leveraged trading and hedging strategies without an expiration date. This service provides advanced trading options for experienced users.",
-};
-
-export const airdropService: ServiceRaw = {
-  id: `${platform.id}-airdrop`,
-  name: "Airdrop",
-  platformId: platform.id,
-  contractsRaw: [airdropContract],
-  description:
-    "JUP token distribution program for platform users and liquidity providers.",
-};
-
-export const inviteService: ServiceRaw = {
-  id: `${platform.id}-invite`,
-  name: "Invite",
-  platformId: platform.id,
-  contractsRaw: [inviteContract],
-  description:
-    "Referral program tracking invitations and rewarding users for onboarding new traders.",
-};
-
-export const lendService: ServiceRaw = {
-  id: `${platform.id}-lend`,
-  name: "Lend",
-  platformId: platform.id,
-  contractsRaw: [lendContract, lendVaultsContract],
-  link: "https://jup.ag/lend",
-  description:
-    "The lend service allows users to lend their cryptocurrencies to earn interest, providing a way to generate passive income from idle assets. This service facilitates liquidity provision and supports the broader DeFi ecosystem.",
-};
-
-export const lendEthenaService: ServiceRaw = {
-  id: `${platform.id}-lend-ethena`,
-  name: "Lend",
-  platformId: platform.id,
-  contractsRaw: [
-    lendEthenaContract,
-    lendEthenaVaultsContract,
-    lendLiquidityEthenaContract,
-  ],
-  link: "https://jup.ag/lend/ethena/market",
-  description:
-    "Institutional-grade lending for Ethena assets in a fully isolated market, co-curated with Bitwise.",
-};
-
-export const rewardsHubService: ServiceRaw = {
-  id: `${platform.id}-rewards-hub`,
-  name: "Rewards Hub",
-  platformId: platform.id,
-  contractsRaw: [rewardsHubContract],
-};
-
-const deltaNeutralVaultService: ServiceRaw = {
-  id: `${platform.id}-delta-neutral-vault`,
-  name: "Delta Neutral Vault",
-  platformId: platform.id,
-  contractsRaw: [deltaNeutralVaultContract],
-  description:
-    "Delta Neutral Vaults providing hedged investment strategies to minimize market risk.",
-};
-
-export const services: ServiceRaw[] = [
-  swapV7Service,
-  swapV6Service,
-  swapV5Service,
-  swapV4Service,
-  swapV3Service,
-  swapV2Service,
-  swapV1Service,
-  gaslessSwapService,
-  gaslessSendService,
-  ultraSwapService,
-  manualSwapService,
-  apeService,
-  jupiterZService,
-  limitService,
-  limitV1Service,
-  limitV2Service,
-  dcaService,
-  dcaDepositService,
-  dcaVaService,
-  lockService,
-  perpsService,
-  airdropService,
-  inviteService,
-  lendService,
-  lendEthenaService,
-  rewardsHubService,
-  deltaNeutralVaultService,
-  reclaimService,
+export const contracts: ContractRaw[] = [
+  { name: "Swap V7", address: "JUP7pNXFL1G2BESRYMtZ1jepzfDQVffkkkf5JhXWWhC" },
+  { name: "Swap V6", address: "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4" },
+  { name: "Swap v5", address: "JUP5pEAZeHdHrLxh5UCwAbpjGwYKKoquCpda2hfP4u8" },
+  { name: "Swap v4", address: "JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDD33WcGuJB" },
+  { name: "Swap v3", address: "JUP3c2Uh3WA4Ng34tw6kPd2G4C5BB21Xo36Je1s32Ph" },
+  { name: "Swap v2", address: "JUP2jxvXaqu7NQY1GmNF4m1vodw12LVXYxbFL2uJvfo" },
+  { name: "Swap v1", address: "JUP6i4ozu5ydDCnLiMogSckDPpbtr7BJ4FtzYWkb5Rk" },
+  { name: "Ape", address: "JSWX3pKDbj2EdCMu4ei7sPYSpdcwZNyjkDSteoHQ4UH" },
+  { name: "JupiterZ", address: "61DFfeTKM7trxYcPQCM78bJ794ddZprZpAwAnLiwTpYH" },
+  { name: "Limit", address: "jupoNjAxXgZ4rjzxzPMP4oxduvQsQtZzyknqvzYNrNu" },
+  { name: "Limit V1", address: "j1o2qRpjcyUwEvwtcfhEQefh773ZgjxcVRry7LDqg5X" },
+  { name: "DCA", address: "DCA265Vj8a9CEuX1eb1LWRnDT7uK6q1xMipnNyatn23M" },
+  { name: "VA", address: "VALaaymxQh2mNy2trH9jUqHT1mTow76wpTcGmSWSwJe" },
+  { name: "Lock", address: "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn" },
+  { name: "Perps", address: "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu" },
+  { name: "Airdrop", address: "meRjbQXFNf5En86FXT2YPz1dQzLj4Yb3xK8u1MVgqpb" },
+  { name: "Invite", address: "inv1tEtSwRMtM44tbvJGNiTxMvDfPVnX9StyqXfDfks" },
+  { name: "Lend", address: "jup3YeL8QhtSx1e253b2FDvsMNC87fDrgQZivbrndc9" },
+  {
+    name: "Lend Vaults",
+    address: "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+  },
+  {
+    name: "Lend Ethena",
+    address: "jup97Zx1NixM8UJMQFw8TtKzqTiRT3ETAJR7cVx3PfQ",
+  },
+  {
+    name: "Lend Ethena Vaults",
+    address: "jupo974WCqAUMD3RtpayTap1me7StQCWtEkBbDb6Ba3",
+  },
+  {
+    name: "Lend Liquidity Ethena",
+    address: "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS",
+  },
+  {
+    name: "Rewards Hub",
+    address: "GenieRGuCtgfDGThwjp2GLreQMFtJoG1fqFE8MF1gAzG",
+  },
+  {
+    name: "Delta Neutral Vault",
+    address: "BUNDeH5A4c47bcEoAjBhN3sCjLgYnRsmt9ibMztqVkC9",
+  },
 ];

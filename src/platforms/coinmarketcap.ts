@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "coinmarketcap",
   name: "CoinMarketCap",
@@ -10,4 +10,4 @@ export const platform: PlatformRaw = {
   tags: ["tool"],
 };
 
-export const services: ServiceRaw[] = [];
+export const contracts: ContractRaw[] = [];

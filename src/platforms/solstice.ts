@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "solstice",
   name: "Solstice",
@@ -15,52 +15,14 @@ export const platform: PlatformRaw = {
   ],
 };
 
-export const contract = {
-  name: "Yield Vault",
-  address: "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
-};
-
-export const usxJustEarnContract = {
-  name: "USX Just Earn",
-  address: "JECcmzAWytxXQtMN3taGmAYhTK4CDEfwEGrzfMvVeGXm",
-};
-
-export const usxContract = {
-  name: "USX",
-  address: "USXyiSTsPEWz55pSK7sZoUL79ntoVGQbaTDT57tH6bx",
-};
-
-export const yieldVaultService: ServiceRaw = {
-  id: `${platform.id}-yield-vault`,
-  name: "Yield Vault",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  link: "https://solstice.finance/yieldvault",
-  description:
-    "Institutional-grade delta-neutral trading strategy vault offering stable yields with zero negative months track record since inception.",
-};
-
-export const usxJustEarnService: ServiceRaw = {
-  id: `${platform.id}-usx-just-earn`,
-  name: "USX Just Earn",
-  platformId: platform.id,
-  contractsRaw: [usxJustEarnContract],
-  description:
-    "Passive yield program for USX holders providing eUSX receipt tokens representing shares in the YieldVault's underlying assets.",
-};
-
-export const usxService: ServiceRaw = {
-  id: `${platform.id}-usx`,
-  name: "USX",
-  platformId: platform.id,
-  contractsRaw: [usxContract],
-  link: "https://solstice.finance/usx",
-  description:
-    "Fully collateralized synthetic stablecoin pegged to USD, backed 1:1 by USDC and USDT with real-time Chainlink Proof of Reserves.",
-};
-
-export const services: ServiceRaw[] = [
-  yieldVaultService,
-  usxJustEarnService,
-  usxService,
+export const contracts: ContractRaw[] = [
+  {
+    name: "Yield Vault",
+    address: "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+  },
+  {
+    name: "USX Just Earn",
+    address: "JECcmzAWytxXQtMN3taGmAYhTK4CDEfwEGrzfMvVeGXm",
+  },
+  { name: "USX", address: "USXyiSTsPEWz55pSK7sZoUL79ntoVGQbaTDT57tH6bx" },
 ];

@@ -65,28 +65,13 @@ type Optional<T, K extends keyof T> = Pick<Partial<T>, K> & Omit<T, K>;
 
 export type PlatformRaw = Omit<Optional<Platform, "isDeprecated">, "image">;
 
-export type Service = {
-  id: string;
-  name: string;
-  platformId: string;
-  contracts: Contract[];
-  link?: string;
-  description?: string;
-};
-
-export type ServiceRaw = Omit<Service, "contracts"> & {
-  contractsRaw: ContractRaw[];
-};
-
 /**
  * Represents a smart contract/program
  */
 export type Contract = {
-  id: string;
   name: string;
   address: string;
-  serviceId: string;
   platformId: string;
 };
 
-export type ContractRaw = Omit<Contract, "id" | "serviceId" | "platformId">;
+export type ContractRaw = Omit<Contract, "platformId">;

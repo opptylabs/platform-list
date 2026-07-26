@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "mayan",
   name: "Mayan",
@@ -12,27 +12,6 @@ export const platform: PlatformRaw = {
   tags: ["bridge", "tool", "dapp"],
 };
 
-export const swiftContract = {
-  name: "Swift",
-  address: "BLZRi6frs4X4DNLw56V4EXai1b6QVESN1BhHBTYM9VcY",
-};
-
-export const claimService: ServiceRaw = {
-  id: `${platform.id}-claim`,
-  name: "Claim",
-  platformId: platform.id,
-  contractsRaw: [swiftContract],
-  description:
-    "Redemption service for claiming bridged tokens after cross-chain transfer completion.",
-};
-
-export const bridgeService: ServiceRaw = {
-  id: `${platform.id}-bridge`,
-  name: "Bridge",
-  platformId: platform.id,
-  contractsRaw: [],
-  description:
-    "Cross-chain token bridge using auction-driven transfers for optimal speed and cost across multiple networks.",
-};
-
-export const services: ServiceRaw[] = [claimService, bridgeService];
+export const contracts: ContractRaw[] = [
+  { name: "Swift", address: "BLZRi6frs4X4DNLw56V4EXai1b6QVESN1BhHBTYM9VcY" },
+];

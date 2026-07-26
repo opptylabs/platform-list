@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "fragmetric",
   name: "Fragmetric",
@@ -23,31 +23,10 @@ export const platform: PlatformRaw = {
   ],
 };
 
-const contract = {
-  name: "Fragmetric",
-  address: "fragnAis7Bp6FTsMoa6YcH8UffhEw43Ph79qAiK3iF3",
-};
-
-const airdropContract = {
-  name: "Airdrop",
-  address: "fdropWhSi5xVKa9z26qKXveXoHDePDXfb5zxt3RKvKx",
-};
-
-export const service: ServiceRaw = {
-  id: "fragmetric-restaking",
-  name: "Fragmetric",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  link: "https://fragmetric.xyz/",
-  description:
-    "Liquid restaking protocol enabling users to restake SOL-based LSTs to secure additional networks while earning enhanced yields through fragSOL.",
-};
-
-export const airdropService: ServiceRaw = {
-  id: "fragmetric-airdrop",
-  name: "Fragmetric Airdrop",
-  platformId: platform.id,
-  contractsRaw: [airdropContract],
-};
-
-export const services: ServiceRaw[] = [service, airdropService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Fragmetric",
+    address: "fragnAis7Bp6FTsMoa6YcH8UffhEw43Ph79qAiK3iF3",
+  },
+  { name: "Airdrop", address: "fdropWhSi5xVKa9z26qKXveXoHDePDXfb5zxt3RKvKx" },
+];

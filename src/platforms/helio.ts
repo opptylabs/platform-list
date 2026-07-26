@@ -1,4 +1,4 @@
-import { ContractRaw, PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "helio",
   name: "MoonPay Commerce (Helio)",
@@ -12,30 +12,10 @@ export const platform: PlatformRaw = {
   },
 };
 
-const contractV2: ContractRaw = {
-  name: "Payment",
-  address: "ENicYBBNZQ91toN7ggmTxnDGZW14uv9UkumN7XBGeYJ4",
-};
-
-const contractV1 = {
-  name: "Payment V1",
-  address: "3KPRuKWxV6PtneZXbokMBwdF4T9brCFx7FcmKJ2tPqqt",
-};
-
-export const paymentService: ServiceRaw = {
-  id: `${platform.id}-payment`,
-  name: "Payment",
-  platformId: platform.id,
-  contractsRaw: [contractV2],
-  description:
-    "Crypto payment processing enabling merchants to accept token payments with fiat conversion options.",
-};
-
-export const paymentV2Service: ServiceRaw = {
-  id: `${platform.id}-payment-v1`,
-  name: "Payment V1",
-  platformId: platform.id,
-  contractsRaw: [contractV1],
-};
-
-export const services: ServiceRaw[] = [paymentService, paymentV2Service];
+export const contracts: ContractRaw[] = [
+  { name: "Payment", address: "ENicYBBNZQ91toN7ggmTxnDGZW14uv9UkumN7XBGeYJ4" },
+  {
+    name: "Payment V1",
+    address: "3KPRuKWxV6PtneZXbokMBwdF4T9brCFx7FcmKJ2tPqqt",
+  },
+];

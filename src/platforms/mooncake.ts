@@ -1,5 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
-
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "mooncake",
   name: "Mooncake",
@@ -15,16 +14,6 @@ export const platform: PlatformRaw = {
   platformToken: "J1wnHdKvP34fg7TtYdX63UPJMTdXNzJGEqfNJB22vKjU",
 };
 
-const contract = {
-  name: "Mooncake",
-  address: "mnCk3moW6q9UszVev3C9JjtE4YoviXgLwiLCnUy3c4D",
-};
-
-export const service: ServiceRaw = {
-  id: "mooncake-leveraged-tokens",
-  name: "Leveraged Tokens",
-  platformId: platform.id,
-  contractsRaw: [contract],
-};
-
-export const services: ServiceRaw[] = [service];
+export const contracts: ContractRaw[] = [
+  { name: "Mooncake", address: "mnCk3moW6q9UszVev3C9JjtE4YoviXgLwiLCnUy3c4D" },
+];

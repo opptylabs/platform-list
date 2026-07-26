@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "sharky",
   name: "Sharky",
@@ -15,19 +15,6 @@ export const platform: PlatformRaw = {
   platformToken: "SHARKSYJjqaNyxVfrpnBN9pjgkhwDhatnMyicWPnr1s",
 };
 
-const contract = {
-  name: "Sharky",
-  address: "SHARKobtfF1bHhxD2eqftjHBdVSCbKo9JtgK71FhELP",
-};
-
-export const service: ServiceRaw = {
-  id: "sharky-lending",
-  name: "Sharky",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  link: "https://sharky.fi/",
-  description:
-    "Escrowless NFT lending protocol enabling instant SOL loans against NFT collateral with fixed rates, or earning yield by lending to borrowers.",
-};
-
-export const services: ServiceRaw[] = [service];
+export const contracts: ContractRaw[] = [
+  { name: "Sharky", address: "SHARKobtfF1bHhxD2eqftjHBdVSCbKo9JtgK71FhELP" },
+];

@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "solcasino",
   name: "Solcasino",
@@ -14,27 +14,9 @@ export const platform: PlatformRaw = {
   tags: ["gaming", "dapp"],
 };
 
-const contract = {
-  name: "Solcasino",
-  address: "CQ36xjMHgmgwEM1yvJYUWg3YxMvzwM4Mntn6vZrMk86z",
-};
-
-export const depositService: ServiceRaw = {
-  id: `${platform.id}-deposit`,
-  name: "Deposit",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  description:
-    "Casino deposit service for funding accounts with crypto to play provably fair games.",
-};
-
-export const withdrawService: ServiceRaw = {
-  id: `${platform.id}-withdraw`,
-  name: "Withdraw",
-  platformId: platform.id,
-  contractsRaw: [],
-  description:
-    "Casino withdrawal service for cashing out winnings and remaining balances.",
-};
-
-export const services: ServiceRaw[] = [depositService, withdrawService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Solcasino",
+    address: "CQ36xjMHgmgwEM1yvJYUWg3YxMvzwM4Mntn6vZrMk86z",
+  },
+];

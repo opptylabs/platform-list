@@ -1,5 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
-
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "raydium",
   name: "Raydium",
@@ -18,201 +17,22 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "dex", "amm", "launchpad", "defi"],
 };
 
-const ammV4Contract = {
-  name: "AMM v4",
-  address: "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
-};
-
-const ammV5Contract = {
-  name: "AMM v5",
-  address: "5quBtoiQqxF9Jv6KYKctB59NT3gtJD2Y65kdnB1Uev3h",
-};
-
-const ammRootingContract = {
-  name: "AMM Rooting",
-  address: "routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS",
-};
-
-const clmmContract = {
-  name: "CLMM",
-  address: "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
-};
-
-const cpmmContract = {
-  name: "CPMM",
-  address: "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
-};
-
-const farmV3Contract = {
-  name: "Farm V3",
-  address: "EhhTKczWMGQt46ynNeRX1WfeagwwJd7ufHvCDjRxjo5Q",
-};
-
-const farmV4Contract = {
-  name: "Farm V4",
-  address: "CBuCnLe26faBpcBP2fktp4rp8abpcAnTWft6ZrP5Q4T",
-};
-
-const farmV5Contract = {
-  name: "Farm V5",
-  address: "9KEPoZmtHUrBbhWN1v1KWLMkkvwY6WLtAVUCPRtRjP4z",
-};
-
-const farmV6Contract = {
-  name: "Farm V6",
-  address: "FarmqiPv5eAj3j1GMdMCMUGXqPUvmquZtMy86QH6rzhG",
-};
-
-const idoContract = {
-  name: "IDO V1",
-  address: "6FJon3QE27qgPVggARueB22hLvoh22VzJpXv4rBEoSLF",
-};
-
-const idoV2Contract = {
-  name: "IDO V2",
-  address: "CC12se5To1CdEuw7fDS27B7Geo5jJyL7t5UK2B44NgiH",
-};
-
-const idoV3Contract = {
-  name: "IDO V3",
-  address: "9HzJyW1qZsEiSfMUf6L2jo3CcTKAyBmSyKdwQeYisHrC",
-};
-
-const idoV4Contract = {
-  name: "IDO V4",
-  address: "DropEU8AvevN3UrXWXTMuz3rqnMczQVNjq3kcSdW2SQi",
-};
-
-const launchpadContract = {
-  name: "Launchpad",
-  address: "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
-};
-
-export const ammV4Service: ServiceRaw = {
-  id: `${platform.id}-amm-v4`,
-  name: "AMM v4",
-  platformId: platform.id,
-  contractsRaw: [ammV4Contract],
-};
-
-export const ammV5Service: ServiceRaw = {
-  id: `${platform.id}-amm-v5`,
-  name: "AMM v5",
-  platformId: platform.id,
-  contractsRaw: [ammV5Contract],
-};
-
-export const ammRootingService: ServiceRaw = {
-  id: `${platform.id}-amm-rooting`,
-  name: "Swap",
-  platformId: platform.id,
-  contractsRaw: [ammRootingContract],
-  link: "https://raydium.io/swap/",
-  description:
-    "Token swap router that finds optimal routes across all AMM pools to execute trades with minimal slippage.",
-};
-
-export const clmmService: ServiceRaw = {
-  id: `${platform.id}-clmm`,
-  name: "CLMM",
-  platformId: platform.id,
-  contractsRaw: [clmmContract],
-  link: "https://raydium.io/clmm/pools/",
-  description:
-    "Concentrated Liquidity Market Maker pools allowing LPs to provide liquidity within custom price ranges for higher capital efficiency and increased fee earnings.",
-};
-
-export const cpmmService: ServiceRaw = {
-  id: `${platform.id}-cpmm`,
-  name: "CPMM",
-  platformId: platform.id,
-  contractsRaw: [cpmmContract],
-  link: "https://raydium.io/liquidity/pools/",
-  description:
-    "Constant Product Market Maker pools using the x*y=k formula for permissionless liquidity provision across the full price range.",
-};
-
-export const farmV3Service: ServiceRaw = {
-  id: `${platform.id}-farm-v3`,
-  name: "Stake",
-  platformId: platform.id,
-  contractsRaw: [farmV3Contract],
-  description:
-    "RAY token staking for earning protocol rewards and governance participation.",
-};
-
-export const farmV4Service: ServiceRaw = {
-  id: `${platform.id}-farm-v4`,
-  name: "Farm V4",
-  platformId: platform.id,
-  contractsRaw: [farmV4Contract],
-};
-
-export const farmV5Service: ServiceRaw = {
-  id: `${platform.id}-farm-v5`,
-  name: "Farm V5",
-  platformId: platform.id,
-  contractsRaw: [farmV5Contract],
-};
-
-export const farmV6Service: ServiceRaw = {
-  id: `${platform.id}-farm-v6`,
-  name: "Farm V6",
-  platformId: platform.id,
-  contractsRaw: [farmV6Contract],
-};
-
-export const idoV1Service: ServiceRaw = {
-  id: `${platform.id}-ido-v1`,
-  name: "IDO V1",
-  platformId: platform.id,
-  contractsRaw: [idoContract],
-};
-
-export const idoV2Service: ServiceRaw = {
-  id: `${platform.id}-ido-v2`,
-  name: "IDO V2",
-  platformId: platform.id,
-  contractsRaw: [idoV2Contract],
-};
-
-export const idoV3Service: ServiceRaw = {
-  id: `${platform.id}-ido-v3`,
-  name: "IDO V3",
-  platformId: platform.id,
-  contractsRaw: [idoV3Contract],
-};
-
-export const idoV4Service: ServiceRaw = {
-  id: `${platform.id}-ido-v4`,
-  name: "IDO V4",
-  platformId: platform.id,
-  contractsRaw: [idoV4Contract],
-};
-
-export const launchpadService: ServiceRaw = {
-  id: `${platform.id}-launchpad`,
-  name: "Launchpad",
-  platformId: platform.id,
-  contractsRaw: [launchpadContract],
-  link: "https://raydium.io/launchpad/",
-  description:
-    "Token launch platform enabling new projects to bootstrap liquidity and distribute tokens through fair launch mechanics.",
-};
-
-export const services: ServiceRaw[] = [
-  ammV4Service,
-  ammV5Service,
-  ammRootingService,
-  clmmService,
-  cpmmService,
-  farmV3Service,
-  farmV4Service,
-  farmV5Service,
-  farmV6Service,
-  idoV1Service,
-  idoV2Service,
-  idoV3Service,
-  idoV4Service,
-  launchpadService,
+export const contracts: ContractRaw[] = [
+  { name: "AMM v4", address: "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8" },
+  { name: "AMM v5", address: "5quBtoiQqxF9Jv6KYKctB59NT3gtJD2Y65kdnB1Uev3h" },
+  {
+    name: "AMM Rooting",
+    address: "routeUGWgWzqBWFcrCfv8tritsqukccJPu3q5GPP3xS",
+  },
+  { name: "CLMM", address: "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK" },
+  { name: "CPMM", address: "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C" },
+  { name: "Farm V3", address: "EhhTKczWMGQt46ynNeRX1WfeagwwJd7ufHvCDjRxjo5Q" },
+  { name: "Farm V4", address: "CBuCnLe26faBpcBP2fktp4rp8abpcAnTWft6ZrP5Q4T" },
+  { name: "Farm V5", address: "9KEPoZmtHUrBbhWN1v1KWLMkkvwY6WLtAVUCPRtRjP4z" },
+  { name: "Farm V6", address: "FarmqiPv5eAj3j1GMdMCMUGXqPUvmquZtMy86QH6rzhG" },
+  { name: "IDO V1", address: "6FJon3QE27qgPVggARueB22hLvoh22VzJpXv4rBEoSLF" },
+  { name: "IDO V2", address: "CC12se5To1CdEuw7fDS27B7Geo5jJyL7t5UK2B44NgiH" },
+  { name: "IDO V3", address: "9HzJyW1qZsEiSfMUf6L2jo3CcTKAyBmSyKdwQeYisHrC" },
+  { name: "IDO V4", address: "DropEU8AvevN3UrXWXTMuz3rqnMczQVNjq3kcSdW2SQi" },
+  { name: "Launchpad", address: "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj" },
 ];

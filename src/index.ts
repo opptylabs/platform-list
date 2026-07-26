@@ -1,8 +1,7 @@
-import { platforms as platformsRaw } from "./platforms/index";
-import { services as servicesRaw } from "./platforms/index";
-import { Contract, Platform, Service } from "./types";
+import { platforms as platformsRaw, contracts } from "./platforms/index";
+import { Platform } from "./types";
 
-export { Contract, ContractRaw, Platform, Service, ServiceRaw } from "./types";
+export { Contract, ContractRaw, Platform } from "./types";
 export * from "./utils";
 
 const platforms: Platform[] = platformsRaw.map(
@@ -13,21 +12,4 @@ const platforms: Platform[] = platformsRaw.map(
   }),
 );
 
-const services: Service[] = servicesRaw.map((s): Service => {
-  const { contractsRaw, ...rest } = s;
-  return {
-    ...rest,
-    contracts: contractsRaw.map((c) => ({
-      ...c,
-      id: c.address,
-      platformId: s.platformId,
-      serviceId: s.id,
-    })),
-  };
-});
-
-const contracts: Contract[] = services
-  .map((s): Contract[] => s.contracts)
-  .flat();
-
-export { platforms, services, contracts };
+export { platforms, contracts };

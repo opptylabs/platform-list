@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "pumpswap",
   name: "PumpSwap",
@@ -13,28 +13,10 @@ export const platform: PlatformRaw = {
   },
 };
 
-const contract = {
-  name: "PumpSwap AMM",
-  address: "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
-};
-
-const feesContract = {
-  name: "Pump Fees",
-  address: "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
-};
-
-export const service: ServiceRaw = {
-  id: "pumpswap-amm",
-  name: "PumpSwap AMM",
-  platformId: platform.id,
-  contractsRaw: [contract],
-};
-
-export const feesService: ServiceRaw = {
-  id: "pumpswap-fees",
-  name: "Pump Fees",
-  platformId: platform.id,
-  contractsRaw: [feesContract],
-};
-
-export const services: ServiceRaw[] = [service, feesService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "PumpSwap AMM",
+    address: "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+  },
+  { name: "Pump Fees", address: "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ" },
+];

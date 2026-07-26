@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "okx",
   name: "OKX",
@@ -12,29 +12,14 @@ export const platform: PlatformRaw = {
   tags: ["bridge", "dapp"],
   tokens: ["CtzPWv73Sn1dMGVU3ZtLv9yWSyUAanBni19YWDaznnkn"],
 };
-const aggregator: ContractRaw = {
-  name: `Aggregator`,
-  address: "6m2CDdhRgxpH4WjvdzxAYbGxwdGUz5MziiL5jek2kBma",
-};
-const aggregatorV6: ContractRaw = {
-  name: `Aggregator V6`,
-  address: "proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u",
-};
 
-export const aggregatorService: ServiceRaw = {
-  id: `${platform.id}-aggregator`,
-  name: "Aggregator",
-  platformId: platform.id,
-  contractsRaw: [aggregator],
-  description:
-    "DEX aggregator finding optimal swap routes across multiple liquidity sources for best execution prices.",
-};
-
-export const aggregatorV6Service: ServiceRaw = {
-  id: `${platform.id}-aggregator-v6`,
-  name: "Aggregator V6",
-  platformId: platform.id,
-  contractsRaw: [aggregatorV6],
-};
-
-export const services: ServiceRaw[] = [aggregatorService, aggregatorV6Service];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Aggregator",
+    address: "6m2CDdhRgxpH4WjvdzxAYbGxwdGUz5MziiL5jek2kBma",
+  },
+  {
+    name: "Aggregator V6",
+    address: "proVF4pMXVaYqmy4NjniPh4pqKNfMmsihgd4wdkCX3u",
+  },
+];

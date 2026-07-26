@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "bouncebit",
   name: "BounceBit",
@@ -16,45 +16,11 @@ export const platform: PlatformRaw = {
   },
 };
 
-const contract = {
-  name: "CeDeFi v2",
-  address: "65YBWQitcBexwuaBKfAV163xDd4LzVAdytATLbttpgxx",
-};
-
-const rewardsContract = {
-  name: "Rewards",
-  address: "5DBxQ4KRKgpCEp46fSs2RG4uoZ5totahCLyjmnn6tKRg",
-};
-
-const promoContract = {
-  name: "Promo",
-  address: "5HRzz8VDD9QjpEBBdq6hBUEXcssxW5mPnod4L6Qgnh9g",
-};
-
-export const service: ServiceRaw = {
-  id: `${platform.id}-cedefi-v2`,
-  name: "CeDeFi",
-  platformId: platform.id,
-  contractsRaw: [contract],
-  link: "https://portal.bouncebit.io/cedefi",
-  description:
-    "CeDeFi vault offering institutional-grade market-neutral strategies with auto-compounding yields for BTC, ETH, SOL, and stablecoins.",
-};
-
-export const rewardsService: ServiceRaw = {
-  id: `${platform.id}-cedefi`,
-  name: "Rewards",
-  platformId: platform.id,
-  contractsRaw: [rewardsContract],
-  description:
-    "Rewards distribution program for CeDeFi depositors with boosted APY incentives and promotional reward campaigns.",
-};
-
-export const promoService: ServiceRaw = {
-  id: `${platform.id}-promo`,
-  name: "Promo",
-  platformId: platform.id,
-  contractsRaw: [promoContract],
-};
-
-export const services: ServiceRaw[] = [service, rewardsService, promoService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "CeDeFi v2",
+    address: "65YBWQitcBexwuaBKfAV163xDd4LzVAdytATLbttpgxx",
+  },
+  { name: "Rewards", address: "5DBxQ4KRKgpCEp46fSs2RG4uoZ5totahCLyjmnn6tKRg" },
+  { name: "Promo", address: "5HRzz8VDD9QjpEBBdq6hBUEXcssxW5mPnod4L6Qgnh9g" },
+];

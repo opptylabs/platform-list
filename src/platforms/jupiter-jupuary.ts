@@ -1,6 +1,5 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 import { platform as jupiterPlatform } from "./jupiter-exchange";
-
 export const platform: PlatformRaw = {
   id: "jupiter-jupuary",
   name: "Jupiter Jupuary",
@@ -13,16 +12,6 @@ export const platform: PlatformRaw = {
   parentId: jupiterPlatform.id,
 };
 
-const jupiterJupuaryContract = {
-  name: "Jupuary",
-  address: "DiS3nNjFVMieMgmiQFm6wgJL7nevk4NrhXKLbtEH1Z2R",
-};
-
-export const jupuaryService: ServiceRaw = {
-  id: `${platform.id}-service`,
-  name: "Jupuary",
-  platformId: platform.id,
-  contractsRaw: [jupiterJupuaryContract],
-};
-
-export const services: ServiceRaw[] = [jupuaryService];
+export const contracts: ContractRaw[] = [
+  { name: "Jupuary", address: "DiS3nNjFVMieMgmiQFm6wgJL7nevk4NrhXKLbtEH1Z2R" },
+];

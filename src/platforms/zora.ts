@@ -1,5 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
-
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "zora",
   name: "Zora",
@@ -16,4 +15,4 @@ export const platform: PlatformRaw = {
   addedAt: 1740441600000,
 };
 
-export const services: ServiceRaw[] = [];
+export const contracts: ContractRaw[] = [];

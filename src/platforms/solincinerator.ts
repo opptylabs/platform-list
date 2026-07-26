@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "solincinerator",
   name: "Sol Incinerator",
@@ -12,21 +12,13 @@ export const platform: PlatformRaw = {
   tags: ["tool", "dapp"],
 };
 
-const incineratorContract = {
-  name: "Incinerator",
-  address: "F6fmDVCQfvnEq2KR8hhfZSEczfM9JK9fWbCsYJNbTGn7",
-};
-
-const safecineratorContract = {
-  name: "Safecinerator",
-  address: "CLEANALo6FtS6quqTTEXDGFFTuSKMkeKGgcweeiPRJzK",
-};
-
-export const cleanupService: ServiceRaw = {
-  id: `${platform.id}-cleanup`,
-  name: "Cleanup",
-  platformId: platform.id,
-  contractsRaw: [incineratorContract, safecineratorContract],
-};
-
-export const services: ServiceRaw[] = [cleanupService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Incinerator",
+    address: "F6fmDVCQfvnEq2KR8hhfZSEczfM9JK9fWbCsYJNbTGn7",
+  },
+  {
+    name: "Safecinerator",
+    address: "CLEANALo6FtS6quqTTEXDGFFTuSKMkeKGgcweeiPRJzK",
+  },
+];

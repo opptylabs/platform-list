@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw, ContractRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "thevault",
   name: "The Vault",
@@ -14,16 +14,10 @@ export const platform: PlatformRaw = {
   tokens: ["vSoLxydx6akxyMD9XEcPvGYNGq6Nn66oqVb3UkGkei7"],
   tags: ["dapp", "lst"],
 };
-const unstakePoolContract: ContractRaw = {
-  name: "Unstake Pool",
-  address: "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
-};
 
-export const unstakePoolService: ServiceRaw = {
-  id: `${platform.id}-unstake-pool`,
-  name: "Unstake Pool",
-  platformId: platform.id,
-  contractsRaw: [unstakePoolContract],
-};
-
-export const services: ServiceRaw[] = [unstakePoolService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Unstake Pool",
+    address: "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
+  },
+];

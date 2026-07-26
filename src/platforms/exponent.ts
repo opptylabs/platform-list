@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "exponent",
   name: "Exponent",
@@ -15,40 +15,8 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "defi", "vault"],
 };
 
-const contract = {
-  name: "Core",
-  address: "ExponentnaRg3CQbW6dqQNZKXp7gtZ9DGMp1cwC4HAS7",
-};
-
-export const service: ServiceRaw = {
-  id: "exponent-core",
-  name: "Core",
-  platformId: platform.id,
-  contractsRaw: [contract],
-};
-
-const v2Contract = {
-  name: "V2",
-  address: "XPC1MM4dYACDfykNuXYZ5una2DsMDWL24CrYubCvarC",
-};
-
-export const v2Service: ServiceRaw = {
-  id: "exponent-v2",
-  name: "V2",
-  platformId: platform.id,
-  contractsRaw: [v2Contract],
-};
-
-const vaultsContract = {
-  name: "Vaults",
-  address: "sVau1tXvayVWfotzm9Ahcv2qfnnfRWttt78BCnNC6dD",
-};
-
-export const vaultsService: ServiceRaw = {
-  id: "exponent-vaults",
-  name: "Vaults",
-  platformId: platform.id,
-  contractsRaw: [vaultsContract],
-};
-
-export const services: ServiceRaw[] = [service, v2Service, vaultsService];
+export const contracts: ContractRaw[] = [
+  { name: "Core", address: "ExponentnaRg3CQbW6dqQNZKXp7gtZ9DGMp1cwC4HAS7" },
+  { name: "V2", address: "XPC1MM4dYACDfykNuXYZ5una2DsMDWL24CrYubCvarC" },
+  { name: "Vaults", address: "sVau1tXvayVWfotzm9Ahcv2qfnnfRWttt78BCnNC6dD" },
+];

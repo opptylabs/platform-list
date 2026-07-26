@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "alldomains",
   name: "AllDomains",
@@ -16,37 +16,17 @@ export const platform: PlatformRaw = {
   platformToken: "BaoawH9p2J8yUK9r5YXQs3hQwmUJgscACjmTkh8rMwYL",
 };
 
-const contract = {
-  name: "Name Service",
-  address: "ALTNSZ46uaAUU7XUV6awvdorLGqAsPwa9shm7h4uP2FK",
-};
-
-const coSignerContract = {
-  name: "Top Level Domain CoSigner",
-  address: "TCSVHqadS2swhap43BnZtmeEAPNXfpc3w2HLBredVaR",
-};
-
-const nameHouseContract = {
-  name: "Name House",
-  address: "NH3uX6FtVE2fNREAioP7hm5RaozotZxeL6khU1EHx51",
-};
-
-const nameHouseService: ServiceRaw = {
-  id: `${platform.id}-name-house`,
-  name: "Name House",
-  platformId: platform.id,
-  contractsRaw: [nameHouseContract],
-  description:
-    "Domain registry and management system for organizing and resolving registered domain names.",
-};
-
-export const nameService: ServiceRaw = {
-  id: `${platform.id}-name-service`,
-  name: "Name Service",
-  platformId: platform.id,
-  contractsRaw: [contract, coSignerContract],
-  description:
-    "Domain registration and TLD creation service enabling users to mint custom domain names as NFTs.",
-};
-
-export const services: ServiceRaw[] = [nameHouseService, nameService];
+export const contracts: ContractRaw[] = [
+  {
+    name: "Name House",
+    address: "NH3uX6FtVE2fNREAioP7hm5RaozotZxeL6khU1EHx51",
+  },
+  {
+    name: "Name Service",
+    address: "ALTNSZ46uaAUU7XUV6awvdorLGqAsPwa9shm7h4uP2FK",
+  },
+  {
+    name: "Top Level Domain CoSigner",
+    address: "TCSVHqadS2swhap43BnZtmeEAPNXfpc3w2HLBredVaR",
+  },
+];

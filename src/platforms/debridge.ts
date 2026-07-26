@@ -1,4 +1,4 @@
-import { PlatformRaw, ServiceRaw } from "../types";
+import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "debridge",
   name: "deBridge",
@@ -17,70 +17,10 @@ export const platform: PlatformRaw = {
   tags: ["tool", "bridge", "dapp"],
 };
 
-const transferContract = {
-  name: "DeBridge",
-  address: "DEbrdGj3HsRsAzx6uH4MKyREKxVAfBydijLUF3ygsFfh",
-};
-
-const aidropContract = {
-  name: "Airdrop",
-  address: "DBrLFG4dco1xNC5Aarbt3KEaKaJ5rBYHwysqZoeqsSFE",
-};
-
-const vaultContract = {
-  name: "Vault",
-  address: "DeDRoPXNyHRJSagxZBBqs4hLAAM1bGKgxh7cyfuNCBpo",
-};
-
-const sourceContract = {
-  name: "Bridge",
-  address: "src5qyZHqTqecJV4aY6Cb6zDZLMDzrDKKezs22MPHr4",
-};
-
-const destContract = {
-  name: "Bridge",
-  address: "dst5MGcFPoBeREFAA5E3tU5ij8m5uVYwkzkSAbsLbNo",
-};
-
-export const transferService: ServiceRaw = {
-  id: `${platform.id}-transfer`,
-  name: "Transfer",
-  platformId: platform.id,
-  contractsRaw: [transferContract],
-  link: "https://app.debridge.finance/",
-  description:
-    "Cross-chain asset transfer service enabling token bridging between blockchains with native liquidity and fast finality.",
-};
-
-export const vaultService: ServiceRaw = {
-  id: `${platform.id}-vault`,
-  name: "Vault",
-  platformId: platform.id,
-  contractsRaw: [vaultContract],
-  description:
-    "Liquidity vault holding bridged assets, enabling capital-efficient cross-chain transfers without wrapped token overhead.",
-};
-
-export const airdropService: ServiceRaw = {
-  id: `${platform.id}-airdrop`,
-  name: "Airdrop",
-  platformId: platform.id,
-  contractsRaw: [aidropContract],
-};
-
-export const dlnService: ServiceRaw = {
-  id: `${platform.id}-dln`,
-  name: "DLN",
-  platformId: platform.id,
-  contractsRaw: [sourceContract, destContract],
-  link: "https://dln.trade/",
-  description:
-    "Decentralized Liquidity Network providing limit order cross-chain trading with guaranteed rates and MEV protection through solver competition.",
-};
-
-export const services: ServiceRaw[] = [
-  transferService,
-  vaultService,
-  airdropService,
-  dlnService,
+export const contracts: ContractRaw[] = [
+  { name: "DeBridge", address: "DEbrdGj3HsRsAzx6uH4MKyREKxVAfBydijLUF3ygsFfh" },
+  { name: "Vault", address: "DeDRoPXNyHRJSagxZBBqs4hLAAM1bGKgxh7cyfuNCBpo" },
+  { name: "Airdrop", address: "DBrLFG4dco1xNC5Aarbt3KEaKaJ5rBYHwysqZoeqsSFE" },
+  { name: "Bridge", address: "src5qyZHqTqecJV4aY6Cb6zDZLMDzrDKKezs22MPHr4" },
+  { name: "Bridge", address: "dst5MGcFPoBeREFAA5E3tU5ij8m5uVYwkzkSAbsLbNo" },
 ];
