@@ -5,7 +5,7 @@ export const platform: PlatformRaw = {
   description:
     "BlazeStake is a liquid staking protocol that distributes stake across 200+ validators for decentralization, offering bSOL tokens and custom liquid staking.",
   defiLlamaId: "blazestake",
-  tags: ["lst", "dapp"],
+  tags: ["dapp"],
   links: {
     website: "https://stake.solblaze.org/",
     discord: "https://discord.gg/solblaze",

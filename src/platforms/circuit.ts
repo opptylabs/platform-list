@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     discord: "https://discord.gg/circuittrade",
     documentation: "https://docs.circuit.trade/",
   },
-  tags: ["dapp", "vault", "trading"],
+  tags: ["dapp", "vault"],
 };
 
 export const contracts: ContractRaw[] = [];

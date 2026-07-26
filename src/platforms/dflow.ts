@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/dflow",
   },
   defiLlamaId: "dflow",
-  tags: ["dapp", "bridge", "prediction"],
+  tags: ["dapp", "dex", "prediction"],
 };
 
 export const contracts: ContractRaw[] = [

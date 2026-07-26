@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     discord: "https://discord.gg/metengine",
     twitter: "https://x.com/met_engine",
   },
-  tags: ["dapp", "tool", "trading"],
+  tags: ["dapp", "tool"],
 };
 
 export const contracts: ContractRaw[] = [];

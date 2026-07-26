@@ -20,7 +20,7 @@ export const platform: PlatformRaw = {
     "Ab6K8anKSwAz8VXJPVvAVjPQMJNoVhwzfF7FtAB5PNW9",
     "4PZTRNrHnxWBqLRvX5nuE6m1cNR8RqB4kWvVYjDkMd2H",
   ],
-  tags: ["dapp", "dex", "trading", "defi"],
+  tags: ["dapp", "dex", "defi"],
 };
 
 export const contracts: ContractRaw[] = [

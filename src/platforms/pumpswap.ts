@@ -5,7 +5,7 @@ export const platform: PlatformRaw = {
   description: "Swap tokens on Pump.",
   defiLlamaId: "pumpswap",
   parentId: "pumpfun",
-  tags: ["dapp", "dex", "amm", "defi"],
+  tags: ["dapp", "dex", "defi"],
   links: {
     website: "https://swap.pump.fun/",
     telegram: "https://t.me/pumpfunsupport",

@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     website: "https://web3.okx.com/dex-swap/bridge",
     twitter: "https://x.com/wallet",
   },
-  tags: ["bridge", "dapp"],
+  tags: ["dex"],
   tokens: ["CtzPWv73Sn1dMGVU3ZtLv9yWSyUAanBni19YWDaznnkn"],
 };
 

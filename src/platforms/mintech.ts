@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     documentation:
       "https://mintechbots.gitbook.io/mintech-guide/getting-started/welcome",
   },
-  tags: ["tool", "trading"],
+  tags: ["tool"],
 };
 
 export const contracts: ContractRaw[] = [

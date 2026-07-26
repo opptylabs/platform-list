@@ -13,7 +13,7 @@ export const platform: PlatformRaw = {
   },
   platformToken: "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
   tokens: ["mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So"],
-  tags: ["lst", "dapp"],
+  tags: ["dapp"],
 };
 
 export const contracts: ContractRaw[] = [

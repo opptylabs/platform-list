@@ -7,7 +7,7 @@ export const platform: PlatformRaw = {
     website: "https://x.com/Jupnet",
     twitter: "https://x.com/Jupnet",
   },
-  tags: ["dex"],
+  tags: ["dex", "bridge"],
   parentId: jupiterPlatform.id,
 };
 

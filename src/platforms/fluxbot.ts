@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.fluxbot.xyz/",
   },
   platformToken: "FLUXBmPhT3Fd1EDVFdg46YREqHBeNypn1h4EbnTzWERX",
-  tags: ["tool", "trading"],
+  tags: ["tool"],
 };
 
 export const contracts: ContractRaw[] = [];

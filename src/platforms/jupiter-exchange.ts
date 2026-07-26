@@ -18,7 +18,7 @@ export const platform: PlatformRaw = {
     "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
   ],
   platformToken: "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-  tags: ["dapp", "lending", "trading", "stablecoin", "defi", "lst", "wallet"],
+  tags: ["dapp", "lending", "stablecoin", "defi", "wallet"],
 };
 
 export const contracts: ContractRaw[] = [

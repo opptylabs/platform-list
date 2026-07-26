@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/humidifi",
   },
   platformToken: "WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U",
-  tags: ["liquidity-provider", "amm"],
+  tags: ["dex"],
 };
 
 export const contracts: ContractRaw[] = [];

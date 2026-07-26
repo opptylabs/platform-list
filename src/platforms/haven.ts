@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Haven",
   description:
     "Haven is an automated leverage management platform powered by Solauto for self-rebalancing positions.",
-  tags: ["dapp", "defi", "trading"],
+  tags: ["dapp", "defi"],
   links: {
     website: "https://haven.trade/",
     twitter: "https://x.com/haven_fi",

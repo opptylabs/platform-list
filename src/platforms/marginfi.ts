@@ -13,7 +13,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.marginfi.com/",
   },
   tokens: ["LSTxxxnJzKDFSLr4dUkPcmCf5VyryEqzPLz5j4bpxFp"],
-  tags: ["dapp", "lending", "defi", "lst"],
+  tags: ["dapp", "lending", "defi"],
 };
 
 export const contracts: ContractRaw[] = [

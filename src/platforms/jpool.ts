@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "JPool Solana Staking Pool",
   description:
     "JPool is a liquid staking platform, built for top yield and offering a range of flexible strategies, as well as handy auxiliary tools.",
-  tags: ["lst", "dapp"],
+  tags: ["dapp"],
   links: {
     website: "https://jpool.one/",
     discord: "https://discord.com/invite/qR4BA9QXVR",

@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/wasabi_protocol",
     documentation: "https://docs.wasabi.xyz/_/overview/what-is-wasabi",
   },
-  tags: ["dapp", "trading", "vault", "defi"],
+  tags: ["dapp", "vault", "defi"],
 };
 
 export const contracts: ContractRaw[] = [

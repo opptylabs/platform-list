@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/hylo-so",
   },
   defiLlamaId: "hylo",
-  tags: ["dapp", "stablecoin", "defi", "lst"],
+  tags: ["dapp", "stablecoin", "defi"],
   tokens: [
     "HnnGv3HrSqjRpgdFmx7vQGjntNEoex1SU4e9Lxcxuihz",
     "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
