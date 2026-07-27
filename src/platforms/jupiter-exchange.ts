@@ -13,7 +13,6 @@ export const platform: PlatformRaw = {
     documentation: "https://station.jup.ag/",
   },
   tokens: [
-    "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
     "jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v",
     "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
   ],
@@ -36,15 +35,10 @@ export const contracts: ContractRaw[] = [
   { name: "DCA", address: "DCA265Vj8a9CEuX1eb1LWRnDT7uK6q1xMipnNyatn23M" },
   { name: "VA", address: "VALaaymxQh2mNy2trH9jUqHT1mTow76wpTcGmSWSwJe" },
   { name: "Lock", address: "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn" },
-  { name: "Perps", address: "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu" },
   { name: "Airdrop", address: "meRjbQXFNf5En86FXT2YPz1dQzLj4Yb3xK8u1MVgqpb" },
   { name: "Invite", address: "inv1tEtSwRMtM44tbvJGNiTxMvDfPVnX9StyqXfDfks" },
   {
     name: "Rewards Hub",
     address: "GenieRGuCtgfDGThwjp2GLreQMFtJoG1fqFE8MF1gAzG",
-  },
-  {
-    name: "Delta Neutral Vault",
-    address: "BUNDeH5A4c47bcEoAjBhN3sCjLgYnRsmt9ibMztqVkC9",
   },
 ];

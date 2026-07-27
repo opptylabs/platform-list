@@ -98,6 +98,7 @@ import * as jupiterLaunchpad from "./jupiter-launchpad";
 import * as jupiterLend from "./jupiter-lend";
 import * as jupiterMobile from "./jupiter-mobile";
 import * as jupiterOfferbook from "./jupiter-offerbook";
+import * as jupiterPerps from "./jupiter-perps";
 import * as jupiterPredict from "./jupiter-predict";
 import * as jupiterWallet from "./jupiter-wallet";
 import * as kamino from "./kamino";
@@ -340,6 +341,7 @@ export const platforms: PlatformRaw[] = [
   jupiterLend.platform,
   jupiterMobile.platform,
   jupiterOfferbook.platform,
+  jupiterPerps.platform,
   jupiterPredict.platform,
   jupiterWallet.platform,
   kamino.platform,
@@ -717,6 +719,10 @@ export const contracts: Contract[] = [
   ...jupiterOfferbook.contracts.map((c) => ({
     ...c,
     platformId: jupiterOfferbook.platform.id,
+  })),
+  ...jupiterPerps.contracts.map((c) => ({
+    ...c,
+    platformId: jupiterPerps.platform.id,
   })),
   ...jupiterPredict.contracts.map((c) => ({
     ...c,
