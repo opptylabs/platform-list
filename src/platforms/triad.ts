@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Triad",
   description:
     "Triad is a prediction markets platform for trading politics, crypto, sports & culture.",
-  tags: ["dapp", "prediction", "defi"],
+  tags: ["prediction"],
   links: {
     website: "https://app.triadfi.co/",
     discord: "http://discord.gg/triadfi",

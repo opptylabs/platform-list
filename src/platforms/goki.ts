@@ -2,7 +2,7 @@ import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "goki",
   name: "Goki",
-  tags: ["tool", "dapp"],
+  tags: ["wallet"],
   description:
     "Goki is a Multisig tool that allows users to create and manage multisig wallets.",
   links: {

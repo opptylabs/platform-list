@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     telegram: "https://t.me/SolcasinoIOBot",
   },
   platformToken: "SCSuPPNUSypLBsV4darsrYNg4ANPgaGhKhsA3GmMyjz",
-  tags: ["gaming", "dapp"],
+  tags: ["gaming"],
 };
 
 export const contracts: ContractRaw[] = [

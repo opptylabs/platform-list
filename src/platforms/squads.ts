@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Squads",
   description:
     "Squads is a multisig and smart account protocol for secure team treasury management, program upgrades, and on-chain governance.",
-  tags: ["tool", "dapp"],
+  tags: ["wallet"],
   links: {
     website: "https://squads.xyz/",
     discord: "https://discord.gg/squads",

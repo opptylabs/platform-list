@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "ZORB",
   description:
     "ZORB is a proof-of-work mining platform, a variant of the ORE mining ecosystem.",
-  tags: ["tool"],
+  tags: ["memecoin"],
   links: {
     website: "https://zorb.supply/",
     discord: "https://discord.com/invite/69uxav4fe4",

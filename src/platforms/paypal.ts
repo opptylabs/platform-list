@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/PayPal",
   },
   platformToken: "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
-  tags: ["institutional", "payments", "stablecoin"],
+  tags: ["payments", "stablecoin"],
 };
 
 export const contracts: ContractRaw[] = [];

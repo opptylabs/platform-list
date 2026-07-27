@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Banger",
   description:
     "Banger is a SocialFi platform for launching and trading tokens tied to tweets (tweetcoins).",
-  tags: ["social", "dapp"],
+  tags: ["social"],
   links: {
     website: "https://www.banger.lol/",
     documentation: "https://banger.gitbook.io/banger-docs",

@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     discord: "https://discord.gg/trojan",
     telegram: "https://t.me/trojan",
   },
-  tags: ["dapp", "dex"],
+  tags: ["dex"],
   addedAt: 1768316327000,
 };
 

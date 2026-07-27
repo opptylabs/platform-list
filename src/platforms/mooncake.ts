@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.mooncake.fi/",
     twitter: "https://x.com/mooncake_fi",
   },
-  tags: ["dapp", "defi", "vault"],
+  tags: ["vault"],
   platformToken: "J1wnHdKvP34fg7TtYdX63UPJMTdXNzJGEqfNJB22vKjU",
 };
 

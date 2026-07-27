@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/AmpleHQ",
     documentation: "https://solana.ample.money/docs",
   },
-  tags: ["defi", "dapp"],
+  tags: ["vault"],
   addedAt: 1783430693000,
 };
 

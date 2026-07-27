@@ -18,7 +18,7 @@ export const platform: PlatformRaw = {
     "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
   ],
   platformToken: "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-  tags: ["dapp", "lending", "stablecoin", "defi", "wallet"],
+  tags: ["dex", "stablecoin"],
 };
 
 export const contracts: ContractRaw[] = [
@@ -39,23 +39,6 @@ export const contracts: ContractRaw[] = [
   { name: "Perps", address: "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu" },
   { name: "Airdrop", address: "meRjbQXFNf5En86FXT2YPz1dQzLj4Yb3xK8u1MVgqpb" },
   { name: "Invite", address: "inv1tEtSwRMtM44tbvJGNiTxMvDfPVnX9StyqXfDfks" },
-  { name: "Lend", address: "jup3YeL8QhtSx1e253b2FDvsMNC87fDrgQZivbrndc9" },
-  {
-    name: "Lend Vaults",
-    address: "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
-  },
-  {
-    name: "Lend Ethena",
-    address: "jup97Zx1NixM8UJMQFw8TtKzqTiRT3ETAJR7cVx3PfQ",
-  },
-  {
-    name: "Lend Ethena Vaults",
-    address: "jupo974WCqAUMD3RtpayTap1me7StQCWtEkBbDb6Ba3",
-  },
-  {
-    name: "Lend Liquidity Ethena",
-    address: "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS",
-  },
   {
     name: "Rewards Hub",
     address: "GenieRGuCtgfDGThwjp2GLreQMFtJoG1fqFE8MF1gAzG",

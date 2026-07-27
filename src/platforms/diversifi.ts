@@ -7,7 +7,7 @@ export const platform: PlatformRaw = {
     website: "https://diversifi.trade/",
     twitter: "https://x.com/useDiversiFi",
   },
-  tags: ["defi"],
+  tags: ["vault"],
 };
 
 export const contracts: ContractRaw[] = [

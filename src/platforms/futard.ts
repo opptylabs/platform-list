@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Futard",
   description:
     "Permissionless fundraising launchpad on Solana with onchain spending limits and futarchy-based governance.",
-  tags: ["dapp", "launchpad"],
+  tags: ["launchpad"],
   links: {
     website: "https://www.futard.io/",
     twitter: "https://x.com/futarddotio",

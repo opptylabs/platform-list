@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     discord: "https://discord.gg/mayanfinance",
     documentation: "https://docs.mayan.finance/",
   },
-  tags: ["bridge", "tool", "dapp"],
+  tags: ["bridge"],
 };
 
 export const contracts: ContractRaw[] = [

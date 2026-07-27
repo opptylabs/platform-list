@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/elementalfund",
     documentation: "https://docs.elemental.fund/",
   },
-  tags: ["dapp", "lending", "vault", "defi"],
+  tags: ["lending", "vault"],
 };
 
 export const contracts: ContractRaw[] = [

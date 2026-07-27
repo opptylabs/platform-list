@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/privy-io",
     documentation: "https://docs.privy.io",
   },
-  tags: ["tool", "infrastructure"],
+  tags: ["infrastructure"],
 };
 
 export const contracts: ContractRaw[] = [];

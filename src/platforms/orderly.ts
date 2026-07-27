@@ -16,7 +16,7 @@ export const platform: PlatformRaw = {
     medium: "https://medium.com/@orderlynetwork",
   },
   platformToken: "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E",
-  tags: ["bridge", "dapp"],
+  tags: ["bridge"],
 };
 
 export const contracts: ContractRaw[] = [

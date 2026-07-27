@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     documentation: "https://third-time-games.gitbook.io/photo-finish-live",
   },
   platformToken: "GDfnEsia2WLAW5t8yx2X5j2mkfA74i5kwGdDuZHt7XmG",
-  tags: ["gaming", "dapp"],
+  tags: ["gaming"],
 };
 
 export const contracts: ContractRaw[] = [];

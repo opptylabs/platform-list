@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/doubleup_app",
     discord: "https://discord.gg/doubleup",
   },
-  tags: ["gaming", "dapp"],
+  tags: ["gaming"],
 };
 
 export const contracts: ContractRaw[] = [];

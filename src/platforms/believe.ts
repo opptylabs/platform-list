@@ -2,7 +2,7 @@ import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "believe",
   name: "Believe",
-  tags: ["dapp", "social", "launchpad"],
+  tags: ["social", "launchpad"],
   links: {
     website: "https://believe.app/",
     twitter: "https://x.com/believeapp",

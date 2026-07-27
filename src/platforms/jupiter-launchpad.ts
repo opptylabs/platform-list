@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     website: "https://lfg.jup.ag/",
   },
   parentId: jupiterPlatform.id,
-  tags: ["tool"],
+  tags: ["launchpad"],
 };
 
 export const contracts: ContractRaw[] = [

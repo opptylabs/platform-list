@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Packs",
   description:
     "Packs is a Solana-based on-chain card collecting protocol centered around group pack openings, card rewards, and staking.",
-  tags: ["dapp"],
+  tags: ["rwa"],
   links: {
     website: "https://packs.supply",
     twitter: "https://x.com/packs_supply",

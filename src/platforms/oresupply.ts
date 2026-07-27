@@ -5,7 +5,7 @@ export const platform: PlatformRaw = {
   description:
     "ORE Supply is the original proof-of-work mining protocol enabling users to mine ORE tokens using computational puzzles.",
   defiLlamaId: "ore-protocol",
-  tags: ["tool"],
+  tags: ["memecoin"],
   links: {
     website: "https://ore.supply/",
     discord: "https://discord.gg/4TQfshAAsT",

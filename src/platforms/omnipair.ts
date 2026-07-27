@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.omnipair.fi/",
   },
   platformToken: "omfgRBnxHsNJh6YeGbGAmWenNkenzsXyBXm3WDhmeta",
-  tags: ["dapp", "dex", "defi"],
+  tags: ["dex"],
   addedAt: 1771499370000,
 };
 

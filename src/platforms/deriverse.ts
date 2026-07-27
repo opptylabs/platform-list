@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/deriverse_io",
     documentation: "https://deriverse.gitbook.io/deriverse-v1",
   },
-  tags: ["dapp", "dex", "defi"],
+  tags: ["dex"],
 };
 
 export const contracts: ContractRaw[] = [

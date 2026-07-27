@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "BSKT",
   description:
     "BSKT is a protocol for creating baskets of assets in a portfolio with cross-chain liquidity bridging.",
-  tags: ["dapp"],
+  tags: ["vault"],
   links: {
     website: "https://www.bskt.fi/",
     discord: "https://discord.gg/VdSdWqpqQ6",

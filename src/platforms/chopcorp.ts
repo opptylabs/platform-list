@@ -3,7 +3,7 @@ export const platform: PlatformRaw = {
   id: "chopcorp",
   name: "Chopcorp",
   description: "LOG is a digital commodity on the Solana blockchain.",
-  tags: ["tool"],
+  tags: ["memecoin"],
   defiLlamaId: "chopcorp",
   links: {
     website: "https://chopcorp.io/",

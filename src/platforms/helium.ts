@@ -17,7 +17,7 @@ export const platform: PlatformRaw = {
     "iotEVVZLEywoTn1QdwNPddxPWszn3zFhEot3MfL9fns",
     "mb1eu7TzEc71KxDpsmsKoucSSuuoGLv1drys1oP2jh6",
   ],
-  tags: ["depin", "dapp"],
+  tags: ["depin"],
 };
 
 export const contracts: ContractRaw[] = [

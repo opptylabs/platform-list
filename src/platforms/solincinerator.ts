@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/solincinerator",
     discord: "https://discord.gg/solslugs",
   },
-  tags: ["tool", "dapp"],
+  tags: ["tool"],
 };
 
 export const contracts: ContractRaw[] = [

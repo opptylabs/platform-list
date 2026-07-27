@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/sendaifun",
     documentation: "https://docs.sendai.fun",
   },
-  tags: ["ai", "infrastructure", "tool"],
+  tags: ["ai"],
   addedAt: 1770984000000,
 };
 

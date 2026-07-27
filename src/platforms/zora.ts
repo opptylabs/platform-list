@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.zora.co/",
   },
   platformToken: "soKqZS9pASwBNS46G388nhK7XVtPaTyReffXEd3zora",
-  tags: ["dapp", "social", "nft"],
+  tags: ["social"],
   addedAt: 1740441600000,
 };
 

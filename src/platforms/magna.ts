@@ -4,8 +4,7 @@ export const platform: PlatformRaw = {
   name: "Magna",
   description:
     "Magna is a token management platform for cap table management, vesting automation, airdrops, and custody solutions across multiple chains including Solana.",
-  defiLlamaId: "adrastea",
-  tags: ["tool", "dapp"],
+  tags: ["launchpad"],
   links: {
     website: "https://www.magna.so/",
     twitter: "https://x.com/magna_digital/photo",

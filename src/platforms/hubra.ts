@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Hubra",
   description:
     "Non-custodial Solana platform aggregating DeFi applications, liquid staking, and wallet management tools.",
-  tags: ["dapp", "defi"],
+  tags: ["vault"],
   tokens: ["HUBsveNpjo5pWqNkH57QzxjQASdTVXcSK7bVKTSZtcSX"],
   links: {
     website: "https://hubra.app/",

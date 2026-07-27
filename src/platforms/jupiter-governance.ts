@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     website: "https://vote.jup.ag/",
     twitter: "https://x.com/jup_dao",
   },
-  tags: ["dao", "dapp"],
+  tags: ["dao"],
   parentId: jupiterPlatform.id,
 };
 

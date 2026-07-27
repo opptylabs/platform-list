@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/FamousFoxFed",
     documentation: "https://citrus.famousfoxes.com/faq",
   },
-  tags: ["dapp", "lending", "defi"],
+  tags: ["lending"],
   platformToken: "FoXyMu5xwXre7zEoSvzViRk3nGawHUp9kUh97y2NDhcq",
 };
 

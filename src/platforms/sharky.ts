@@ -5,7 +5,7 @@ export const platform: PlatformRaw = {
   description:
     "Sharky is an escrowless NFT lending and borrowing protocol where users can borrow SOL against NFTs or lend SOL to earn yield.",
   defiLlamaId: "sharky",
-  tags: ["dapp", "lending", "defi", "nft"],
+  tags: ["lending"],
   links: {
     website: "https://sharky.fi/",
     discord: "https://discord.gg/sharkyfi",

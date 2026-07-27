@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     telegram: "https://t.me/TitanDexSol",
     documentation: "https://titandex.gitbook.io/titan",
   },
-  tags: ["tool", "dapp", "dex", "defi"],
+  tags: ["dex"],
 };
 
 export const contracts: ContractRaw[] = [

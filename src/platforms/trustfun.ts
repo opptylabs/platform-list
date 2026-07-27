@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     documentation: "https://trustfun.xyz/terms-conditions",
     twitter: "https://x.com/trustfun_xyz",
   },
-  tags: ["launchpad", "memecoin", "dapp"],
+  tags: ["launchpad", "memecoin"],
   addedAt: 1765454400000,
 };
 

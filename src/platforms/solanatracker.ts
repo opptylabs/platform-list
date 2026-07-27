@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/solanatrackr",
     github: "https://github.com/solanatracker",
   },
-  tags: ["tool", "infrastructure"],
+  tags: ["infrastructure"],
 };
 
 export const contracts: ContractRaw[] = [];

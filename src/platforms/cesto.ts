@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/cesto_co",
     documentation: "https://docs.cesto.co/",
   },
-  tags: ["dapp"],
+  tags: ["vault"],
 };
 
 export const contracts: ContractRaw[] = [];

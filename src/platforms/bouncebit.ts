@@ -5,7 +5,7 @@ export const platform: PlatformRaw = {
   description:
     "BounceBit is a CeDeFi platform offering multi-chain institutional yield strategies for BTC, ETH, SOL, and stablecoins through centralized-decentralized hybrid finance.",
   defiLlamaId: "bouncebit",
-  tags: ["dapp"],
+  tags: ["vault"],
   links: {
     website: "https://portal.bouncebit.io",
     twitter: "https://x.com/bouncebit",

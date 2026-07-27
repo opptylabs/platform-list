@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     website: "https://blueshift.gg/",
     twitter: "https://x.com/blueshift",
   },
-  tags: ["dapp"],
+  tags: ["learn"],
 };
 
 export const contracts: ContractRaw[] = [

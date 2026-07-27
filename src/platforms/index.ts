@@ -9,7 +9,6 @@ import * as asgardfi from "./asgardfi";
 import * as aurory from "./aurory";
 import * as axiom from "./axiom";
 import * as backpack from "./backpack";
-import * as backwoods from "./backwoods";
 import * as bags from "./bags";
 import * as banger from "./banger";
 import * as believe from "./believe";
@@ -22,14 +21,11 @@ import * as bonkfun from "./bonkfun";
 import * as bonkrewards from "./bonkrewards";
 import * as boop from "./boop";
 import * as bouncebit from "./bouncebit";
-import * as brale from "./brale";
-import * as bridge from "./bridge";
 import * as bskt from "./bskt";
 import * as btcsol from "./btcsol";
 import * as bulktrade from "./bulktrade";
 import * as byreal from "./byreal";
 import * as candle from "./candle";
-import * as carrot from "./carrot";
 import * as cesto from "./cesto";
 import * as chopcorp from "./chopcorp";
 import * as circuit from "./circuit";
@@ -41,7 +37,6 @@ import * as coinflow from "./coinflow";
 import * as coinmarketcap from "./coinmarketcap";
 import * as collectorcrypt from "./collectorcrypt";
 import * as cooladdress from "./cooladdress";
-import * as crossmint from "./crossmint";
 import * as cudis from "./cudis";
 import * as cushion from "./cushion";
 import * as daosdotfun from "./daosdotfun";
@@ -59,11 +54,8 @@ import * as domin8 from "./domin8";
 import * as doubleup from "./doubleup";
 import * as drift from "./drift";
 import * as drip from "./drip";
-import * as dynamic from "./dynamic";
 import * as elemental from "./elemental";
 import * as ensofi from "./ensofi";
-import * as epicentral from "./epicentral";
-import * as eternalstakefinance from "./eternalstakefinance";
 import * as exponent from "./exponent";
 import * as famousfoxfederation from "./famousfoxfederation";
 import * as fastpoker from "./fastpoker";
@@ -77,17 +69,11 @@ import * as fuse from "./fuse";
 import * as futarchy from "./futarchy";
 import * as futard from "./futard";
 import * as gamma from "./gamma";
-import * as gauntlet from "./gauntlet";
-import * as gecko from "./gecko";
-import * as genesysgo from "./genesysgo";
-import * as glam from "./glam";
 import * as glow from "./glow";
 import * as gmtrade from "./gmtrade";
 import * as godl from "./godl";
 import * as goki from "./goki";
-import * as graphite from "./graphite";
 import * as grass from "./grass";
-import * as growcorp from "./growcorp";
 import * as gum from "./gum";
 import * as hastra from "./hastra";
 import * as haven from "./haven";
@@ -100,33 +86,28 @@ import * as honeyland from "./honeyland";
 import * as hubra from "./hubra";
 import * as huma from "./huma";
 import * as humidifi from "./humidifi";
-import * as hxro from "./hxro";
 import * as hylo from "./hylo";
 import * as icm from "./icm";
 import * as infinex from "./infinex";
 import * as jito from "./jito";
-import * as jpool from "./jpool";
+import * as jupiterAcademy from "./jupiter-academy";
 import * as jupiterExchange from "./jupiter-exchange";
+import * as jupiterGlobal from "./jupiter-global";
 import * as jupiterGovernance from "./jupiter-governance";
-import * as jupiterJupuary from "./jupiter-jupuary";
 import * as jupiterLaunchpad from "./jupiter-launchpad";
+import * as jupiterLend from "./jupiter-lend";
 import * as jupiterMobile from "./jupiter-mobile";
 import * as jupiterOfferbook from "./jupiter-offerbook";
-import * as jupiterPm from "./jupiter-pm";
+import * as jupiterPredict from "./jupiter-predict";
 import * as jupiterWallet from "./jupiter-wallet";
 import * as kamino from "./kamino";
 import * as kast from "./kast";
-import * as knightrade from "./knightrade";
-import * as kormos from "./kormos";
 import * as kyros from "./kyros";
 import * as lavarage from "./lavarage";
-import * as layer3 from "./layer3";
-import * as ligma from "./ligma";
 import * as lince from "./lince";
 import * as lombard from "./lombard";
 import * as loopscale from "./loopscale";
 import * as lpagent from "./lpagent";
-import * as m0 from "./m0";
 import * as macaron from "./macaron";
 import * as madlads from "./madlads";
 import * as maestro from "./maestro";
@@ -148,7 +129,6 @@ import * as moonpay from "./moonpay";
 import * as moonwalk from "./moonwalk";
 import * as mysticdao from "./mysticdao";
 import * as neutral from "./neutral";
-import * as nirvana from "./nirvana";
 import * as noah from "./noah";
 import * as nodepay from "./nodepay";
 import * as nosana from "./nosana";
@@ -160,7 +140,6 @@ import * as ondoFinance from "./ondo-finance";
 import * as onre from "./onre";
 import * as oobeprotocol from "./oobeprotocol";
 import * as oobit from "./oobit";
-import * as openbook from "./openbook";
 import * as orbmarkets from "./orbmarkets";
 import * as orca from "./orca";
 import * as orderly from "./orderly";
@@ -192,7 +171,6 @@ import * as pudgy from "./pudgy";
 import * as pumpfun from "./pumpfun";
 import * as pumpkin from "./pumpkin";
 import * as pumpswap from "./pumpswap";
-import * as pyra from "./pyra";
 import * as pyth from "./pyth";
 import * as ratex from "./ratex";
 import * as raydium from "./raydium";
@@ -214,7 +192,6 @@ import * as slabdrop from "./slabdrop";
 import * as smb from "./smb";
 import * as solanaExplorer from "./solana-explorer";
 import * as solanaFm from "./solana-fm";
-import * as solana from "./solana";
 import * as solanabeach from "./solanabeach";
 import * as solanaid from "./solanaid";
 import * as solanamobile from "./solanamobile";
@@ -225,13 +202,10 @@ import * as solcasino from "./solcasino";
 import * as solflare from "./solflare";
 import * as solincinerator from "./solincinerator";
 import * as solomon from "./solomon";
-import * as solsave from "./solsave";
 import * as solscan from "./solscan";
 import * as solstice from "./solstice";
 import * as solv from "./solv";
-import * as sonic from "./sonic";
 import * as sphere from "./sphere";
-import * as spice from "./spice";
 import * as squads from "./squads";
 import * as stabble from "./stabble";
 import * as stakewiz from "./stakewiz";
@@ -244,7 +218,6 @@ import * as tender from "./tender";
 import * as tensor from "./tensor";
 import * as thevault from "./thevault";
 import * as threshold from "./threshold";
-import * as tibanelabs from "./tibanelabs";
 import * as titan from "./titan";
 import * as tramplin from "./tramplin";
 import * as trepa from "./trepa";
@@ -256,7 +229,6 @@ import * as tuktuk from "./tuktuk";
 import * as turbinecash from "./turbinecash";
 import * as tuyo from "./tuyo";
 import * as vectis from "./vectis";
-import * as vidar from "./vidar";
 import * as voltr from "./voltr";
 import * as wasabi from "./wasabi";
 import * as wbtc from "./wbtc";
@@ -265,7 +237,6 @@ import * as wink from "./wink";
 import * as wormhole from "./wormhole";
 import * as xstocks from "./xstocks";
 import * as y00ts from "./y00ts";
-import * as yaku from "./yaku";
 import * as yo from "./yo";
 import * as zelo from "./zelo";
 import * as zeus from "./zeus";
@@ -280,7 +251,6 @@ export const platforms: PlatformRaw[] = [
   aurory.platform,
   axiom.platform,
   backpack.platform,
-  backwoods.platform,
   bags.platform,
   banger.platform,
   believe.platform,
@@ -293,14 +263,11 @@ export const platforms: PlatformRaw[] = [
   bonkrewards.platform,
   boop.platform,
   bouncebit.platform,
-  brale.platform,
-  bridge.platform,
   bskt.platform,
   btcsol.platform,
   bulktrade.platform,
   byreal.platform,
   candle.platform,
-  carrot.platform,
   cesto.platform,
   chopcorp.platform,
   circuit.platform,
@@ -312,7 +279,6 @@ export const platforms: PlatformRaw[] = [
   coinmarketcap.platform,
   collectorcrypt.platform,
   cooladdress.platform,
-  crossmint.platform,
   cudis.platform,
   cushion.platform,
   daosdotfun.platform,
@@ -330,11 +296,8 @@ export const platforms: PlatformRaw[] = [
   doubleup.platform,
   drift.platform,
   drip.platform,
-  dynamic.platform,
   elemental.platform,
   ensofi.platform,
-  epicentral.platform,
-  eternalstakefinance.platform,
   exponent.platform,
   famousfoxfederation.platform,
   fastpoker.platform,
@@ -348,17 +311,11 @@ export const platforms: PlatformRaw[] = [
   futarchy.platform,
   futard.platform,
   gamma.platform,
-  gauntlet.platform,
-  gecko.platform,
-  genesysgo.platform,
-  glam.platform,
   glow.platform,
   gmtrade.platform,
   godl.platform,
   goki.platform,
-  graphite.platform,
   grass.platform,
-  growcorp.platform,
   gum.platform,
   hastra.platform,
   haven.platform,
@@ -371,33 +328,28 @@ export const platforms: PlatformRaw[] = [
   hubra.platform,
   huma.platform,
   humidifi.platform,
-  hxro.platform,
   hylo.platform,
   icm.platform,
   infinex.platform,
   jito.platform,
-  jpool.platform,
+  jupiterAcademy.platform,
   jupiterExchange.platform,
+  jupiterGlobal.platform,
   jupiterGovernance.platform,
-  jupiterJupuary.platform,
   jupiterLaunchpad.platform,
+  jupiterLend.platform,
   jupiterMobile.platform,
   jupiterOfferbook.platform,
-  jupiterPm.platform,
+  jupiterPredict.platform,
   jupiterWallet.platform,
   kamino.platform,
   kast.platform,
-  knightrade.platform,
-  kormos.platform,
   kyros.platform,
   lavarage.platform,
-  layer3.platform,
-  ligma.platform,
   lince.platform,
   lombard.platform,
   loopscale.platform,
   lpagent.platform,
-  m0.platform,
   macaron.platform,
   madlads.platform,
   maestro.platform,
@@ -419,7 +371,6 @@ export const platforms: PlatformRaw[] = [
   moonwalk.platform,
   mysticdao.platform,
   neutral.platform,
-  nirvana.platform,
   noah.platform,
   nodepay.platform,
   nosana.platform,
@@ -431,7 +382,6 @@ export const platforms: PlatformRaw[] = [
   onre.platform,
   oobeprotocol.platform,
   oobit.platform,
-  openbook.platform,
   orbmarkets.platform,
   orca.platform,
   orderly.platform,
@@ -463,7 +413,6 @@ export const platforms: PlatformRaw[] = [
   pumpfun.platform,
   pumpkin.platform,
   pumpswap.platform,
-  pyra.platform,
   pyth.platform,
   ratex.platform,
   raydium.platform,
@@ -485,7 +434,6 @@ export const platforms: PlatformRaw[] = [
   smb.platform,
   solanaExplorer.platform,
   solanaFm.platform,
-  solana.platform,
   solanabeach.platform,
   solanaid.platform,
   solanamobile.platform,
@@ -496,13 +444,10 @@ export const platforms: PlatformRaw[] = [
   solflare.platform,
   solincinerator.platform,
   solomon.platform,
-  solsave.platform,
   solscan.platform,
   solstice.platform,
   solv.platform,
-  sonic.platform,
   sphere.platform,
-  spice.platform,
   squads.platform,
   stabble.platform,
   stakewiz.platform,
@@ -515,7 +460,6 @@ export const platforms: PlatformRaw[] = [
   tensor.platform,
   thevault.platform,
   threshold.platform,
-  tibanelabs.platform,
   titan.platform,
   tramplin.platform,
   trepa.platform,
@@ -527,7 +471,6 @@ export const platforms: PlatformRaw[] = [
   turbinecash.platform,
   tuyo.platform,
   vectis.platform,
-  vidar.platform,
   voltr.platform,
   wasabi.platform,
   wbtc.platform,
@@ -536,7 +479,6 @@ export const platforms: PlatformRaw[] = [
   wormhole.platform,
   xstocks.platform,
   y00ts.platform,
-  yaku.platform,
   yo.platform,
   zelo.platform,
   zeus.platform,
@@ -561,10 +503,6 @@ export const contracts: Contract[] = [
     ...c,
     platformId: backpack.platform.id,
   })),
-  ...backwoods.contracts.map((c) => ({
-    ...c,
-    platformId: backwoods.platform.id,
-  })),
   ...bags.contracts.map((c) => ({ ...c, platformId: bags.platform.id })),
   ...banger.contracts.map((c) => ({ ...c, platformId: banger.platform.id })),
   ...believe.contracts.map((c) => ({ ...c, platformId: believe.platform.id })),
@@ -586,8 +524,6 @@ export const contracts: Contract[] = [
     ...c,
     platformId: bouncebit.platform.id,
   })),
-  ...brale.contracts.map((c) => ({ ...c, platformId: brale.platform.id })),
-  ...bridge.contracts.map((c) => ({ ...c, platformId: bridge.platform.id })),
   ...bskt.contracts.map((c) => ({ ...c, platformId: bskt.platform.id })),
   ...btcsol.contracts.map((c) => ({ ...c, platformId: btcsol.platform.id })),
   ...bulktrade.contracts.map((c) => ({
@@ -596,7 +532,6 @@ export const contracts: Contract[] = [
   })),
   ...byreal.contracts.map((c) => ({ ...c, platformId: byreal.platform.id })),
   ...candle.contracts.map((c) => ({ ...c, platformId: candle.platform.id })),
-  ...carrot.contracts.map((c) => ({ ...c, platformId: carrot.platform.id })),
   ...cesto.contracts.map((c) => ({ ...c, platformId: cesto.platform.id })),
   ...chopcorp.contracts.map((c) => ({
     ...c,
@@ -631,10 +566,6 @@ export const contracts: Contract[] = [
   ...cooladdress.contracts.map((c) => ({
     ...c,
     platformId: cooladdress.platform.id,
-  })),
-  ...crossmint.contracts.map((c) => ({
-    ...c,
-    platformId: crossmint.platform.id,
   })),
   ...cudis.contracts.map((c) => ({ ...c, platformId: cudis.platform.id })),
   ...cushion.contracts.map((c) => ({ ...c, platformId: cushion.platform.id })),
@@ -680,20 +611,11 @@ export const contracts: Contract[] = [
   })),
   ...drift.contracts.map((c) => ({ ...c, platformId: drift.platform.id })),
   ...drip.contracts.map((c) => ({ ...c, platformId: drip.platform.id })),
-  ...dynamic.contracts.map((c) => ({ ...c, platformId: dynamic.platform.id })),
   ...elemental.contracts.map((c) => ({
     ...c,
     platformId: elemental.platform.id,
   })),
   ...ensofi.contracts.map((c) => ({ ...c, platformId: ensofi.platform.id })),
-  ...epicentral.contracts.map((c) => ({
-    ...c,
-    platformId: epicentral.platform.id,
-  })),
-  ...eternalstakefinance.contracts.map((c) => ({
-    ...c,
-    platformId: eternalstakefinance.platform.id,
-  })),
   ...exponent.contracts.map((c) => ({
     ...c,
     platformId: exponent.platform.id,
@@ -731,29 +653,11 @@ export const contracts: Contract[] = [
   })),
   ...futard.contracts.map((c) => ({ ...c, platformId: futard.platform.id })),
   ...gamma.contracts.map((c) => ({ ...c, platformId: gamma.platform.id })),
-  ...gauntlet.contracts.map((c) => ({
-    ...c,
-    platformId: gauntlet.platform.id,
-  })),
-  ...gecko.contracts.map((c) => ({ ...c, platformId: gecko.platform.id })),
-  ...genesysgo.contracts.map((c) => ({
-    ...c,
-    platformId: genesysgo.platform.id,
-  })),
-  ...glam.contracts.map((c) => ({ ...c, platformId: glam.platform.id })),
   ...glow.contracts.map((c) => ({ ...c, platformId: glow.platform.id })),
   ...gmtrade.contracts.map((c) => ({ ...c, platformId: gmtrade.platform.id })),
   ...godl.contracts.map((c) => ({ ...c, platformId: godl.platform.id })),
   ...goki.contracts.map((c) => ({ ...c, platformId: goki.platform.id })),
-  ...graphite.contracts.map((c) => ({
-    ...c,
-    platformId: graphite.platform.id,
-  })),
   ...grass.contracts.map((c) => ({ ...c, platformId: grass.platform.id })),
-  ...growcorp.contracts.map((c) => ({
-    ...c,
-    platformId: growcorp.platform.id,
-  })),
   ...gum.contracts.map((c) => ({ ...c, platformId: gum.platform.id })),
   ...hastra.contracts.map((c) => ({ ...c, platformId: hastra.platform.id })),
   ...haven.contracts.map((c) => ({ ...c, platformId: haven.platform.id })),
@@ -778,27 +682,33 @@ export const contracts: Contract[] = [
     ...c,
     platformId: humidifi.platform.id,
   })),
-  ...hxro.contracts.map((c) => ({ ...c, platformId: hxro.platform.id })),
   ...hylo.contracts.map((c) => ({ ...c, platformId: hylo.platform.id })),
   ...icm.contracts.map((c) => ({ ...c, platformId: icm.platform.id })),
   ...infinex.contracts.map((c) => ({ ...c, platformId: infinex.platform.id })),
   ...jito.contracts.map((c) => ({ ...c, platformId: jito.platform.id })),
-  ...jpool.contracts.map((c) => ({ ...c, platformId: jpool.platform.id })),
+  ...jupiterAcademy.contracts.map((c) => ({
+    ...c,
+    platformId: jupiterAcademy.platform.id,
+  })),
   ...jupiterExchange.contracts.map((c) => ({
     ...c,
     platformId: jupiterExchange.platform.id,
+  })),
+  ...jupiterGlobal.contracts.map((c) => ({
+    ...c,
+    platformId: jupiterGlobal.platform.id,
   })),
   ...jupiterGovernance.contracts.map((c) => ({
     ...c,
     platformId: jupiterGovernance.platform.id,
   })),
-  ...jupiterJupuary.contracts.map((c) => ({
-    ...c,
-    platformId: jupiterJupuary.platform.id,
-  })),
   ...jupiterLaunchpad.contracts.map((c) => ({
     ...c,
     platformId: jupiterLaunchpad.platform.id,
+  })),
+  ...jupiterLend.contracts.map((c) => ({
+    ...c,
+    platformId: jupiterLend.platform.id,
   })),
   ...jupiterMobile.contracts.map((c) => ({
     ...c,
@@ -808,9 +718,9 @@ export const contracts: Contract[] = [
     ...c,
     platformId: jupiterOfferbook.platform.id,
   })),
-  ...jupiterPm.contracts.map((c) => ({
+  ...jupiterPredict.contracts.map((c) => ({
     ...c,
-    platformId: jupiterPm.platform.id,
+    platformId: jupiterPredict.platform.id,
   })),
   ...jupiterWallet.contracts.map((c) => ({
     ...c,
@@ -818,18 +728,11 @@ export const contracts: Contract[] = [
   })),
   ...kamino.contracts.map((c) => ({ ...c, platformId: kamino.platform.id })),
   ...kast.contracts.map((c) => ({ ...c, platformId: kast.platform.id })),
-  ...knightrade.contracts.map((c) => ({
-    ...c,
-    platformId: knightrade.platform.id,
-  })),
-  ...kormos.contracts.map((c) => ({ ...c, platformId: kormos.platform.id })),
   ...kyros.contracts.map((c) => ({ ...c, platformId: kyros.platform.id })),
   ...lavarage.contracts.map((c) => ({
     ...c,
     platformId: lavarage.platform.id,
   })),
-  ...layer3.contracts.map((c) => ({ ...c, platformId: layer3.platform.id })),
-  ...ligma.contracts.map((c) => ({ ...c, platformId: ligma.platform.id })),
   ...lince.contracts.map((c) => ({ ...c, platformId: lince.platform.id })),
   ...lombard.contracts.map((c) => ({ ...c, platformId: lombard.platform.id })),
   ...loopscale.contracts.map((c) => ({
@@ -837,7 +740,6 @@ export const contracts: Contract[] = [
     platformId: loopscale.platform.id,
   })),
   ...lpagent.contracts.map((c) => ({ ...c, platformId: lpagent.platform.id })),
-  ...m0.contracts.map((c) => ({ ...c, platformId: m0.platform.id })),
   ...macaron.contracts.map((c) => ({ ...c, platformId: macaron.platform.id })),
   ...madlads.contracts.map((c) => ({ ...c, platformId: madlads.platform.id })),
   ...maestro.contracts.map((c) => ({ ...c, platformId: maestro.platform.id })),
@@ -886,7 +788,6 @@ export const contracts: Contract[] = [
     platformId: mysticdao.platform.id,
   })),
   ...neutral.contracts.map((c) => ({ ...c, platformId: neutral.platform.id })),
-  ...nirvana.contracts.map((c) => ({ ...c, platformId: nirvana.platform.id })),
   ...noah.contracts.map((c) => ({ ...c, platformId: noah.platform.id })),
   ...nodepay.contracts.map((c) => ({ ...c, platformId: nodepay.platform.id })),
   ...nosana.contracts.map((c) => ({ ...c, platformId: nosana.platform.id })),
@@ -910,10 +811,6 @@ export const contracts: Contract[] = [
     platformId: oobeprotocol.platform.id,
   })),
   ...oobit.contracts.map((c) => ({ ...c, platformId: oobit.platform.id })),
-  ...openbook.contracts.map((c) => ({
-    ...c,
-    platformId: openbook.platform.id,
-  })),
   ...orbmarkets.contracts.map((c) => ({
     ...c,
     platformId: orbmarkets.platform.id,
@@ -981,7 +878,6 @@ export const contracts: Contract[] = [
     ...c,
     platformId: pumpswap.platform.id,
   })),
-  ...pyra.contracts.map((c) => ({ ...c, platformId: pyra.platform.id })),
   ...pyth.contracts.map((c) => ({ ...c, platformId: pyth.platform.id })),
   ...ratex.contracts.map((c) => ({ ...c, platformId: ratex.platform.id })),
   ...raydium.contracts.map((c) => ({ ...c, platformId: raydium.platform.id })),
@@ -1018,7 +914,6 @@ export const contracts: Contract[] = [
     ...c,
     platformId: solanaFm.platform.id,
   })),
-  ...solana.contracts.map((c) => ({ ...c, platformId: solana.platform.id })),
   ...solanabeach.contracts.map((c) => ({
     ...c,
     platformId: solanabeach.platform.id,
@@ -1050,16 +945,13 @@ export const contracts: Contract[] = [
     platformId: solincinerator.platform.id,
   })),
   ...solomon.contracts.map((c) => ({ ...c, platformId: solomon.platform.id })),
-  ...solsave.contracts.map((c) => ({ ...c, platformId: solsave.platform.id })),
   ...solscan.contracts.map((c) => ({ ...c, platformId: solscan.platform.id })),
   ...solstice.contracts.map((c) => ({
     ...c,
     platformId: solstice.platform.id,
   })),
   ...solv.contracts.map((c) => ({ ...c, platformId: solv.platform.id })),
-  ...sonic.contracts.map((c) => ({ ...c, platformId: sonic.platform.id })),
   ...sphere.contracts.map((c) => ({ ...c, platformId: sphere.platform.id })),
-  ...spice.contracts.map((c) => ({ ...c, platformId: spice.platform.id })),
   ...squads.contracts.map((c) => ({ ...c, platformId: squads.platform.id })),
   ...stabble.contracts.map((c) => ({ ...c, platformId: stabble.platform.id })),
   ...stakewiz.contracts.map((c) => ({
@@ -1093,10 +985,6 @@ export const contracts: Contract[] = [
     ...c,
     platformId: threshold.platform.id,
   })),
-  ...tibanelabs.contracts.map((c) => ({
-    ...c,
-    platformId: tibanelabs.platform.id,
-  })),
   ...titan.contracts.map((c) => ({ ...c, platformId: titan.platform.id })),
   ...tramplin.contracts.map((c) => ({
     ...c,
@@ -1117,7 +1005,6 @@ export const contracts: Contract[] = [
   })),
   ...tuyo.contracts.map((c) => ({ ...c, platformId: tuyo.platform.id })),
   ...vectis.contracts.map((c) => ({ ...c, platformId: vectis.platform.id })),
-  ...vidar.contracts.map((c) => ({ ...c, platformId: vidar.platform.id })),
   ...voltr.contracts.map((c) => ({ ...c, platformId: voltr.platform.id })),
   ...wasabi.contracts.map((c) => ({ ...c, platformId: wasabi.platform.id })),
   ...wbtc.contracts.map((c) => ({ ...c, platformId: wbtc.platform.id })),
@@ -1132,7 +1019,6 @@ export const contracts: Contract[] = [
   })),
   ...xstocks.contracts.map((c) => ({ ...c, platformId: xstocks.platform.id })),
   ...y00ts.contracts.map((c) => ({ ...c, platformId: y00ts.platform.id })),
-  ...yaku.contracts.map((c) => ({ ...c, platformId: yaku.platform.id })),
   ...yo.contracts.map((c) => ({ ...c, platformId: yo.platform.id })),
   ...zelo.contracts.map((c) => ({ ...c, platformId: zelo.platform.id })),
   ...zeus.contracts.map((c) => ({ ...c, platformId: zeus.platform.id })),

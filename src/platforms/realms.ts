@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.realms.today/",
     twitter: "https://x.com/RealmsDAOs",
   },
-  tags: ["dao", "tool", "dapp"],
+  tags: ["dao"],
 };
 
 export const contracts: ContractRaw[] = [

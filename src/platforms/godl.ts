@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "GODL",
   description:
     "GODL is a mineable token using proof-of-work mechanics, allowing users to mine tokens through computational puzzles.",
-  tags: ["tool"],
+  tags: ["memecoin"],
   links: {
     website: "https://www.godl.supply/",
     discord: "https://discord.com/invite/BDmq4CZXWr",

@@ -14,7 +14,7 @@ export const platform: PlatformRaw = {
   },
   platformToken: "GTH3wG3NErjwcf7VGCoXEXkgXSHvYhx5gtATeeM5JAS1",
   tokens: ["3wCoTb3TArUdzmeTBPzPFyPBUP6EJXaW5LAzGsWCpySu"],
-  tags: ["dapp", "prediction", "defi"],
+  tags: ["prediction"],
 };
 
 export const contracts: ContractRaw[] = [

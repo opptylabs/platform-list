@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     medium: "https://medium.com/@vectisfinance",
     documentation: "https://docs.vectis.finance/",
   },
-  tags: ["dapp", "vault", "defi"],
+  tags: ["vault"],
 };
 
 export const contracts: ContractRaw[] = [

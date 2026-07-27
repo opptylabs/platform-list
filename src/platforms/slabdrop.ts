@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/SlabDrop",
   },
   platformToken: "6RXiM7kFbVhqNnS12m8gUjNrvzUdL9kRTsYGJWHEFQTc",
-  tags: ["dapp"],
+  tags: ["social"],
   addedAt: 1749484800000,
 };
 

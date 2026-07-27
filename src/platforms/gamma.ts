@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/_gammafi",
     documentation: "https://gma.fi/docs",
   },
-  tags: ["dapp", "defi", "vault"],
+  tags: ["vault"],
 };
 
 export const contracts: ContractRaw[] = [];

@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/Blocksmith-Labs",
     documentation: "https://blocksmithlabs-1.gitbook.io/zelo-docs",
   },
-  tags: ["dapp", "gaming"],
+  tags: ["gaming"],
 };
 
 export const contracts: ContractRaw[] = [

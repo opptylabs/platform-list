@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/FluxBeamDEX",
     documentation: "https://docs.fluxbeam.xyz/",
   },
-  tags: ["dapp", "dex", "defi"],
+  tags: ["dex"],
 };
 
 export const contracts: ContractRaw[] = [

@@ -14,7 +14,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/Raydium",
   },
   platformToken: "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
-  tags: ["dapp", "dex", "launchpad", "defi"],
+  tags: ["dex", "launchpad"],
 };
 
 export const contracts: ContractRaw[] = [

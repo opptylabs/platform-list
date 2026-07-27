@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Glow",
   description:
     "Glow Finance is a DeFi protocol offering lending, borrowing, and yield optimization strategies.",
-  tags: ["dapp", "defi", "lending", "restaking"],
+  tags: ["lending", "restaking"],
   links: {
     website: "https://app.glowfinance.xyz/",
     twitter: "https://x.com/glowfinancexyz",

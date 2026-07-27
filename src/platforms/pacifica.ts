@@ -5,7 +5,7 @@ export const platform: PlatformRaw = {
   description:
     "Pacifica is a decentralized perpetual futures exchange on Solana offering up to 50x leverage with CEX-level speed and DeFi transparency.",
   defiLlamaId: "pacifica",
-  tags: ["dapp", "dex", "defi"],
+  tags: ["dex"],
   links: {
     website: "https://app.pacifica.fi/",
     discord: "https://discord.com/invite/pacifica",

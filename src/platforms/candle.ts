@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.candle.tv",
   },
   platformToken: "A8bcY1eSenMiMy75vgSnp6ShMfWHRHjeM6JxfM1CNDL",
-  tags: ["memecoin", "dapp", "social"],
+  tags: ["memecoin", "social"],
 };
 
 export const contracts: ContractRaw[] = [

@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.bonkbot.io/",
   },
   defiLlamaId: "bonkbot",
-  tags: ["tool", "dapp"],
+  tags: ["tool"],
 };
 
 export const contracts: ContractRaw[] = [

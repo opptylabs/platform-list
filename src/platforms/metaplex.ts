@@ -13,7 +13,7 @@ export const platform: PlatformRaw = {
     documentation: "https://www.metaplex.com/guides",
   },
   platformToken: "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m",
-  tags: ["tool", "dapp", "nft"],
+  tags: ["infrastructure"],
 };
 
 export const contracts: ContractRaw[] = [

@@ -2,7 +2,7 @@ import { PlatformRaw, ContractRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "solstice",
   name: "Solstice",
-  tags: ["dapp", "stablecoin", "institutional", "defi"],
+  tags: ["stablecoin", "institutional"],
   defiLlamaId: "solstice-usx",
   links: {
     website: "https://solstice.finance/",

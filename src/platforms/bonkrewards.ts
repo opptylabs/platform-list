@@ -5,7 +5,7 @@ export const platform: PlatformRaw = {
   description:
     "Bonk Rewards is the staking and utility platform for BONK, the community meme coin of Solana, offering staking rewards, swaps, and DAO governance.",
   defiLlamaId: "bonkswap",
-  tags: ["memecoin", "dapp"],
+  tags: ["memecoin"],
   links: {
     website: "https://bonkrewards.com/",
     discord: "https://discord.com/invite/qaQa6M6mN2",

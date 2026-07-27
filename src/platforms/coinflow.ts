@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     website: "https://coinflow.cash/",
     twitter: "https://x.com/CoinflowLabs",
   },
-  tags: ["dapp", "payments", "infrastructure"],
+  tags: ["payments"],
 };
 
 export const contracts: ContractRaw[] = [];

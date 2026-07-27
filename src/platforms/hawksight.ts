@@ -13,7 +13,7 @@ export const platform: PlatformRaw = {
     documentation: "https://hawkfi.gitbook.io/whitepaper",
   },
   platformToken: "BKipkearSqAUdNKa1WDstvcMjoPsSKBuNyvKDQDDu9WE",
-  tags: ["dapp", "defi", "tool"],
+  tags: ["vault"],
 };
 
 export const contracts: ContractRaw[] = [

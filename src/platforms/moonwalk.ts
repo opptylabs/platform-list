@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/moonwalkfitness",
     documentation: "https://moonwalk.fit/faq",
   },
-  tags: ["fitness", "dapp"],
+  tags: ["fitness"],
   platformToken: "moonThZEkkTVoNB7v6YVCQiT56JYDZ1oN185ba3WizL",
 };
 

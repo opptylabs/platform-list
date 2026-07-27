@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/bridgesplit",
     documentation: "https://docs.loopscale.com/",
   },
-  tags: ["dapp", "lending", "defi"],
+  tags: ["lending"],
 };
 
 export const contracts: ContractRaw[] = [

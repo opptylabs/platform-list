@@ -3,7 +3,7 @@ export const platform: PlatformRaw = {
   id: "tribeca",
   name: "Tribeca",
   description: "Onchain Governance.",
-  tags: ["dapp", "dao"],
+  tags: ["dao"],
   links: {
     website: "https://tribeca.so/gov/",
     twitter: "https://x.com/thesaberdao",

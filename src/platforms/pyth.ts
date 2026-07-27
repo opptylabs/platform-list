@@ -13,7 +13,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.pyth.network/home",
   },
   platformToken: "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
-  tags: ["tool", "dapp", "infrastructure", "oracle", "defi"],
+  tags: ["oracle"],
 };
 
 export const contracts: ContractRaw[] = [

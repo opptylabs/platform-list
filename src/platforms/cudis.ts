@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Cudis",
   description:
     "CUDIS is a DePIN wellness wearable featuring an AI-powered smart ring that tracks health metrics and rewards users for healthy behaviors.",
-  tags: ["dapp", "fitness", "depin"],
+  tags: ["fitness", "depin"],
   links: {
     website: "https://www.cudis.xyz/002",
     twitter: "https://x.com/CudisWellness",

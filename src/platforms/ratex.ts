@@ -13,7 +13,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/RateX-Protocol",
     documentation: "https://docs.rate-x.io/ratex",
   },
-  tags: ["dapp", "dex", "defi", "vault"],
+  tags: ["dex", "vault"],
   platformToken: "J1wnHdKvP34fg7TtYdX63UPJMTdXNzJGEqfNJB22vKjU",
 };
 

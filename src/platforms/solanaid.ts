@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     discord: "https://discord.com/invite/solanaid",
     telegram: "https://t.me/+NKjmb1u7LZw5YTU6",
   },
-  tags: ["dapp"],
+  tags: ["social"],
   platformToken: "SoLiDMWBct5TurG1LNcocemBK7QmTn4P33GSrRrcd2n",
 };
 

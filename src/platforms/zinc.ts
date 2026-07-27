@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Zinc",
   description:
     "Zinc is a private proof-of-work mining protocol on Solana powered by MetaDAO and Arcium.",
-  tags: ["dapp"],
+  tags: ["memecoin"],
   links: {
     website: "https://zinc.cash",
     twitter: "https://x.com/zinc_cash",

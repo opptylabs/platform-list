@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     documentation: "https://www.helius.dev/docs",
   },
   tokens: ["he1iusmfkpAdwvxLNGV8Y1iSbj4rUy6yMhEA3fotn9A"],
-  tags: ["tool", "infrastructure"],
+  tags: ["infrastructure"],
 };
 
 export const contracts: ContractRaw[] = [];

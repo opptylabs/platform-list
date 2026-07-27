@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     website: "https://www.trepa.io/",
     twitter: "https://x.com/trepa_io",
   },
-  tags: ["dapp", "prediction"],
+  tags: ["prediction"],
   addedAt: 1768219200000,
 };
 

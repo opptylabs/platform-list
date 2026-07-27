@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "PlaySolana",
   description:
     "PlaySolana is a gaming platform offering play-to-earn games and NFT rewards.",
-  tags: ["gaming", "dapp"],
+  tags: ["gaming"],
   links: {
     website: "https://www.playsolana.com/",
     discord: "https://discord.com/invite/playsolanaofficial",

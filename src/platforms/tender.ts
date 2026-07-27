@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/Tender-cash/",
     documentation: "https://docs.tender.cash/",
   },
-  tags: ["payments", "tool"],
+  tags: ["payments"],
   addedAt: 1770984000000,
 };
 

@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/onre-finance",
     telegram: "https://t.me/+mW8VqpLlFIExMmMx",
   },
-  tags: ["dapp", "stablecoin", "institutional"],
+  tags: ["stablecoin", "institutional"],
 };
 
 export const contracts: ContractRaw[] = [

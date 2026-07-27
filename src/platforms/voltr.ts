@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/voltrxyz",
     documentation: "https://docs.voltr.xyz/",
   },
-  tags: ["dapp", "vault", "defi"],
+  tags: ["vault"],
 };
 
 export const contracts: ContractRaw[] = [

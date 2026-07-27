@@ -13,7 +13,7 @@ export const platform: PlatformRaw = {
     documentation: "https://wormhole.com/docs/",
   },
   platformToken: "85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ",
-  tags: ["tool", "bridge", "dapp"],
+  tags: ["bridge"],
   tokens: [
     "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
     "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",

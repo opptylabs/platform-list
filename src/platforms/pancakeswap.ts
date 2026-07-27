@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     discord: "https://discord.gg/pancakeswap",
     github: "https://github.com/pancakeswap/",
   },
-  tags: ["dex", "dapp"],
+  tags: ["dex"],
   platformToken: "4qQeZ5LwSz6HuupUu8jCtgXyW1mYQcNbFAW1sWZp89HL",
 };
 

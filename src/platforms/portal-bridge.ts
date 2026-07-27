@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     website: "https://portalbridge.com/",
     twitter: "https://x.com/portalbridge_",
   },
-  tags: ["bridge", "dapp"],
+  tags: ["bridge"],
   parentId: "wormhole",
 };
 

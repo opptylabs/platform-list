@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     website: "https://spherepay.co/",
     twitter: "https://x.com/sphere_labs",
   },
-  tags: ["dapp", "payments", "infrastructure"],
+  tags: ["payments", "infrastructure"],
 };
 
 export const contracts: ContractRaw[] = [];

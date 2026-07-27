@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     discord: "https://discord.gg/zKV4B3etbX",
     documentation: "https://docs.recc.finance/",
   },
-  tags: ["dapp", "rwa"],
+  tags: ["rwa"],
   addedAt: 1771243200000,
 };
 

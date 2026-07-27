@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.defiland.app/",
   },
   platformToken: "DFL1zNkaGPWm1BqAVqRjCZvHmwTFrEaJtbzJWgseoNJh",
-  tags: ["gaming", "dapp"],
+  tags: ["gaming"],
 };
 
 export const contracts: ContractRaw[] = [

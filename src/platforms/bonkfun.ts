@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/bonkfun",
   },
   defiLlamaId: "letsbonk.fun",
-  tags: ["launchpad", "dapp"],
+  tags: ["launchpad"],
 };
 
 export const contracts: ContractRaw[] = [];

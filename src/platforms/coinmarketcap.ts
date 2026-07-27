@@ -7,7 +7,7 @@ export const platform: PlatformRaw = {
     website: "https://coinmarketcap.com/",
     twitter: "https://x.com/CoinMarketCap",
   },
-  tags: ["tool"],
+  tags: ["explorer"],
 };
 
 export const contracts: ContractRaw[] = [];

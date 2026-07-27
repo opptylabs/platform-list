@@ -29,7 +29,10 @@ export const PlatformSchema = z.object({
   id: platformIdSchema,
   name: nameSchema,
   image: z.string().url(),
-  tags: z.array(z.string()).min(1),
+  tags: z
+    .array(z.string())
+    .min(1, "A platform must have at least 1 tag")
+    .max(2, "A platform must have at most 2 tags"),
   links: z.object({
     website: z.string().url(),
     discord: z.string().url().optional(),

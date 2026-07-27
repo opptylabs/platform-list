@@ -5,7 +5,7 @@ export const platform: PlatformRaw = {
   description:
     "Pump.fun is a memecoin launchpad that enables anyone to create and trade tokens with bonding curve mechanics and automatic liquidity migration to Raydium.",
   defiLlamaId: "pumpfun",
-  tags: ["memecoin", "launchpad", "dapp"],
+  tags: ["memecoin", "launchpad"],
   links: {
     website: "https://pump.fun/board",
     telegram: "https://t.me/pumpfunsupport",

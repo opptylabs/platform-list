@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     telegram: "https://t.me/mixooor",
     documentation: "https://docs.mixoor.fun/",
   },
-  tags: ["tool", "dapp", "privacy"],
+  tags: ["privacy"],
   tokens: ["CdqUsAfihtKntBsXPrFaovYyr642zKmZmLxzwWQfsoar"],
   addedAt: 1771243200000,
 };

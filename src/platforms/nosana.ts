@@ -5,14 +5,12 @@ export const platform: PlatformRaw = {
   description:
     "Nosana is a decentralized GPU compute marketplace for AI inference workloads, connecting GPU providers with AI developers.",
   links: {
-    website: "https://app.nosana.io/",
-    discord: "http://discord.gg/nosana-ai",
-    telegram: "http://t.me/NosanaCompute",
+    website: "https://nosana.com/",
     twitter: "https://x.com/nosana_ai",
     github: "https://github.com/nosana-ci",
-    documentation: "https://docs.nosana.com/",
+    documentation: "https://learn.nosana.com/",
   },
-  tags: ["tool", "depin", "dapp", "ai"],
+  tags: ["depin", "ai"],
 };
 
 export const contracts: ContractRaw[] = [

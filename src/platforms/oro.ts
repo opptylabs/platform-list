@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     website: "https://app.oro.finance/",
     twitter: "https://x.com/orogoldapp",
   },
-  tags: ["dapp", "rwa"],
+  tags: ["rwa"],
   tokens: ["GoLDppdjB1vDTPSGxyMJFqdnj134yH6Prg9eqsGDiw6A"],
 };
 

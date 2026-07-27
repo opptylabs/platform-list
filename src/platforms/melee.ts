@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/meleemarkets",
     documentation: "https://melee-1.gitbook.io/melee-docs",
   },
-  tags: ["dapp", "prediction", "defi"],
+  tags: ["prediction"],
 };
 
 export const contracts: ContractRaw[] = [

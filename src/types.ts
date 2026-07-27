@@ -22,7 +22,6 @@ export type Platform = {
 };
 
 export type PlatformTag =
-  | "dapp"
   | "tool"
   | "cex"
   | "nft-collection"
@@ -37,7 +36,6 @@ export type PlatformTag =
   | "dex"
   | "social"
   | "depin"
-  | "desci"
   | "fitness"
   | "lending"
   | "rwa"
@@ -45,17 +43,16 @@ export type PlatformTag =
   | "prediction"
   | "infrastructure"
   | "vault"
-  | "defi"
   | "ai"
   | "restaking"
-  | "options"
   | "payments"
   | "oracle"
-  | "nft"
   | "bitcoin"
   | "card"
   | "privacy"
-  | "explorer";
+  | "explorer"
+  | "learn"
+  | "liquid-staking";
 
 type Optional<T, K extends keyof T> = Pick<Partial<T>, K> & Omit<T, K>;
 

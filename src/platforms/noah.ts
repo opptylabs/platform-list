@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     website: "https://noah.com/en",
     twitter: "https://x.com/Noah_HQ",
   },
-  tags: ["payments", "infrastructure"],
+  tags: ["payments"],
 };
 
 export const contracts: ContractRaw[] = [];

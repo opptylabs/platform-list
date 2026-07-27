@@ -7,7 +7,7 @@ export const platform: PlatformRaw = {
     website: "https://www.domin8.fun/",
     twitter: "https://x.com/domin8Arena",
   },
-  tags: ["gaming", "dapp"],
+  tags: ["gaming"],
 };
 
 export const contracts: ContractRaw[] = [

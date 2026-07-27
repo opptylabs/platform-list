@@ -86,15 +86,14 @@ You can convert images to WebP format using tools like:
 | `defiLlamaId`  | string        | No       | DefiLlama protocol ID                           |
 | `isDeprecated` | boolean       | No       | Mark platform as deprecated (defaults to false) |
 | `tokens`       | string[]      | No       | Array of token mint addresses                   |
-| `tags`         | PlatformTag[] | Yes      | Platform categories (see below)                 |
+| `tags`         | PlatformTag[] | Yes      | Platform categories, 1 to 2 max (see below)     |
 | `links`        | object        | Yes      | Social links and resources                      |
 | `addedAt`      | number        | No       | The timestamp (in ms) of your PR                |
 
 ### Available Tags
 
-Choose one or more tags that best describe your platform:
+Choose **1 to 2 tags** (maximum 2) that best describe your platform:
 
-- `dapp` - Decentralized application
 - `tool` - Utility or infrastructure tool
 - `cex` - Centralized exchange
 - `nft-collection` - NFT collection
@@ -109,7 +108,6 @@ Choose one or more tags that best describe your platform:
 - `dex` - Decentralized exchange
 - `social` - Social platform
 - `depin` - Decentralized physical infrastructure
-- `desci` - Decentralized science
 - `fitness` - Fitness/health platform
 - `lending` - Lending and borrowing protocol
 - `rwa` - Real world assets
@@ -117,16 +115,15 @@ Choose one or more tags that best describe your platform:
 - `prediction` - Prediction market
 - `infrastructure` - Blockchain infrastructure
 - `vault` - Vault or yield aggregator
-- `defi` - Decentralized finance
 - `ai` - AI-related platform
 - `restaking` - Restaking protocol
-- `options` - Options trading
 - `payments` - Payment solution
 - `oracle` - Oracle provider
-- `nft` - NFT-related protocol
 - `bitcoin` - Bitcoin-related protocol
 - `card` - Card or spending solution
 - `privacy` - Privacy-focused protocol
+- `learn` - Educational / developer learning resource
+- `liquid-staking` - Liquid staking protocol
 
 ## Contracts
 
@@ -174,6 +171,7 @@ Please follow these rules when contributing:
 - Follow the existing code structure and patterns
 - Ensure all required fields are filled
 - Validate contract addresses are correct
+- Use **at most 2 tags** per platform (1 minimum)
 - Always export `contracts` as a named export (empty array if there are none)
 
 ## Testing

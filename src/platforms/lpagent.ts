@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/lpagent",
     documentation: "https://docs.lpagent.io/",
   },
-  tags: ["tool", "ai"],
+  tags: ["ai"],
   addedAt: 1770984000000,
 };
 

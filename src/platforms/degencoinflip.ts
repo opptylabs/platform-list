@@ -9,7 +9,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/degencoinflip",
     discord: "https://discord.gg/degencoinflip",
   },
-  tags: ["gaming", "dapp"],
+  tags: ["gaming"],
 };
 
 export const contracts: ContractRaw[] = [

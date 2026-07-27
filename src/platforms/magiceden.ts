@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     documentation: "https://community.magiceden.io/learn",
   },
   platformToken: "MEFNBXixkEbait3xn9bkm8WsJzXtVsaJEn4c8Sam21u",
-  tags: ["tool", "nft-marketplace", "dapp"],
+  tags: ["nft-marketplace"],
 };
 
 export const contracts: ContractRaw[] = [

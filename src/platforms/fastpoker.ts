@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/FastdotPoker",
   },
   platformToken: "FP111dxqjLRqtuoknQ8L6aaZjqqyFRT6FcAnaCPytJ3",
-  tags: ["gaming", "dapp"],
+  tags: ["gaming"],
   addedAt: 1749600000000,
 };
 

@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Macaron",
   description:
     "Macaron is a mining protocol that integrates both auction-based and block-based mining models.",
-  tags: ["tool"],
+  tags: ["memecoin"],
   links: {
     website: "https://www.macaron.bid/",
     telegram: "https://t.me/macaron_bid",

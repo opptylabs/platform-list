@@ -7,7 +7,7 @@ export const platform: PlatformRaw = {
     website: "https://offerbook.jup.ag/",
     twitter: "https://x.com/jup_offerbook",
   },
-  tags: ["defi", "dapp"],
+  tags: ["lending"],
   parentId: jupiterPlatform.id,
 };
 

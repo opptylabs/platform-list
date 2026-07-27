@@ -32,7 +32,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs...",      // optional
   },
   platformToken: "<solana token address>", // optional
-  tags: ["dapp", ...],                     // see PlatformTag in types.ts
+  tags: ["dex", ...],                      // 1-2 max, see PlatformTag in types.ts
   addedAt: <unix ms timestamp>,            // optional
   isDeprecated: true,                      // only if deprecated
 };

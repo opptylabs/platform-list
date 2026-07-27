@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Portals",
   description:
     "Portals is a web-based virtual world platform where users can create, customize and explore immersive 3D environments with integrated NFT showcasing.",
-  tags: ["gaming", "nft-collection", "dapp"],
+  tags: ["gaming", "nft-collection"],
   links: {
     website: "https://theportal.to/",
     twitter: "https://x.com/_portals_",

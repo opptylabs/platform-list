@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Infinex",
   description:
     "Infinex is a keyless multi-chain DeFi platform and perpetual exchange offering a CEX-like experience onchain with passkey security.",
-  tags: ["dapp", "dex", "defi"],
+  tags: ["dex"],
   links: {
     website: "https://infinex.xyz/",
     discord: "https://discord.gg/infinex",

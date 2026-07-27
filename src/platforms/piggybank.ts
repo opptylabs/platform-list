@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Piggybank",
   description:
     "Piggybank is a DeFi platform offering vaults for xStocks and yield optimization strategies.",
-  tags: ["dapp", "vault", "defi"],
+  tags: ["vault"],
   links: {
     website: "https://www.piggybank.fi/",
     discord: "https://discord.gg/WNutXfvTgw",

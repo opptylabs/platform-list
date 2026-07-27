@@ -3,7 +3,7 @@ export const platform: PlatformRaw = {
   id: "solv",
   name: "Solv",
   description: "Bitcoin liquid staking protocol on Solana",
-  tags: ["dapp", "defi", "bitcoin"],
+  tags: ["bitcoin"],
   defiLlamaId: "solv-protocol",
   links: {
     website: "https://solv.finance/",

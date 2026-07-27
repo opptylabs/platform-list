@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     documentation: "https://defituna.gitbook.io/defituna-docs",
   },
   defiLlamaId: "defituna",
-  tags: ["dapp", "dex", "defi", "lending"],
+  tags: ["dex", "lending"],
   platformToken: "TUNAfXDZEdQizTMTh3uEvNvYqJmqFHZbEJt8joP4cyx",
 };
 

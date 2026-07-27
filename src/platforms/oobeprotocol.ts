@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     documentation: "https://synapse.oobeprotocol.ai/",
   },
   platformToken: "EikyJKSVWPK28rX5FG8KyJcSzv3D2b2Qg7VodzqQoobe",
-  tags: ["tool", "ai"],
+  tags: ["ai"],
   addedAt: 1772406000000,
 };
 

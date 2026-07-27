@@ -11,7 +11,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/regolith-labs/ore",
   },
   platformToken: "oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
-  tags: ["dapp"],
+  tags: ["memecoin"],
 };
 
 export const contracts: ContractRaw[] = [];

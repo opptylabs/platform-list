@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     website: "https://docs.near.org/chain-abstraction/omnibridge/overview",
     twitter: "https://x.com/nearprotocol",
   },
-  tags: ["bridge", "dapp"],
+  tags: ["bridge"],
   addedAt: 1763380800000,
 };
 

@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/printr",
     documentation: "https://printr.gitbook.io/printr-docs",
   },
-  tags: ["dapp", "launchpad"],
+  tags: ["launchpad"],
 };
 
 export const contracts: ContractRaw[] = [

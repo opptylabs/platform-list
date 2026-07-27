@@ -13,7 +13,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.kamino.finance/",
   },
   platformToken: "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS",
-  tags: ["dapp", "lending", "vault", "defi"],
+  tags: ["lending", "vault"],
 };
 
 export const contracts: ContractRaw[] = [

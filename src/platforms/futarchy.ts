@@ -14,7 +14,7 @@ export const platform: PlatformRaw = {
   defiLlamaId: "metadao",
   platformToken: "METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta",
   tokens: ["METADDFL6wWMWEoKTFJwcThTbUmtarRJZjRpzUvkxhr"],
-  tags: ["dapp", "dao"],
+  tags: ["dao"],
 };
 
 export const contracts: ContractRaw[] = [

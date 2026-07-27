@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/laine_sa_",
   },
   tokens: ["LAinEtNLgpmCP9Rvsf5Hn8W6EhNiKLZQti1xfWMLy6X"],
-  tags: ["tool", "dapp"],
+  tags: ["explorer"],
 };
 
 export const contracts: ContractRaw[] = [];

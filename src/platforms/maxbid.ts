@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/maxbidbro",
     documentation: "https://maxbid-pro.gitbook.io/maxbid-pro",
   },
-  tags: ["dapp"],
+  tags: ["dex"],
 };
 
 export const contracts: ContractRaw[] = [];

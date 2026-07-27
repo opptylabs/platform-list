@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/Tramplin_io",
     discord: "https://discord.com/invite/tramplin",
   },
-  tags: ["dapp"],
+  tags: ["vault"],
   addedAt: 1770897600000,
 };
 

@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "AllDomains",
   description:
     "AllDomains is a Web3 domain name service that enables users to create, register, and trade customizable domain names and top-level domains as NFTs.",
-  tags: ["tool", "dapp"],
+  tags: ["social"],
   links: {
     website: "https://alldomains.id/",
     discord: "https://discord.com/invite/alldomains",

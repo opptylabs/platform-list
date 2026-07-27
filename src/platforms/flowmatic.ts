@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Flowmatic",
   description:
     "Flowmatic is a DeFi ecosystem providing a unified interface for DLMM workflows with Asset Agnostic Order Books (AAOB) for trading derivatives.",
-  tags: ["dapp"],
+  tags: ["dex"],
   links: {
     website: "https://www.flowmatic.xyz/",
     discord: "https://discord.gg/flowmatic",

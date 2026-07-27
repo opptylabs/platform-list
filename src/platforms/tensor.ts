@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Tensor",
   description:
     "Tensor is an NFT marketplace offering trading, bidding, AMM pools, and compressed NFT support with advanced features for professional traders.",
-  tags: ["tool", "nft-marketplace", "dapp"],
+  tags: ["nft-marketplace"],
   links: {
     website: "https://www.tensor.trade/",
     discord: "https://discord.gg/tensor",

@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Turbine Cash",
   description:
     "Turbine Cash is a privacy-focused DeFi platform on Solana using zero-knowledge cryptography to obfuscate transactions, offering private swaps and DCA.",
-  tags: ["dapp", "defi", "privacy"],
+  tags: ["privacy"],
   links: {
     website: "https://turbine.cash/",
     twitter: "https://x.com/turbine_cash",

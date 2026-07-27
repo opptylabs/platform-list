@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/refihub",
     documentation: "https://refihub.gitbook.io/refi-hub",
   },
-  tags: ["dapp", "rwa"],
+  tags: ["rwa"],
 };
 
 export const contracts: ContractRaw[] = [];

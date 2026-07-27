@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Solomon",
   description: "Solomon is a native synthetic dollar protocol.",
   defiLlamaId: "solomon-usdv",
-  tags: ["stablecoin", "dapp"],
+  tags: ["stablecoin"],
   links: {
     website: "https://solomonlabs.org/",
     telegram: "https://t.me/solomonlabs",

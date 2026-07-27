@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Honeyland",
   description:
     "Honeyland is a play-to-earn strategy game where players manage bee colonies, harvest honey, breed NFT bees, and compete in PvP raids.",
-  tags: ["gaming", "dapp"],
+  tags: ["gaming"],
   links: {
     website: "https://honey.land/",
     discord: "https://discord.gg/playhoneyland",

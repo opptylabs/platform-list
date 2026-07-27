@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "Circular.fi",
   description:
     "MEV Hub on Solana | Real-time MEV tracking + deep portfolio analytics, turn the signal into a hedge.",
-  tags: ["dapp", "tool"],
+  tags: ["tool"],
   links: {
     website: "https://circular.fi/",
     discord: "https://discord.gg/j99p8dmE5a",

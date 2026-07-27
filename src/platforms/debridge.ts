@@ -14,7 +14,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.debridge.finance/",
   },
   platformToken: "DBRiDgJAMsM95moTzJs7M9LnkGErpbv9v6CUR1DXnUu5",
-  tags: ["tool", "bridge", "dapp"],
+  tags: ["bridge"],
 };
 
 export const contracts: ContractRaw[] = [

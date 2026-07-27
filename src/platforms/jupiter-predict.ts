@@ -1,7 +1,7 @@
 import { PlatformRaw, ContractRaw } from "../types";
 import { platform as jupiterPlatform } from "./jupiter-exchange";
 export const platform: PlatformRaw = {
-  id: "jupiter-pm",
+  id: "jupiter-predict",
   name: "Jupiter Predict",
   description: "Jupiter Prediction Market, trade on real-world events.",
   links: {
@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/jup_predict",
     github: "https://github.com/jup-ag",
   },
-  tags: ["dapp", "prediction"],
+  tags: ["prediction"],
   parentId: jupiterPlatform.id,
 };
 
