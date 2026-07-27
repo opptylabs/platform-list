@@ -41,6 +41,7 @@ export type PlatformTag =
   | "rwa"
   | "institutional"
   | "prediction"
+  | "perpetuals"
   | "infrastructure"
   | "vault"
   | "ai"

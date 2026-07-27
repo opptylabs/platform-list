@@ -4,7 +4,7 @@ export const platform: PlatformRaw = {
   name: "GMTrade",
   description:
     "GMTrade is a decentralized leveraged trading platform built on the Solana blockchain.",
-  tags: ["dex"],
+  tags: ["perpetuals"],
   links: {
     website: "https://gmxsol.io/",
     discord: "https://discord.com/invite/gmtrade",

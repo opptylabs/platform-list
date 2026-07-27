@@ -113,6 +113,7 @@ Choose **1 to 2 tags** (maximum 2) that best describe your platform:
 - `rwa` - Real world assets
 - `institutional` - Institutional-grade platform
 - `prediction` - Prediction market
+- `perpetuals` - Perpetual futures trading
 - `infrastructure` - Blockchain infrastructure
 - `vault` - Vault or yield aggregator
 - `ai` - AI-related platform

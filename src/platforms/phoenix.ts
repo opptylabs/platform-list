@@ -13,7 +13,7 @@ export const platform: PlatformRaw = {
     documentation:
       "https://ellipsis-labs.gitbook.io/phoenix-dex/tRIkEFlLUzWK9uKO3W2V",
   },
-  tags: ["dex"],
+  tags: ["perpetuals"],
 };
 
 export const contracts: ContractRaw[] = [
