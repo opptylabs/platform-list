@@ -2,6 +2,8 @@
 
 A comprehensive registry of platforms in the Solana ecosystem. This package provides structured platform data including metadata, links, token(s) information and smart contracts.
 
+> 🌐 **Browse the Solana ecosystem on the https://solanavibes.xyz/ecosystem-directory**
+
 ## JSON endpoints
 
 The latest generated JSON files are available via GitHub Releases:
