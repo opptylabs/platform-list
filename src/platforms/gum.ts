@@ -3,6 +3,8 @@ import { platform as jupiterPlatform } from "./jupiter-exchange";
 export const platform: PlatformRaw = {
   id: "gum",
   name: "GUM",
+  description:
+    "Discover trending tokens across Solana, Base, Arbitrum and more on GUM, the universal decentralized exchange.",
   links: {
     website: "https://x.com/Jupnet",
     twitter: "https://x.com/Jupnet",
