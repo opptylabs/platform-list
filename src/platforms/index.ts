@@ -25,6 +25,7 @@ import * as bskt from "./bskt";
 import * as btcsol from "./btcsol";
 import * as bulktrade from "./bulktrade";
 import * as byreal from "./byreal";
+import * as caged from "./caged";
 import * as candle from "./candle";
 import * as cesto from "./cesto";
 import * as chopcorp from "./chopcorp";
@@ -212,6 +213,7 @@ import * as squads from "./squads";
 import * as stabble from "./stabble";
 import * as stakewiz from "./stakewiz";
 import * as staratlas from "./staratlas";
+import * as stonkfun from "./stonkfun";
 import * as streamflow from "./streamflow";
 import * as sunrise from "./sunrise";
 import * as switchboard from "./switchboard";
@@ -269,6 +271,7 @@ export const platforms: PlatformRaw[] = [
   btcsol.platform,
   bulktrade.platform,
   byreal.platform,
+  caged.platform,
   candle.platform,
   cesto.platform,
   chopcorp.platform,
@@ -456,6 +459,7 @@ export const platforms: PlatformRaw[] = [
   stabble.platform,
   stakewiz.platform,
   staratlas.platform,
+  stonkfun.platform,
   streamflow.platform,
   sunrise.platform,
   switchboard.platform,
@@ -535,6 +539,7 @@ export const contracts: Contract[] = [
     platformId: bulktrade.platform.id,
   })),
   ...byreal.contracts.map((c) => ({ ...c, platformId: byreal.platform.id })),
+  ...caged.contracts.map((c) => ({ ...c, platformId: caged.platform.id })),
   ...candle.contracts.map((c) => ({ ...c, platformId: candle.platform.id })),
   ...cesto.contracts.map((c) => ({ ...c, platformId: cesto.platform.id })),
   ...chopcorp.contracts.map((c) => ({
@@ -973,6 +978,10 @@ export const contracts: Contract[] = [
   ...staratlas.contracts.map((c) => ({
     ...c,
     platformId: staratlas.platform.id,
+  })),
+  ...stonkfun.contracts.map((c) => ({
+    ...c,
+    platformId: stonkfun.platform.id,
   })),
   ...streamflow.contracts.map((c) => ({
     ...c,
